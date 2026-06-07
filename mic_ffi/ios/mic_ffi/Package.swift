@@ -16,9 +16,21 @@ let package = Package(
     ],
     targets: [
         .target(
+            name: "mic_ffi_objc",
+            publicHeadersPath: "include",
+//            cSettings: [
+//                .headerSearchPath("include"),
+////                .unsafeFlags(["-ObjC"])
+//            ],
+            linkerSettings: [
+              .unsafeFlags(["-ObjC"])
+            ]
+        ),
+        .target(
             name: "mic_ffi",
             dependencies: [
-                .product(name: "FlutterFramework", package: "FlutterFramework")
+                .product(name: "FlutterFramework", package: "FlutterFramework"),
+                "mic_ffi_objc"
             ],
             resources: [
                 // If your plugin requires a privacy manifest, for example if it uses any required

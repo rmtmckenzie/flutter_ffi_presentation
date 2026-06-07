@@ -7,80 +7,6 @@ import 'package:objective_c/objective_c.dart' as objc;
 import 'package:ffi/ffi.dart' as pkg_ffi;
 
 @ffi.Native<
-  ffi.Bool Function(ffi.Pointer<objc.ObjCObjectImpl>, ffi.Pointer<ffi.Void>)
->()
-external bool _NativeLibrary_protocolTrampoline_e3qsqz(
-  ffi.Pointer<objc.ObjCObjectImpl> target,
-  ffi.Pointer<ffi.Void> arg0,
-);
-
-@ffi.Native<
-  ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)
->(isLeaf: true)
-external ffi.Pointer<objc.ObjCBlockImpl>
-_NativeLibrary_wrapListenerBlock_18v1jvf(ffi.Pointer<objc.ObjCBlockImpl> block);
-
-@ffi.Native<
-  ffi.Pointer<objc.ObjCBlockImpl> Function(
-    ffi.Pointer<objc.ObjCBlockImpl>,
-    ffi.Pointer<objc.ObjCBlockImpl>,
-    ffi.Pointer<objc.DOBJC_Context>,
-  )
->(isLeaf: true)
-external ffi.Pointer<objc.ObjCBlockImpl>
-_NativeLibrary_wrapBlockingBlock_18v1jvf(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
-  ffi.Pointer<objc.DOBJC_Context> context,
-);
-
-@ffi.Native<
-  ffi.Void Function(
-    ffi.Pointer<objc.ObjCObjectImpl>,
-    ffi.Pointer<ffi.Void>,
-    ffi.Pointer<objc.ObjCObjectImpl>,
-  )
->()
-external void _NativeLibrary_protocolTrampoline_18v1jvf(
-  ffi.Pointer<objc.ObjCObjectImpl> target,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObjectImpl> arg1,
-);
-
-@ffi.Native<
-  instancetype Function(
-    ffi.Pointer<objc.ObjCObjectImpl>,
-    ffi.Pointer<ffi.Void>,
-    ffi.Pointer<objc.ObjCObjectImpl>,
-  )
->()
-external instancetype _NativeLibrary_protocolTrampoline_xr62hr(
-  ffi.Pointer<objc.ObjCObjectImpl> target,
-  ffi.Pointer<ffi.Void> arg0,
-  ffi.Pointer<objc.ObjCObjectImpl> arg1,
-);
-
-@ffi.Native<
-  ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)
->(isLeaf: true)
-external ffi.Pointer<objc.ObjCBlockImpl>
-_NativeLibrary_wrapListenerBlock_1hqui74(ffi.Pointer<objc.ObjCBlockImpl> block);
-
-@ffi.Native<
-  ffi.Pointer<objc.ObjCBlockImpl> Function(
-    ffi.Pointer<objc.ObjCBlockImpl>,
-    ffi.Pointer<objc.ObjCBlockImpl>,
-    ffi.Pointer<objc.DOBJC_Context>,
-  )
->(isLeaf: true)
-external ffi.Pointer<objc.ObjCBlockImpl>
-_NativeLibrary_wrapBlockingBlock_1hqui74(
-  ffi.Pointer<objc.ObjCBlockImpl> block,
-  ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
-  ffi.Pointer<objc.DOBJC_Context> context,
-);
-
-@ffi.Native<
   ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)
 >(isLeaf: true)
 external ffi.Pointer<objc.ObjCBlockImpl>
@@ -158,6 +84,60 @@ _NativeLibrary_wrapBlockingBlock_bqkezo(
   ffi.Pointer<objc.ObjCBlockImpl> block,
   ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
   ffi.Pointer<objc.DOBJC_Context> context,
+);
+
+@ffi.Native<
+  ffi.Bool Function(ffi.Pointer<objc.ObjCObjectImpl>, ffi.Pointer<ffi.Void>)
+>()
+external bool _NativeLibrary_protocolTrampoline_e3qsqz(
+  ffi.Pointer<objc.ObjCObjectImpl> target,
+  ffi.Pointer<ffi.Void> arg0,
+);
+
+@ffi.Native<
+  ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)
+>(isLeaf: true)
+external ffi.Pointer<objc.ObjCBlockImpl>
+_NativeLibrary_wrapListenerBlock_18v1jvf(ffi.Pointer<objc.ObjCBlockImpl> block);
+
+@ffi.Native<
+  ffi.Pointer<objc.ObjCBlockImpl> Function(
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<objc.DOBJC_Context>,
+  )
+>(isLeaf: true)
+external ffi.Pointer<objc.ObjCBlockImpl>
+_NativeLibrary_wrapBlockingBlock_18v1jvf(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
+  ffi.Pointer<objc.DOBJC_Context> context,
+);
+
+@ffi.Native<
+  ffi.Void Function(
+    ffi.Pointer<objc.ObjCObjectImpl>,
+    ffi.Pointer<ffi.Void>,
+    ffi.Pointer<objc.ObjCObjectImpl>,
+  )
+>()
+external void _NativeLibrary_protocolTrampoline_18v1jvf(
+  ffi.Pointer<objc.ObjCObjectImpl> target,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObjectImpl> arg1,
+);
+
+@ffi.Native<
+  instancetype Function(
+    ffi.Pointer<objc.ObjCObjectImpl>,
+    ffi.Pointer<ffi.Void>,
+    ffi.Pointer<objc.ObjCObjectImpl>,
+  )
+>()
+external instancetype _NativeLibrary_protocolTrampoline_xr62hr(
+  ffi.Pointer<objc.ObjCObjectImpl> target,
+  ffi.Pointer<ffi.Void> arg0,
+  ffi.Pointer<objc.ObjCObjectImpl> arg1,
 );
 
 @ffi.Native<
@@ -275,6 +255,26 @@ _NativeLibrary_wrapListenerBlock_18q2rn5(ffi.Pointer<objc.ObjCBlockImpl> block);
 >(isLeaf: true)
 external ffi.Pointer<objc.ObjCBlockImpl>
 _NativeLibrary_wrapBlockingBlock_18q2rn5(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
+  ffi.Pointer<objc.DOBJC_Context> context,
+);
+
+@ffi.Native<
+  ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)
+>(isLeaf: true)
+external ffi.Pointer<objc.ObjCBlockImpl>
+_NativeLibrary_wrapListenerBlock_1hqui74(ffi.Pointer<objc.ObjCBlockImpl> block);
+
+@ffi.Native<
+  ffi.Pointer<objc.ObjCBlockImpl> Function(
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<objc.DOBJC_Context>,
+  )
+>(isLeaf: true)
+external ffi.Pointer<objc.ObjCBlockImpl>
+_NativeLibrary_wrapBlockingBlock_1hqui74(
   ffi.Pointer<objc.ObjCBlockImpl> block,
   ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
   ffi.Pointer<objc.DOBJC_Context> context,
@@ -544,6 +544,26 @@ external void _NativeLibrary_protocolTrampoline_1sk3k4k(
   AVAudio3DPoint arg1,
 );
 
+@ffi.Native<
+  ffi.Pointer<objc.ObjCBlockImpl> Function(ffi.Pointer<objc.ObjCBlockImpl>)
+>(isLeaf: true)
+external ffi.Pointer<objc.ObjCBlockImpl> _NativeLibrary_wrapListenerBlock_aiz4t(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+);
+
+@ffi.Native<
+  ffi.Pointer<objc.ObjCBlockImpl> Function(
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<objc.ObjCBlockImpl>,
+    ffi.Pointer<objc.DOBJC_Context>,
+  )
+>(isLeaf: true)
+external ffi.Pointer<objc.ObjCBlockImpl> _NativeLibrary_wrapBlockingBlock_aiz4t(
+  ffi.Pointer<objc.ObjCBlockImpl> block,
+  ffi.Pointer<objc.ObjCBlockImpl> listnerBlock,
+  ffi.Pointer<objc.DOBJC_Context> context,
+);
+
 @ffi.Packed(2)
 final class ComponentInstanceRecord extends ffi.Opaque {}
 
@@ -656,2253 +676,7 @@ final class AudioTimeStamp extends ffi.Struct {
 
 final class AudioChannelLayout extends ffi.Opaque {}
 
-final class AVAudio3DPoint extends ffi.Struct {
-  @ffi.Float()
-  external double x;
-
-  @ffi.Float()
-  external double y;
-
-  @ffi.Float()
-  external double z;
-}
-
-late final _class_AVAudioBuffer = objc.getClass("AVAudioBuffer");
-late final _sel_isKindOfClass_ = objc.registerName("isKindOfClass:");
-final _objc_msgSend_19nvye5 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Bool Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.ObjCObjectImpl>,
-        )
-      >
-    >()
-    .asFunction<
-      bool Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<objc.ObjCObjectImpl>,
-      )
-    >();
-late final _class_AVAudioFormat = objc.getClass("AVAudioFormat");
-typedef instancetype = ffi.Pointer<objc.ObjCObjectImpl>;
-typedef Dartinstancetype = objc.ObjCObject;
-late final _sel_initWithStreamDescription_ = objc.registerName(
-  "initWithStreamDescription:",
-);
-final _objc_msgSend_12whkva = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<AudioStreamBasicDescription>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<AudioStreamBasicDescription>,
-      )
-    >();
-
-/// WARNING: AVAudioChannelLayout is a stub. To generate bindings for this class, include
-/// AVAudioChannelLayout in your config's objc-interfaces list.
-///
-/// AVAudioChannelLayout
-extension type AVAudioChannelLayout._(objc.ObjCObject object$)
-    implements objc.ObjCObject, objc.NSObject, objc.NSSecureCoding {
-  /// Constructs a [AVAudioChannelLayout] that points to the same underlying object as [other].
-  AVAudioChannelLayout.as(objc.ObjCObject other) : object$ = other {
-    objc.checkOsVersionInternal(
-      'AVAudioChannelLayout',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-  }
-
-  /// Constructs a [AVAudioChannelLayout] that wraps the given raw object pointer.
-  AVAudioChannelLayout.fromPointer(
-    ffi.Pointer<objc.ObjCObjectImpl> other, {
-    bool retain = false,
-    bool release = false,
-  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
-    objc.checkOsVersionInternal(
-      'AVAudioChannelLayout',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-  }
-}
-
-late final _sel_initWithStreamDescription_channelLayout_ = objc.registerName(
-  "initWithStreamDescription:channelLayout:",
-);
-final _objc_msgSend_1pu5pn8 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<AudioStreamBasicDescription>,
-          ffi.Pointer<objc.ObjCObjectImpl>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<AudioStreamBasicDescription>,
-        ffi.Pointer<objc.ObjCObjectImpl>,
-      )
-    >();
-late final _sel_initStandardFormatWithSampleRate_channels_ = objc.registerName(
-  "initStandardFormatWithSampleRate:channels:",
-);
-final _objc_msgSend_lrt8o8 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Double,
-          ffi.Uint32,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        double,
-        int,
-      )
-    >();
-late final _sel_initStandardFormatWithSampleRate_channelLayout_ = objc
-    .registerName("initStandardFormatWithSampleRate:channelLayout:");
-final _objc_msgSend_1ozwf6k = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Double,
-          ffi.Pointer<objc.ObjCObjectImpl>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        double,
-        ffi.Pointer<objc.ObjCObjectImpl>,
-      )
-    >();
-
-/// !
-/// @enum		AVAudioCommonFormat
-/// @constant	AVAudioOtherFormat
-/// A format other than one of the common ones below.
-/// @constant	AVAudioPCMFormatFloat32
-/// Native-endian floats (this is the standard format).
-/// @constant	AVAudioPCMFormatFloat64
-/// Native-endian doubles.
-/// @constant	AVAudioPCMFormatInt16
-/// Signed 16-bit native-endian integers.
-/// @constant	AVAudioPCMFormatInt32
-/// Signed 32-bit native-endian integers.
-enum AVAudioCommonFormat {
-  AVAudioOtherFormat(0),
-  AVAudioPCMFormatFloat32(1),
-  AVAudioPCMFormatFloat64(2),
-  AVAudioPCMFormatInt16(3),
-  AVAudioPCMFormatInt32(4);
-
-  final int value;
-  const AVAudioCommonFormat(this.value);
-
-  static AVAudioCommonFormat fromValue(int value) => switch (value) {
-    0 => AVAudioOtherFormat,
-    1 => AVAudioPCMFormatFloat32,
-    2 => AVAudioPCMFormatFloat64,
-    3 => AVAudioPCMFormatInt16,
-    4 => AVAudioPCMFormatInt32,
-    _ => throw ArgumentError('Unknown value for AVAudioCommonFormat: $value'),
-  };
-}
-
-late final _sel_initWithCommonFormat_sampleRate_channels_interleaved_ = objc
-    .registerName("initWithCommonFormat:sampleRate:channels:interleaved:");
-final _objc_msgSend_14phkbx = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.UnsignedLong,
-          ffi.Double,
-          ffi.Uint32,
-          ffi.Bool,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        int,
-        double,
-        int,
-        bool,
-      )
-    >();
-late final _sel_initWithCommonFormat_sampleRate_interleaved_channelLayout_ =
-    objc.registerName(
-      "initWithCommonFormat:sampleRate:interleaved:channelLayout:",
-    );
-final _objc_msgSend_13hxpgt = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.UnsignedLong,
-          ffi.Double,
-          ffi.Bool,
-          ffi.Pointer<objc.ObjCObjectImpl>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        int,
-        double,
-        bool,
-        ffi.Pointer<objc.ObjCObjectImpl>,
-      )
-    >();
-late final _sel_initWithSettings_ = objc.registerName("initWithSettings:");
-final _objc_msgSend_1sotr3r = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.ObjCObjectImpl>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<objc.ObjCObjectImpl>,
-      )
-    >();
-
 final class opaqueCMFormatDescription extends ffi.Opaque {}
-
-late final _sel_initWithCMAudioFormatDescription_ = objc.registerName(
-  "initWithCMAudioFormatDescription:",
-);
-final _objc_msgSend_1bmcroy = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<opaqueCMFormatDescription>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<opaqueCMFormatDescription>,
-      )
-    >();
-late final _sel_isEqual_ = objc.registerName("isEqual:");
-late final _sel_isStandard = objc.registerName("isStandard");
-final _objc_msgSend_91o635 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Bool Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      bool Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-late final _sel_commonFormat = objc.registerName("commonFormat");
-final _objc_msgSend_1hv2fgi = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.UnsignedLong Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      int Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-late final _sel_channelCount = objc.registerName("channelCount");
-final _objc_msgSend_usggvf = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Uint32 Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      int Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-late final _sel_sampleRate = objc.registerName("sampleRate");
-final _objc_msgSend_1ukqyt8 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Double Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      double Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-final _objc_msgSend_1ukqyt8Fpret = objc.msgSendFpretPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Double Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      double Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-late final _sel_isInterleaved = objc.registerName("isInterleaved");
-late final _sel_streamDescription = objc.registerName("streamDescription");
-final _objc_msgSend_lhvs9c = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<AudioStreamBasicDescription> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<AudioStreamBasicDescription> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-late final _sel_channelLayout = objc.registerName("channelLayout");
-final _objc_msgSend_151sglz = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-late final _sel_magicCookie = objc.registerName("magicCookie");
-late final _sel_setMagicCookie_ = objc.registerName("setMagicCookie:");
-final _objc_msgSend_xtuoz7 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Void Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.ObjCObjectImpl>,
-        )
-      >
-    >()
-    .asFunction<
-      void Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<objc.ObjCObjectImpl>,
-      )
-    >();
-late final _sel_settings = objc.registerName("settings");
-late final _sel_formatDescription = objc.registerName("formatDescription");
-final _objc_msgSend_15dwpk8 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<opaqueCMFormatDescription> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<opaqueCMFormatDescription> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-late final _sel_init = objc.registerName("init");
-late final _sel_new = objc.registerName("new");
-late final _sel_allocWithZone_ = objc.registerName("allocWithZone:");
-final _objc_msgSend_1cwp428 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.NSZone>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<objc.NSZone>,
-      )
-    >();
-late final _sel_alloc = objc.registerName("alloc");
-late final _sel_supportsSecureCoding = objc.registerName(
-  "supportsSecureCoding",
-);
-
-/// Construction methods for `objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>`.
-abstract final class ObjCBlock_bool_ffiVoid {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)> fromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>(
-    pointer,
-    retain: retain,
-    release: release,
-  );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>
-  fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<ffi.Bool Function(ffi.Pointer<ffi.Void> arg0)>
-    >
-    ptr,
-  ) => objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>(
-    objc.newPointerBlock(_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)> fromFunction(
-    bool Function(ffi.Pointer<ffi.Void>) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>(
-    objc.newClosureBlock(
-      _closureCallable,
-      (ffi.Pointer<ffi.Void> arg0) => fn(arg0),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-
-  static bool _fnPtrTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<ffi.Void> arg0,
-  ) => block.ref.target
-      .cast<ffi.NativeFunction<ffi.Bool Function(ffi.Pointer<ffi.Void> arg0)>>()
-      .asFunction<bool Function(ffi.Pointer<ffi.Void>)>()(arg0);
-  static ffi.Pointer<ffi.Void> _fnPtrCallable =
-      ffi.Pointer.fromFunction<
-            ffi.Bool Function(
-              ffi.Pointer<objc.ObjCBlockImpl>,
-              ffi.Pointer<ffi.Void>,
-            )
-          >(_fnPtrTrampoline, false)
-          .cast();
-  static bool _closureTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<ffi.Void> arg0,
-  ) => (objc.getBlockClosure(block) as bool Function(ffi.Pointer<ffi.Void>))(
-    arg0,
-  );
-  static ffi.Pointer<ffi.Void> _closureCallable =
-      ffi.Pointer.fromFunction<
-            ffi.Bool Function(
-              ffi.Pointer<objc.ObjCBlockImpl>,
-              ffi.Pointer<ffi.Void>,
-            )
-          >(_closureTrampoline, false)
-          .cast();
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>`.
-extension ObjCBlock_bool_ffiVoid$CallExtension
-    on objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)> {
-  bool call(ffi.Pointer<ffi.Void> arg0) => ref.pointer.ref.invoke
-      .cast<
-        ffi.NativeFunction<
-          ffi.Bool Function(
-            ffi.Pointer<objc.ObjCBlockImpl> block,
-            ffi.Pointer<ffi.Void> arg0,
-          )
-        >
-      >()
-      .asFunction<
-        bool Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
-      >()(ref.pointer, arg0);
-}
-
-late final _sel_encodeWithCoder_ = objc.registerName("encodeWithCoder:");
-
-/// Construction methods for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>`.
-abstract final class ObjCBlock_ffiVoid_ffiVoid_NSCoder {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>
-  fromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>(
-    pointer,
-    retain: retain,
-    release: release,
-  );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>
-  fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<
-        ffi.Void Function(
-          ffi.Pointer<ffi.Void> arg0,
-          ffi.Pointer<objc.ObjCObjectImpl> arg1,
-        )
-      >
-    >
-    ptr,
-  ) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>(
-    objc.newPointerBlock(_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>
-  fromFunction(
-    void Function(ffi.Pointer<ffi.Void>, objc.NSCoder) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>(
-    objc.newClosureBlock(
-      _closureCallable,
-      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObjectImpl> arg1) =>
-          fn(arg0, objc.NSCoder.fromPointer(arg1, retain: true, release: true)),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a listener block from a Dart function.
-  ///
-  /// This is based on FFI's NativeCallable.listener, and has the same
-  /// capabilities and limitations. This block can be invoked from any thread,
-  /// but only supports void functions, and is not run synchronously. See
-  /// NativeCallable.listener for more details.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>
-  listener(
-    void Function(ffi.Pointer<ffi.Void>, objc.NSCoder) fn, {
-    bool keepIsolateAlive = true,
-  }) {
-    final raw = objc.newClosureBlock(
-      _listenerCallable.nativeFunction.cast(),
-      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObjectImpl> arg1) => fn(
-        arg0,
-        objc.NSCoder.fromPointer(arg1, retain: false, release: true),
-      ),
-      keepIsolateAlive,
-    );
-    final wrapper = _NativeLibrary_wrapListenerBlock_18v1jvf(raw);
-    objc.objectRelease(raw.cast());
-    return objc.ObjCBlock<
-      ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)
-    >(wrapper, retain: false, release: true);
-  }
-
-  /// Creates a blocking block from a Dart function.
-  ///
-  /// This callback can be invoked from any native thread, and will block the
-  /// caller until the callback is handled by the Dart isolate that created
-  /// the block. Async functions are not supported.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC. If the owner isolate
-  /// has shut down, and the block is invoked by native code, it may block
-  /// indefinitely, or have other undefined behavior.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>
-  blocking(
-    void Function(ffi.Pointer<ffi.Void>, objc.NSCoder) fn, {
-    bool keepIsolateAlive = true,
-  }) {
-    final raw = objc.newClosureBlock(
-      _blockingCallable.nativeFunction.cast(),
-      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObjectImpl> arg1) => fn(
-        arg0,
-        objc.NSCoder.fromPointer(arg1, retain: false, release: true),
-      ),
-      keepIsolateAlive,
-    );
-    final rawListener = objc.newClosureBlock(
-      _blockingListenerCallable.nativeFunction.cast(),
-      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObjectImpl> arg1) => fn(
-        arg0,
-        objc.NSCoder.fromPointer(arg1, retain: false, release: true),
-      ),
-      keepIsolateAlive,
-    );
-    final wrapper = _NativeLibrary_wrapBlockingBlock_18v1jvf(
-      raw,
-      rawListener,
-      objc.objCContext,
-    );
-    objc.objectRelease(raw.cast());
-    objc.objectRelease(rawListener.cast());
-    return objc.ObjCBlock<
-      ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)
-    >(wrapper, retain: false, release: true);
-  }
-
-  static void _listenerTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<ffi.Void> arg0,
-    ffi.Pointer<objc.ObjCObjectImpl> arg1,
-  ) {
-    (objc.getBlockClosure(block)
-        as void Function(
-          ffi.Pointer<ffi.Void>,
-          ffi.Pointer<objc.ObjCObjectImpl>,
-        ))(arg0, arg1);
-    objc.objectRelease(block.cast());
-  }
-
-  static ffi.NativeCallable<
-    ffi.Void Function(
-      ffi.Pointer<objc.ObjCBlockImpl>,
-      ffi.Pointer<ffi.Void>,
-      ffi.Pointer<objc.ObjCObjectImpl>,
-    )
-  >
-  _listenerCallable =
-      ffi.NativeCallable<
-          ffi.Void Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObjectImpl>,
-          )
-        >.listener(_listenerTrampoline)
-        ..keepIsolateAlive = false;
-  static void _blockingTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<ffi.Void> waiter,
-    ffi.Pointer<ffi.Void> arg0,
-    ffi.Pointer<objc.ObjCObjectImpl> arg1,
-  ) {
-    try {
-      (objc.getBlockClosure(block)
-          as void Function(
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObjectImpl>,
-          ))(arg0, arg1);
-    } catch (e) {
-    } finally {
-      objc.signalWaiter(waiter);
-      objc.objectRelease(block.cast());
-    }
-  }
-
-  static ffi.NativeCallable<
-    ffi.Void Function(
-      ffi.Pointer<objc.ObjCBlockImpl>,
-      ffi.Pointer<ffi.Void>,
-      ffi.Pointer<ffi.Void>,
-      ffi.Pointer<objc.ObjCObjectImpl>,
-    )
-  >
-  _blockingCallable =
-      ffi.NativeCallable<
-          ffi.Void Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObjectImpl>,
-          )
-        >.isolateLocal(_blockingTrampoline)
-        ..keepIsolateAlive = false;
-  static ffi.NativeCallable<
-    ffi.Void Function(
-      ffi.Pointer<objc.ObjCBlockImpl>,
-      ffi.Pointer<ffi.Void>,
-      ffi.Pointer<ffi.Void>,
-      ffi.Pointer<objc.ObjCObjectImpl>,
-    )
-  >
-  _blockingListenerCallable =
-      ffi.NativeCallable<
-          ffi.Void Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObjectImpl>,
-          )
-        >.listener(_blockingTrampoline)
-        ..keepIsolateAlive = false;
-  static void _fnPtrTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<ffi.Void> arg0,
-    ffi.Pointer<objc.ObjCObjectImpl> arg1,
-  ) => block.ref.target
-      .cast<
-        ffi.NativeFunction<
-          ffi.Void Function(
-            ffi.Pointer<ffi.Void> arg0,
-            ffi.Pointer<objc.ObjCObjectImpl> arg1,
-          )
-        >
-      >()
-      .asFunction<
-        void Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObjectImpl>)
-      >()(arg0, arg1);
-  static ffi.Pointer<ffi.Void> _fnPtrCallable =
-      ffi.Pointer.fromFunction<
-            ffi.Void Function(
-              ffi.Pointer<objc.ObjCBlockImpl>,
-              ffi.Pointer<ffi.Void>,
-              ffi.Pointer<objc.ObjCObjectImpl>,
-            )
-          >(_fnPtrTrampoline)
-          .cast();
-  static void _closureTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<ffi.Void> arg0,
-    ffi.Pointer<objc.ObjCObjectImpl> arg1,
-  ) =>
-      (objc.getBlockClosure(block)
-          as void Function(
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObjectImpl>,
-          ))(arg0, arg1);
-  static ffi.Pointer<ffi.Void> _closureCallable =
-      ffi.Pointer.fromFunction<
-            ffi.Void Function(
-              ffi.Pointer<objc.ObjCBlockImpl>,
-              ffi.Pointer<ffi.Void>,
-              ffi.Pointer<objc.ObjCObjectImpl>,
-            )
-          >(_closureTrampoline)
-          .cast();
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>`.
-extension ObjCBlock_ffiVoid_ffiVoid_NSCoder$CallExtension
-    on objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)> {
-  void call(ffi.Pointer<ffi.Void> arg0, objc.NSCoder arg1) => ref
-      .pointer
-      .ref
-      .invoke
-      .cast<
-        ffi.NativeFunction<
-          ffi.Void Function(
-            ffi.Pointer<objc.ObjCBlockImpl> block,
-            ffi.Pointer<ffi.Void> arg0,
-            ffi.Pointer<objc.ObjCObjectImpl> arg1,
-          )
-        >
-      >()
-      .asFunction<
-        void Function(
-          ffi.Pointer<objc.ObjCBlockImpl>,
-          ffi.Pointer<ffi.Void>,
-          ffi.Pointer<objc.ObjCObjectImpl>,
-        )
-      >()(ref.pointer, arg0, arg1.ref.pointer);
-}
-
-late final _sel_initWithCoder_ = objc.registerName("initWithCoder:");
-
-/// Construction methods for `objc.ObjCBlock<objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>`.
-abstract final class ObjCBlock_instancetype_ffiVoid_NSCoder {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<
-    objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
-      ffi.Pointer<ffi.Void>,
-      objc.NSCoder,
-    )
-  >
-  fromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) =>
-      objc.ObjCBlock<
-        objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
-          ffi.Pointer<ffi.Void>,
-          objc.NSCoder,
-        )
-      >(pointer, retain: retain, release: release);
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<
-    objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
-      ffi.Pointer<ffi.Void>,
-      objc.NSCoder,
-    )
-  >
-  fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<
-        instancetype Function(
-          ffi.Pointer<ffi.Void> arg0,
-          ffi.Pointer<objc.ObjCObjectImpl> arg1,
-        )
-      >
-    >
-    ptr,
-  ) =>
-      objc.ObjCBlock<
-        objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
-          ffi.Pointer<ffi.Void>,
-          objc.NSCoder,
-        )
-      >(
-        objc.newPointerBlock(_fnPtrCallable, ptr.cast()),
-        retain: false,
-        release: true,
-      );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<
-    objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
-      ffi.Pointer<ffi.Void>,
-      objc.NSCoder,
-    )
-  >
-  fromFunction(
-    Dartinstancetype? Function(ffi.Pointer<ffi.Void>, objc.NSCoder) fn, {
-    bool keepIsolateAlive = true,
-  }) =>
-      objc.ObjCBlock<
-        objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
-          ffi.Pointer<ffi.Void>,
-          objc.NSCoder,
-        )
-      >(
-        objc.newClosureBlock(
-          _closureCallable,
-          (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObjectImpl> arg1) =>
-              fn(
-                arg0,
-                objc.NSCoder.fromPointer(arg1, retain: true, release: true),
-              )?.ref.retainAndReturnPointer() ??
-              ffi.nullptr,
-          keepIsolateAlive,
-        ),
-        retain: false,
-        release: true,
-      );
-
-  static instancetype _fnPtrTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<ffi.Void> arg0,
-    ffi.Pointer<objc.ObjCObjectImpl> arg1,
-  ) => block.ref.target
-      .cast<
-        ffi.NativeFunction<
-          instancetype Function(
-            ffi.Pointer<ffi.Void> arg0,
-            ffi.Pointer<objc.ObjCObjectImpl> arg1,
-          )
-        >
-      >()
-      .asFunction<
-        instancetype Function(
-          ffi.Pointer<ffi.Void>,
-          ffi.Pointer<objc.ObjCObjectImpl>,
-        )
-      >()(arg0, arg1);
-  static ffi.Pointer<ffi.Void> _fnPtrCallable =
-      ffi.Pointer.fromFunction<
-            instancetype Function(
-              ffi.Pointer<objc.ObjCBlockImpl>,
-              ffi.Pointer<ffi.Void>,
-              ffi.Pointer<objc.ObjCObjectImpl>,
-            )
-          >(_fnPtrTrampoline)
-          .cast();
-  static instancetype _closureTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<ffi.Void> arg0,
-    ffi.Pointer<objc.ObjCObjectImpl> arg1,
-  ) =>
-      (objc.getBlockClosure(block)
-          as instancetype Function(
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<objc.ObjCObjectImpl>,
-          ))(arg0, arg1);
-  static ffi.Pointer<ffi.Void> _closureCallable =
-      ffi.Pointer.fromFunction<
-            instancetype Function(
-              ffi.Pointer<objc.ObjCBlockImpl>,
-              ffi.Pointer<ffi.Void>,
-              ffi.Pointer<objc.ObjCObjectImpl>,
-            )
-          >(_closureTrampoline)
-          .cast();
-}
-
-/// Call operator for `objc.ObjCBlock<objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>`.
-extension ObjCBlock_instancetype_ffiVoid_NSCoder$CallExtension
-    on
-        objc.ObjCBlock<
-          objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
-            ffi.Pointer<ffi.Void>,
-            objc.NSCoder,
-          )
-        > {
-  Dartinstancetype? call(ffi.Pointer<ffi.Void> arg0, objc.NSCoder arg1) =>
-      ref.pointer.ref.invoke
-              .cast<
-                ffi.NativeFunction<
-                  instancetype Function(
-                    ffi.Pointer<objc.ObjCBlockImpl> block,
-                    ffi.Pointer<ffi.Void> arg0,
-                    ffi.Pointer<objc.ObjCObjectImpl> arg1,
-                  )
-                >
-              >()
-              .asFunction<
-                instancetype Function(
-                  ffi.Pointer<objc.ObjCBlockImpl>,
-                  ffi.Pointer<ffi.Void>,
-                  ffi.Pointer<objc.ObjCObjectImpl>,
-                )
-              >()(ref.pointer, arg0, arg1.ref.pointer)
-              .address ==
-          0
-      ? null
-      : objc.ObjCObject(
-          ref.pointer.ref.invoke
-              .cast<
-                ffi.NativeFunction<
-                  instancetype Function(
-                    ffi.Pointer<objc.ObjCBlockImpl> block,
-                    ffi.Pointer<ffi.Void> arg0,
-                    ffi.Pointer<objc.ObjCObjectImpl> arg1,
-                  )
-                >
-              >()
-              .asFunction<
-                instancetype Function(
-                  ffi.Pointer<objc.ObjCBlockImpl>,
-                  ffi.Pointer<ffi.Void>,
-                  ffi.Pointer<objc.ObjCObjectImpl>,
-                )
-              >()(ref.pointer, arg0, arg1.ref.pointer),
-          retain: false,
-          release: true,
-        );
-}
-
-/// AVAudioFormat
-extension type AVAudioFormat._(objc.ObjCObject object$)
-    implements objc.ObjCObject, objc.NSObject, objc.NSSecureCoding {
-  /// Constructs a [AVAudioFormat] that points to the same underlying object as [other].
-  AVAudioFormat.as(objc.ObjCObject other) : object$ = other {
-    assert(isA(object$));
-  }
-
-  /// Constructs a [AVAudioFormat] that wraps the given raw object pointer.
-  AVAudioFormat.fromPointer(
-    ffi.Pointer<objc.ObjCObjectImpl> other, {
-    bool retain = false,
-    bool release = false,
-  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
-    assert(isA(object$));
-  }
-
-  /// Returns whether [obj] is an instance of [AVAudioFormat].
-  static bool isA(objc.ObjCObject obj) => _objc_msgSend_19nvye5(
-    obj.ref.pointer,
-    _sel_isKindOfClass_,
-    _class_AVAudioFormat,
-  );
-
-  /// alloc
-  static AVAudioFormat alloc() {
-    final $ret = _objc_msgSend_151sglz(_class_AVAudioFormat, _sel_alloc);
-    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// allocWithZone:
-  static AVAudioFormat allocWithZone(ffi.Pointer<objc.NSZone> zone) {
-    final $ret = _objc_msgSend_1cwp428(
-      _class_AVAudioFormat,
-      _sel_allocWithZone_,
-      zone,
-    );
-    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// new
-  static AVAudioFormat new$() {
-    final $ret = _objc_msgSend_151sglz(_class_AVAudioFormat, _sel_new);
-    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// supportsSecureCoding
-  static bool getSupportsSecureCoding() {
-    return _objc_msgSend_91o635(
-      _class_AVAudioFormat,
-      _sel_supportsSecureCoding,
-    );
-  }
-
-  /// Returns a new instance of AVAudioFormat constructed with the default `new` method.
-  AVAudioFormat() : this.as(new$().object$);
-}
-
-extension AVAudioFormat$Methods on AVAudioFormat {
-  /// ! @property channelCount
-  /// @abstract The number of channels of audio data.
-  int get channelCount {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.channelCount',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_usggvf(object$.ref.pointer, _sel_channelCount);
-  }
-
-  /// !	@property channelLayout
-  /// @abstract The underlying AVAudioChannelLayout, if any.
-  /// @discussion
-  /// Only formats with more than 2 channels are required to have channel layouts.
-  AVAudioChannelLayout? get channelLayout {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.channelLayout',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_151sglz(object$.ref.pointer, _sel_channelLayout);
-    return $ret.address == 0
-        ? null
-        : AVAudioChannelLayout.fromPointer($ret, retain: true, release: true);
-  }
-
-  /// !	@property commonFormat
-  /// @abstract An `AVAudioCommonFormat` identifying the format
-  AVAudioCommonFormat get commonFormat {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.commonFormat',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_1hv2fgi(object$.ref.pointer, _sel_commonFormat);
-    return AVAudioCommonFormat.fromValue($ret);
-  }
-
-  /// encodeWithCoder:
-  void encodeWithCoder(objc.NSCoder coder) {
-    _objc_msgSend_xtuoz7(
-      object$.ref.pointer,
-      _sel_encodeWithCoder_,
-      coder.ref.pointer,
-    );
-  }
-
-  /// !
-  /// @property formatDescription
-  /// @abstract Converts to a CMAudioFormatDescriptionRef, for use with Core Media API's.
-  ffi.Pointer<opaqueCMFormatDescription> get formatDescription {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.formatDescription',
-      iOS: (false, (9, 0, 0)),
-      macOS: (false, (10, 11, 0)),
-    );
-    return _objc_msgSend_15dwpk8(object$.ref.pointer, _sel_formatDescription);
-  }
-
-  /// init
-  AVAudioFormat init() {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.init',
-      iOS: (false, (2, 0, 0)),
-      macOS: (false, (10, 0, 0)),
-    );
-    final $ret = _objc_msgSend_151sglz(
-      object$.ref.retainAndReturnPointer(),
-      _sel_init,
-    );
-    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// ! @method initStandardFormatWithSampleRate:channelLayout:
-  /// @abstract Initialize to deinterleaved float with the specified sample rate and channel layout.
-  /// @param sampleRate
-  /// the sample rate
-  /// @param layout
-  /// the channel layout. must not be nil.
-  AVAudioFormat initStandardFormatWithSampleRate(
-    double sampleRate, {
-    required AVAudioChannelLayout channelLayout,
-  }) {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.initStandardFormatWithSampleRate:channelLayout:',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_1ozwf6k(
-      object$.ref.retainAndReturnPointer(),
-      _sel_initStandardFormatWithSampleRate_channelLayout_,
-      sampleRate,
-      channelLayout.ref.pointer,
-    );
-    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// ! @method initStandardFormatWithSampleRate:channels:
-  /// @abstract Initialize to deinterleaved float with the specified sample rate and channel count.
-  /// @param sampleRate
-  /// the sample rate
-  /// @param channels
-  /// the channel count
-  /// @discussion
-  /// If the format specifies more than 2 channels, this method fails (returns nil).
-  AVAudioFormat? initStandardFormatWithSampleRate$1(
-    double sampleRate, {
-    required int channels,
-  }) {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.initStandardFormatWithSampleRate:channels:',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_lrt8o8(
-      object$.ref.retainAndReturnPointer(),
-      _sel_initStandardFormatWithSampleRate_channels_,
-      sampleRate,
-      channels,
-    );
-    return $ret.address == 0
-        ? null
-        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// !
-  /// @method initWithCMAudioFormatDescription:
-  /// @abstract initialize from a CMAudioFormatDescriptionRef.
-  /// @param formatDescription
-  /// the CMAudioFormatDescriptionRef.
-  /// @discussion
-  /// If formatDescription is invalid, this method fails (returns nil).
-  AVAudioFormat initWithCMAudioFormatDescription(
-    ffi.Pointer<opaqueCMFormatDescription> formatDescription,
-  ) {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.initWithCMAudioFormatDescription:',
-      iOS: (false, (9, 0, 0)),
-      macOS: (false, (10, 11, 0)),
-    );
-    final $ret = _objc_msgSend_1bmcroy(
-      object$.ref.retainAndReturnPointer(),
-      _sel_initWithCMAudioFormatDescription_,
-      formatDescription,
-    );
-    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// initWithCoder:
-  AVAudioFormat? initWithCoder(objc.NSCoder coder) {
-    final $ret = _objc_msgSend_1sotr3r(
-      object$.ref.retainAndReturnPointer(),
-      _sel_initWithCoder_,
-      coder.ref.pointer,
-    );
-    return $ret.address == 0
-        ? null
-        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// ! @method initWithCommonFormat:sampleRate:channels:interleaved:
-  /// @abstract Initialize to float with the specified sample rate, channel count and interleavedness.
-  /// @param format
-  /// the common format type
-  /// @param sampleRate
-  /// the sample rate
-  /// @param channels
-  /// the channel count
-  /// @param interleaved
-  /// true if interleaved
-  /// @discussion
-  /// If the format specifies more than 2 channels, this method fails (returns nil).
-  AVAudioFormat? initWithCommonFormat(
-    AVAudioCommonFormat format, {
-    required double sampleRate,
-    required int channels,
-    required bool interleaved,
-  }) {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.initWithCommonFormat:sampleRate:channels:interleaved:',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_14phkbx(
-      object$.ref.retainAndReturnPointer(),
-      _sel_initWithCommonFormat_sampleRate_channels_interleaved_,
-      format.value,
-      sampleRate,
-      channels,
-      interleaved,
-    );
-    return $ret.address == 0
-        ? null
-        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// ! @method initWithCommonFormat:sampleRate:interleaved:channelLayout:
-  /// @abstract Initialize to float with the specified sample rate, channel layout and interleavedness.
-  /// @param format
-  /// the common format type
-  /// @param sampleRate
-  /// the sample rate
-  /// @param interleaved
-  /// true if interleaved
-  /// @param layout
-  /// the channel layout. must not be nil.
-  AVAudioFormat initWithCommonFormat$1(
-    AVAudioCommonFormat format, {
-    required double sampleRate,
-    required bool interleaved,
-    required AVAudioChannelLayout channelLayout,
-  }) {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.initWithCommonFormat:sampleRate:interleaved:channelLayout:',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_13hxpgt(
-      object$.ref.retainAndReturnPointer(),
-      _sel_initWithCommonFormat_sampleRate_interleaved_channelLayout_,
-      format.value,
-      sampleRate,
-      interleaved,
-      channelLayout.ref.pointer,
-    );
-    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// ! @method initWithSettings:
-  /// @abstract Initialize using a settings dictionary.
-  /// @discussion
-  /// See AVAudioSettings.h. Note that many settings dictionary elements pertain to encoder
-  /// settings, not the basic format, and will be ignored.
-  ///
-  /// Returns nil if a format cannot be constructed with the provided settings, e.g. when:
-  /// - AVNumberOfChannelsKey specifies more than 2 channels, but AVChannelLayoutKey hasn't
-  /// been specified or the layout does not match
-  /// - AVLinearPCMBitDepthKey for linear PCM format specifies less than 8 or greater
-  /// than 32 bits
-  /// - values for the keys are not of the expected types
-  AVAudioFormat? initWithSettings(objc.NSDictionary settings) {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.initWithSettings:',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_1sotr3r(
-      object$.ref.retainAndReturnPointer(),
-      _sel_initWithSettings_,
-      settings.ref.pointer,
-    );
-    return $ret.address == 0
-        ? null
-        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// ! @method initWithStreamDescription:
-  /// @abstract Initialize from an AudioStreamBasicDescription.
-  /// @param asbd
-  /// the AudioStreamBasicDescription
-  /// @discussion
-  /// If the format specifies more than 2 channels, this method fails (returns nil).
-  AVAudioFormat? initWithStreamDescription(
-    ffi.Pointer<AudioStreamBasicDescription> asbd,
-  ) {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.initWithStreamDescription:',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_12whkva(
-      object$.ref.retainAndReturnPointer(),
-      _sel_initWithStreamDescription_,
-      asbd,
-    );
-    return $ret.address == 0
-        ? null
-        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// ! @method initWithStreamDescription:channelLayout:
-  /// @abstract Initialize from an AudioStreamBasicDescription and optional channel layout.
-  /// @param asbd
-  /// the AudioStreamBasicDescription
-  /// @param layout
-  /// the channel layout. Can be nil only if asbd specifies 1 or 2 channels.
-  /// @discussion
-  /// If the format specifies more than 2 channels, this method fails (returns nil) unless layout
-  /// is non-nil.
-  AVAudioFormat? initWithStreamDescription$1(
-    ffi.Pointer<AudioStreamBasicDescription> asbd, {
-    AVAudioChannelLayout? channelLayout,
-  }) {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.initWithStreamDescription:channelLayout:',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_1pu5pn8(
-      object$.ref.retainAndReturnPointer(),
-      _sel_initWithStreamDescription_channelLayout_,
-      asbd,
-      channelLayout?.ref.pointer ?? ffi.nullptr,
-    );
-    return $ret.address == 0
-        ? null
-        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// !	@method isEqual:
-  /// @abstract Determine whether another format is functionally equivalent.
-  /// @param object
-  /// the format to compare against
-  /// @discussion
-  /// For PCM, interleavedness is ignored for mono. Differences in the AudioStreamBasicDescription
-  /// alignment and packedness are ignored when they are not significant (e.g. with 1 channel, 2
-  /// bytes per frame and 16 bits per channel, neither alignment, the format is implicitly packed
-  /// and can be interpreted as either high- or low-aligned.)
-  /// For AVAudioChannelLayout, a layout with standard mono/stereo tag is considered to be
-  /// equivalent to a nil layout. Otherwise, the layouts are compared for equality.
-  bool isEqual(objc.ObjCObject object) {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.isEqual:',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_19nvye5(
-      object$.ref.pointer,
-      _sel_isEqual_,
-      object.ref.pointer,
-    );
-  }
-
-  /// !	@property interleaved
-  /// @abstract Describes whether the samples are interleaved.
-  /// @discussion
-  /// For non-PCM formats, the value is undefined.
-  bool get isInterleaved {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.isInterleaved',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_91o635(object$.ref.pointer, _sel_isInterleaved);
-  }
-
-  /// !	@property standard
-  /// @abstract Describes whether the format is deinterleaved native-endian float.
-  bool get isStandard {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.isStandard',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_91o635(object$.ref.pointer, _sel_isStandard);
-  }
-
-  /// ! @property magicCookie
-  /// @abstract The underlying magic cookie, if any.
-  /// @discussion
-  /// A magic cookie contains metadata associated with encoders and decoders.
-  /// Encoders produce a magic cookie, and some decoders require a magic cookie to decode properly.
-  objc.NSData? get magicCookie {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.magicCookie',
-      iOS: (false, (10, 0, 0)),
-      macOS: (false, (10, 12, 0)),
-    );
-    final $ret = _objc_msgSend_151sglz(object$.ref.pointer, _sel_magicCookie);
-    return $ret.address == 0
-        ? null
-        : objc.NSData.fromPointer($ret, retain: true, release: true);
-  }
-
-  /// ! @property sampleRate
-  /// @abstract A sampling rate in Hertz.
-  double get sampleRate {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.sampleRate',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return objc.useMsgSendVariants
-        ? _objc_msgSend_1ukqyt8Fpret(object$.ref.pointer, _sel_sampleRate)
-        : _objc_msgSend_1ukqyt8(object$.ref.pointer, _sel_sampleRate);
-  }
-
-  /// ! @property magicCookie
-  /// @abstract The underlying magic cookie, if any.
-  /// @discussion
-  /// A magic cookie contains metadata associated with encoders and decoders.
-  /// Encoders produce a magic cookie, and some decoders require a magic cookie to decode properly.
-  set magicCookie(objc.NSData? value) {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.setMagicCookie:',
-      iOS: (false, (10, 0, 0)),
-      macOS: (false, (10, 12, 0)),
-    );
-    _objc_msgSend_xtuoz7(
-      object$.ref.pointer,
-      _sel_setMagicCookie_,
-      value?.ref.pointer ?? ffi.nullptr,
-    );
-  }
-
-  /// !	@property settings
-  /// @abstract Returns the format represented as a dictionary with keys from AVAudioSettings.h.
-  objc.NSDictionary get settings {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.settings',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_151sglz(object$.ref.pointer, _sel_settings);
-    return objc.NSDictionary.fromPointer($ret, retain: true, release: true);
-  }
-
-  /// !	@property streamDescription
-  /// @abstract Returns the AudioStreamBasicDescription, for use with lower-level audio API's.
-  ffi.Pointer<AudioStreamBasicDescription> get streamDescription {
-    objc.checkOsVersionInternal(
-      'AVAudioFormat.streamDescription',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_lhvs9c(object$.ref.pointer, _sel_streamDescription);
-  }
-}
-
-late final _sel_format = objc.registerName("format");
-late final _sel_audioBufferList = objc.registerName("audioBufferList");
-final _objc_msgSend_vz9uye = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<AudioBufferList> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<AudioBufferList> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-late final _sel_mutableAudioBufferList = objc.registerName(
-  "mutableAudioBufferList",
-);
-
-/// AVAudioBuffer
-extension type AVAudioBuffer._(objc.ObjCObject object$)
-    implements
-        objc.ObjCObject,
-        objc.NSObject,
-        objc.NSCopying,
-        objc.NSMutableCopying {
-  /// Constructs a [AVAudioBuffer] that points to the same underlying object as [other].
-  AVAudioBuffer.as(objc.ObjCObject other) : object$ = other {
-    objc.checkOsVersionInternal(
-      'AVAudioBuffer',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    assert(isA(object$));
-  }
-
-  /// Constructs a [AVAudioBuffer] that wraps the given raw object pointer.
-  AVAudioBuffer.fromPointer(
-    ffi.Pointer<objc.ObjCObjectImpl> other, {
-    bool retain = false,
-    bool release = false,
-  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
-    objc.checkOsVersionInternal(
-      'AVAudioBuffer',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    assert(isA(object$));
-  }
-
-  /// Returns whether [obj] is an instance of [AVAudioBuffer].
-  static bool isA(objc.ObjCObject obj) => _objc_msgSend_19nvye5(
-    obj.ref.pointer,
-    _sel_isKindOfClass_,
-    _class_AVAudioBuffer,
-  );
-
-  /// alloc
-  static AVAudioBuffer alloc() {
-    final $ret = _objc_msgSend_151sglz(_class_AVAudioBuffer, _sel_alloc);
-    return AVAudioBuffer.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// allocWithZone:
-  static AVAudioBuffer allocWithZone(ffi.Pointer<objc.NSZone> zone) {
-    final $ret = _objc_msgSend_1cwp428(
-      _class_AVAudioBuffer,
-      _sel_allocWithZone_,
-      zone,
-    );
-    return AVAudioBuffer.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// new
-  static AVAudioBuffer new$() {
-    final $ret = _objc_msgSend_151sglz(_class_AVAudioBuffer, _sel_new);
-    return AVAudioBuffer.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// Returns a new instance of AVAudioBuffer constructed with the default `new` method.
-  AVAudioBuffer() : this.as(new$().object$);
-}
-
-extension AVAudioBuffer$Methods on AVAudioBuffer {
-  /// audioBufferList
-  ffi.Pointer<AudioBufferList> get audioBufferList {
-    objc.checkOsVersionInternal(
-      'AVAudioBuffer.audioBufferList',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_vz9uye(object$.ref.pointer, _sel_audioBufferList);
-  }
-
-  /// format
-  AVAudioFormat get format {
-    objc.checkOsVersionInternal(
-      'AVAudioBuffer.format',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_151sglz(object$.ref.pointer, _sel_format);
-    return AVAudioFormat.fromPointer($ret, retain: true, release: true);
-  }
-
-  /// init
-  AVAudioBuffer init() {
-    objc.checkOsVersionInternal(
-      'AVAudioBuffer.init',
-      iOS: (false, (2, 0, 0)),
-      macOS: (false, (10, 0, 0)),
-    );
-    final $ret = _objc_msgSend_151sglz(
-      object$.ref.retainAndReturnPointer(),
-      _sel_init,
-    );
-    return AVAudioBuffer.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// mutableAudioBufferList
-  ffi.Pointer<AudioBufferList> get mutableAudioBufferList {
-    objc.checkOsVersionInternal(
-      'AVAudioBuffer.mutableAudioBufferList',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_vz9uye(
-      object$.ref.pointer,
-      _sel_mutableAudioBufferList,
-    );
-  }
-}
-
-late final _class_AVAudioPCMBuffer = objc.getClass("AVAudioPCMBuffer");
-late final _sel_initWithPCMFormat_frameCapacity_ = objc.registerName(
-  "initWithPCMFormat:frameCapacity:",
-);
-final _objc_msgSend_14jnjpt = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Uint32,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        int,
-      )
-    >();
-
-/// Construction methods for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>`.
-abstract final class ObjCBlock_ffiVoid_AudioBufferList {
-  /// Returns a block that wraps the given raw block pointer.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>
-  fromPointer(
-    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
-    bool retain = false,
-    bool release = false,
-  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>(
-    pointer,
-    retain: retain,
-    release: release,
-  );
-
-  /// Creates a block from a C function pointer.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>
-  fromFunctionPointer(
-    ffi.Pointer<
-      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<AudioBufferList> arg0)>
-    >
-    ptr,
-  ) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>(
-    objc.newPointerBlock(_fnPtrCallable, ptr.cast()),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a block from a Dart function.
-  ///
-  /// This block must be invoked by native code running on the same thread as
-  /// the isolate that registered it. Invoking the block on the wrong thread
-  /// will result in a crash.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>
-  fromFunction(
-    void Function(ffi.Pointer<AudioBufferList>) fn, {
-    bool keepIsolateAlive = true,
-  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>(
-    objc.newClosureBlock(
-      _closureCallable,
-      (ffi.Pointer<AudioBufferList> arg0) => fn(arg0),
-      keepIsolateAlive,
-    ),
-    retain: false,
-    release: true,
-  );
-
-  /// Creates a listener block from a Dart function.
-  ///
-  /// This is based on FFI's NativeCallable.listener, and has the same
-  /// capabilities and limitations. This block can be invoked from any thread,
-  /// but only supports void functions, and is not run synchronously. See
-  /// NativeCallable.listener for more details.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>
-  listener(
-    void Function(ffi.Pointer<AudioBufferList>) fn, {
-    bool keepIsolateAlive = true,
-  }) {
-    final raw = objc.newClosureBlock(
-      _listenerCallable.nativeFunction.cast(),
-      (ffi.Pointer<AudioBufferList> arg0) => fn(arg0),
-      keepIsolateAlive,
-    );
-    final wrapper = _NativeLibrary_wrapListenerBlock_1hqui74(raw);
-    objc.objectRelease(raw.cast());
-    return objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>(
-      wrapper,
-      retain: false,
-      release: true,
-    );
-  }
-
-  /// Creates a blocking block from a Dart function.
-  ///
-  /// This callback can be invoked from any native thread, and will block the
-  /// caller until the callback is handled by the Dart isolate that created
-  /// the block. Async functions are not supported.
-  ///
-  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
-  /// until it is garbage collected by both Dart and ObjC. If the owner isolate
-  /// has shut down, and the block is invoked by native code, it may block
-  /// indefinitely, or have other undefined behavior.
-  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>
-  blocking(
-    void Function(ffi.Pointer<AudioBufferList>) fn, {
-    bool keepIsolateAlive = true,
-  }) {
-    final raw = objc.newClosureBlock(
-      _blockingCallable.nativeFunction.cast(),
-      (ffi.Pointer<AudioBufferList> arg0) => fn(arg0),
-      keepIsolateAlive,
-    );
-    final rawListener = objc.newClosureBlock(
-      _blockingListenerCallable.nativeFunction.cast(),
-      (ffi.Pointer<AudioBufferList> arg0) => fn(arg0),
-      keepIsolateAlive,
-    );
-    final wrapper = _NativeLibrary_wrapBlockingBlock_1hqui74(
-      raw,
-      rawListener,
-      objc.objCContext,
-    );
-    objc.objectRelease(raw.cast());
-    objc.objectRelease(rawListener.cast());
-    return objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>(
-      wrapper,
-      retain: false,
-      release: true,
-    );
-  }
-
-  static void _listenerTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<AudioBufferList> arg0,
-  ) {
-    (objc.getBlockClosure(block)
-        as void Function(ffi.Pointer<AudioBufferList>))(arg0);
-    objc.objectRelease(block.cast());
-  }
-
-  static ffi.NativeCallable<
-    ffi.Void Function(
-      ffi.Pointer<objc.ObjCBlockImpl>,
-      ffi.Pointer<AudioBufferList>,
-    )
-  >
-  _listenerCallable =
-      ffi.NativeCallable<
-          ffi.Void Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<AudioBufferList>,
-          )
-        >.listener(_listenerTrampoline)
-        ..keepIsolateAlive = false;
-  static void _blockingTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<ffi.Void> waiter,
-    ffi.Pointer<AudioBufferList> arg0,
-  ) {
-    try {
-      (objc.getBlockClosure(block)
-          as void Function(ffi.Pointer<AudioBufferList>))(arg0);
-    } catch (e) {
-    } finally {
-      objc.signalWaiter(waiter);
-      objc.objectRelease(block.cast());
-    }
-  }
-
-  static ffi.NativeCallable<
-    ffi.Void Function(
-      ffi.Pointer<objc.ObjCBlockImpl>,
-      ffi.Pointer<ffi.Void>,
-      ffi.Pointer<AudioBufferList>,
-    )
-  >
-  _blockingCallable =
-      ffi.NativeCallable<
-          ffi.Void Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<AudioBufferList>,
-          )
-        >.isolateLocal(_blockingTrampoline)
-        ..keepIsolateAlive = false;
-  static ffi.NativeCallable<
-    ffi.Void Function(
-      ffi.Pointer<objc.ObjCBlockImpl>,
-      ffi.Pointer<ffi.Void>,
-      ffi.Pointer<AudioBufferList>,
-    )
-  >
-  _blockingListenerCallable =
-      ffi.NativeCallable<
-          ffi.Void Function(
-            ffi.Pointer<objc.ObjCBlockImpl>,
-            ffi.Pointer<ffi.Void>,
-            ffi.Pointer<AudioBufferList>,
-          )
-        >.listener(_blockingTrampoline)
-        ..keepIsolateAlive = false;
-  static void _fnPtrTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<AudioBufferList> arg0,
-  ) => block.ref.target
-      .cast<
-        ffi.NativeFunction<ffi.Void Function(ffi.Pointer<AudioBufferList> arg0)>
-      >()
-      .asFunction<void Function(ffi.Pointer<AudioBufferList>)>()(arg0);
-  static ffi.Pointer<ffi.Void> _fnPtrCallable =
-      ffi.Pointer.fromFunction<
-            ffi.Void Function(
-              ffi.Pointer<objc.ObjCBlockImpl>,
-              ffi.Pointer<AudioBufferList>,
-            )
-          >(_fnPtrTrampoline)
-          .cast();
-  static void _closureTrampoline(
-    ffi.Pointer<objc.ObjCBlockImpl> block,
-    ffi.Pointer<AudioBufferList> arg0,
-  ) =>
-      (objc.getBlockClosure(block)
-          as void Function(ffi.Pointer<AudioBufferList>))(arg0);
-  static ffi.Pointer<ffi.Void> _closureCallable =
-      ffi.Pointer.fromFunction<
-            ffi.Void Function(
-              ffi.Pointer<objc.ObjCBlockImpl>,
-              ffi.Pointer<AudioBufferList>,
-            )
-          >(_closureTrampoline)
-          .cast();
-}
-
-/// Call operator for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>`.
-extension ObjCBlock_ffiVoid_AudioBufferList$CallExtension
-    on objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)> {
-  void call(ffi.Pointer<AudioBufferList> arg0) => ref.pointer.ref.invoke
-      .cast<
-        ffi.NativeFunction<
-          ffi.Void Function(
-            ffi.Pointer<objc.ObjCBlockImpl> block,
-            ffi.Pointer<AudioBufferList> arg0,
-          )
-        >
-      >()
-      .asFunction<
-        void Function(
-          ffi.Pointer<objc.ObjCBlockImpl>,
-          ffi.Pointer<AudioBufferList>,
-        )
-      >()(ref.pointer, arg0);
-}
-
-late final _sel_initWithPCMFormat_bufferListNoCopy_deallocator_ = objc
-    .registerName("initWithPCMFormat:bufferListNoCopy:deallocator:");
-final _objc_msgSend_1x81s3d = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<objc.ObjCObjectImpl> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<AudioBufferList>,
-          ffi.Pointer<objc.ObjCBlockImpl>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<objc.ObjCObjectImpl> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<AudioBufferList>,
-        ffi.Pointer<objc.ObjCBlockImpl>,
-      )
-    >();
-late final _sel_frameCapacity = objc.registerName("frameCapacity");
-late final _sel_frameLength = objc.registerName("frameLength");
-late final _sel_setFrameLength_ = objc.registerName("setFrameLength:");
-final _objc_msgSend_1xpk2hb = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Void Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-          ffi.Uint32,
-        )
-      >
-    >()
-    .asFunction<
-      void Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-        int,
-      )
-    >();
-late final _sel_stride = objc.registerName("stride");
-final _objc_msgSend_xw2lbc = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.UnsignedLong Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      int Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-late final _sel_floatChannelData = objc.registerName("floatChannelData");
-final _objc_msgSend_16wx3vd = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<ffi.Pointer<ffi.Float>> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<ffi.Pointer<ffi.Float>> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-late final _sel_int16ChannelData = objc.registerName("int16ChannelData");
-final _objc_msgSend_a3hp12 = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<ffi.Pointer<ffi.Int16>> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<ffi.Pointer<ffi.Int16>> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-late final _sel_int32ChannelData = objc.registerName("int32ChannelData");
-final _objc_msgSend_1icm2hk = objc.msgSendPointer
-    .cast<
-      ffi.NativeFunction<
-        ffi.Pointer<ffi.Pointer<ffi.Int32>> Function(
-          ffi.Pointer<objc.ObjCObjectImpl>,
-          ffi.Pointer<objc.ObjCSelector>,
-        )
-      >
-    >()
-    .asFunction<
-      ffi.Pointer<ffi.Pointer<ffi.Int32>> Function(
-        ffi.Pointer<objc.ObjCObjectImpl>,
-        ffi.Pointer<objc.ObjCSelector>,
-      )
-    >();
-
-/// AVAudioPCMBuffer
-extension type AVAudioPCMBuffer._(objc.ObjCObject object$)
-    implements objc.ObjCObject, AVAudioBuffer {
-  /// Constructs a [AVAudioPCMBuffer] that points to the same underlying object as [other].
-  AVAudioPCMBuffer.as(objc.ObjCObject other) : object$ = other {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    assert(isA(object$));
-  }
-
-  /// Constructs a [AVAudioPCMBuffer] that wraps the given raw object pointer.
-  AVAudioPCMBuffer.fromPointer(
-    ffi.Pointer<objc.ObjCObjectImpl> other, {
-    bool retain = false,
-    bool release = false,
-  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    assert(isA(object$));
-  }
-
-  /// Returns whether [obj] is an instance of [AVAudioPCMBuffer].
-  static bool isA(objc.ObjCObject obj) => _objc_msgSend_19nvye5(
-    obj.ref.pointer,
-    _sel_isKindOfClass_,
-    _class_AVAudioPCMBuffer,
-  );
-
-  /// alloc
-  static AVAudioPCMBuffer alloc() {
-    final $ret = _objc_msgSend_151sglz(_class_AVAudioPCMBuffer, _sel_alloc);
-    return AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// allocWithZone:
-  static AVAudioPCMBuffer allocWithZone(ffi.Pointer<objc.NSZone> zone) {
-    final $ret = _objc_msgSend_1cwp428(
-      _class_AVAudioPCMBuffer,
-      _sel_allocWithZone_,
-      zone,
-    );
-    return AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// new
-  static AVAudioPCMBuffer new$() {
-    final $ret = _objc_msgSend_151sglz(_class_AVAudioPCMBuffer, _sel_new);
-    return AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// Returns a new instance of AVAudioPCMBuffer constructed with the default `new` method.
-  AVAudioPCMBuffer() : this.as(new$().object$);
-}
-
-extension AVAudioPCMBuffer$Methods on AVAudioPCMBuffer {
-  /// floatChannelData
-  ffi.Pointer<ffi.Pointer<ffi.Float>> get floatChannelData {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer.floatChannelData',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_16wx3vd(object$.ref.pointer, _sel_floatChannelData);
-  }
-
-  /// frameCapacity
-  int get frameCapacity {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer.frameCapacity',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_usggvf(object$.ref.pointer, _sel_frameCapacity);
-  }
-
-  /// frameLength
-  int get frameLength {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer.frameLength',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_usggvf(object$.ref.pointer, _sel_frameLength);
-  }
-
-  /// init
-  AVAudioPCMBuffer init() {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer.init',
-      iOS: (false, (2, 0, 0)),
-      macOS: (false, (10, 0, 0)),
-    );
-    final $ret = _objc_msgSend_151sglz(
-      object$.ref.retainAndReturnPointer(),
-      _sel_init,
-    );
-    return AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// initWithPCMFormat:bufferListNoCopy:deallocator:
-  AVAudioPCMBuffer? initWithPCMFormat(
-    AVAudioFormat format, {
-    required ffi.Pointer<AudioBufferList> bufferListNoCopy,
-    objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>?
-    deallocator,
-  }) {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer.initWithPCMFormat:bufferListNoCopy:deallocator:',
-      iOS: (false, (15, 0, 0)),
-      macOS: (false, (12, 0, 0)),
-    );
-    final $ret = _objc_msgSend_1x81s3d(
-      object$.ref.retainAndReturnPointer(),
-      _sel_initWithPCMFormat_bufferListNoCopy_deallocator_,
-      format.ref.pointer,
-      bufferListNoCopy,
-      deallocator?.ref.pointer ?? ffi.nullptr,
-    );
-    return $ret.address == 0
-        ? null
-        : AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// initWithPCMFormat:frameCapacity:
-  AVAudioPCMBuffer? initWithPCMFormat$1(
-    AVAudioFormat format, {
-    required int frameCapacity,
-  }) {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer.initWithPCMFormat:frameCapacity:',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    final $ret = _objc_msgSend_14jnjpt(
-      object$.ref.retainAndReturnPointer(),
-      _sel_initWithPCMFormat_frameCapacity_,
-      format.ref.pointer,
-      frameCapacity,
-    );
-    return $ret.address == 0
-        ? null
-        : AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
-  }
-
-  /// int16ChannelData
-  ffi.Pointer<ffi.Pointer<ffi.Int16>> get int16ChannelData {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer.int16ChannelData',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_a3hp12(object$.ref.pointer, _sel_int16ChannelData);
-  }
-
-  /// int32ChannelData
-  ffi.Pointer<ffi.Pointer<ffi.Int32>> get int32ChannelData {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer.int32ChannelData',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_1icm2hk(object$.ref.pointer, _sel_int32ChannelData);
-  }
-
-  /// setFrameLength:
-  set frameLength(int value) {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer.setFrameLength:',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    _objc_msgSend_1xpk2hb(object$.ref.pointer, _sel_setFrameLength_, value);
-  }
-
-  /// stride
-  int get stride {
-    objc.checkOsVersionInternal(
-      'AVAudioPCMBuffer.stride',
-      iOS: (false, (8, 0, 0)),
-      macOS: (false, (10, 10, 0)),
-    );
-    return _objc_msgSend_xw2lbc(object$.ref.pointer, _sel_stride);
-  }
-}
-
-/// WARNING: AVAudioConnectionPoint is a stub. To generate bindings for this class, include
-/// AVAudioConnectionPoint in your config's objc-interfaces list.
-///
-/// AVAudioConnectionPoint
-extension type AVAudioConnectionPoint._(objc.ObjCObject object$)
-    implements objc.ObjCObject, objc.NSObject {
-  /// Constructs a [AVAudioConnectionPoint] that points to the same underlying object as [other].
-  AVAudioConnectionPoint.as(objc.ObjCObject other) : object$ = other {
-    objc.checkOsVersionInternal(
-      'AVAudioConnectionPoint',
-      iOS: (false, (9, 0, 0)),
-      macOS: (false, (10, 11, 0)),
-    );
-  }
-
-  /// Constructs a [AVAudioConnectionPoint] that wraps the given raw object pointer.
-  AVAudioConnectionPoint.fromPointer(
-    ffi.Pointer<objc.ObjCObjectImpl> other, {
-    bool retain = false,
-    bool release = false,
-  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
-    objc.checkOsVersionInternal(
-      'AVAudioConnectionPoint',
-      iOS: (false, (9, 0, 0)),
-      macOS: (false, (10, 11, 0)),
-    );
-  }
-}
 
 sealed class AudioComponentInstantiationOptions {
   static const kAudioComponentInstantiation_LoadOutOfProcess = 1;
@@ -4291,7 +2065,40 @@ extension ObjCBlock_ffiVoid_NSInteger_AUParameterAutomationEvent$CallExtension
 }
 
 late final _class_AUParameterNode = objc.getClass("AUParameterNode");
+late final _sel_isKindOfClass_ = objc.registerName("isKindOfClass:");
+final _objc_msgSend_19nvye5 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Bool Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObjectImpl>,
+        )
+      >
+    >()
+    .asFunction<
+      bool Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObjectImpl>,
+      )
+    >();
 late final _sel_identifier = objc.registerName("identifier");
+final _objc_msgSend_151sglz = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
 late final _sel_keyPath = objc.registerName("keyPath");
 late final _sel_displayName = objc.registerName("displayName");
 late final _sel_displayNameWithLength_ = objc.registerName(
@@ -4360,6 +2167,29 @@ final _objc_msgSend_ovsamd = objc.msgSendPointer
         ffi.Pointer<ffi.Void>,
       )
     >();
+typedef instancetype = ffi.Pointer<objc.ObjCObjectImpl>;
+typedef Dartinstancetype = objc.ObjCObject;
+late final _sel_init = objc.registerName("init");
+late final _sel_new = objc.registerName("new");
+late final _sel_allocWithZone_ = objc.registerName("allocWithZone:");
+final _objc_msgSend_1cwp428 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.NSZone>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.NSZone>,
+      )
+    >();
+late final _sel_alloc = objc.registerName("alloc");
 late final _class_AUParameter = objc.getClass("AUParameter");
 late final _sel_minValue = objc.registerName("minValue");
 final _objc_msgSend_2cgrxl = objc.msgSendPointer
@@ -4588,6 +2418,640 @@ final _objc_msgSend_g4ia9xFpret = objc.msgSendFpretPointer
         ffi.Pointer<objc.ObjCObjectImpl>,
       )
     >();
+late final _sel_supportsSecureCoding = objc.registerName(
+  "supportsSecureCoding",
+);
+final _objc_msgSend_91o635 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Bool Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      bool Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>`.
+abstract final class ObjCBlock_bool_ffiVoid {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)> fromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>(
+    pointer,
+    retain: retain,
+    release: release,
+  );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<ffi.Bool Function(ffi.Pointer<ffi.Void> arg0)>
+    >
+    ptr,
+  ) => objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>(
+    objc.newPointerBlock(_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)> fromFunction(
+    bool Function(ffi.Pointer<ffi.Void>) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>(
+    objc.newClosureBlock(
+      _closureCallable,
+      (ffi.Pointer<ffi.Void> arg0) => fn(arg0),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+
+  static bool _fnPtrTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Void> arg0,
+  ) => block.ref.target
+      .cast<ffi.NativeFunction<ffi.Bool Function(ffi.Pointer<ffi.Void> arg0)>>()
+      .asFunction<bool Function(ffi.Pointer<ffi.Void>)>()(arg0);
+  static ffi.Pointer<ffi.Void> _fnPtrCallable =
+      ffi.Pointer.fromFunction<
+            ffi.Bool Function(
+              ffi.Pointer<objc.ObjCBlockImpl>,
+              ffi.Pointer<ffi.Void>,
+            )
+          >(_fnPtrTrampoline, false)
+          .cast();
+  static bool _closureTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Void> arg0,
+  ) => (objc.getBlockClosure(block) as bool Function(ffi.Pointer<ffi.Void>))(
+    arg0,
+  );
+  static ffi.Pointer<ffi.Void> _closureCallable =
+      ffi.Pointer.fromFunction<
+            ffi.Bool Function(
+              ffi.Pointer<objc.ObjCBlockImpl>,
+              ffi.Pointer<ffi.Void>,
+            )
+          >(_closureTrampoline, false)
+          .cast();
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)>`.
+extension ObjCBlock_bool_ffiVoid$CallExtension
+    on objc.ObjCBlock<ffi.Bool Function(ffi.Pointer<ffi.Void>)> {
+  bool call(ffi.Pointer<ffi.Void> arg0) => ref.pointer.ref.invoke
+      .cast<
+        ffi.NativeFunction<
+          ffi.Bool Function(
+            ffi.Pointer<objc.ObjCBlockImpl> block,
+            ffi.Pointer<ffi.Void> arg0,
+          )
+        >
+      >()
+      .asFunction<
+        bool Function(ffi.Pointer<objc.ObjCBlockImpl>, ffi.Pointer<ffi.Void>)
+      >()(ref.pointer, arg0);
+}
+
+late final _sel_encodeWithCoder_ = objc.registerName("encodeWithCoder:");
+final _objc_msgSend_xtuoz7 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObjectImpl>,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObjectImpl>,
+      )
+    >();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>`.
+abstract final class ObjCBlock_ffiVoid_ffiVoid_NSCoder {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>
+  fromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>(
+    pointer,
+    retain: retain,
+    release: release,
+  );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<ffi.Void> arg0,
+          ffi.Pointer<objc.ObjCObjectImpl> arg1,
+        )
+      >
+    >
+    ptr,
+  ) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>(
+    objc.newPointerBlock(_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>
+  fromFunction(
+    void Function(ffi.Pointer<ffi.Void>, objc.NSCoder) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>(
+    objc.newClosureBlock(
+      _closureCallable,
+      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObjectImpl> arg1) =>
+          fn(arg0, objc.NSCoder.fromPointer(arg1, retain: true, release: true)),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a listener block from a Dart function.
+  ///
+  /// This is based on FFI's NativeCallable.listener, and has the same
+  /// capabilities and limitations. This block can be invoked from any thread,
+  /// but only supports void functions, and is not run synchronously. See
+  /// NativeCallable.listener for more details.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>
+  listener(
+    void Function(ffi.Pointer<ffi.Void>, objc.NSCoder) fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _listenerCallable.nativeFunction.cast(),
+      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObjectImpl> arg1) => fn(
+        arg0,
+        objc.NSCoder.fromPointer(arg1, retain: false, release: true),
+      ),
+      keepIsolateAlive,
+    );
+    final wrapper = _NativeLibrary_wrapListenerBlock_18v1jvf(raw);
+    objc.objectRelease(raw.cast());
+    return objc.ObjCBlock<
+      ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)
+    >(wrapper, retain: false, release: true);
+  }
+
+  /// Creates a blocking block from a Dart function.
+  ///
+  /// This callback can be invoked from any native thread, and will block the
+  /// caller until the callback is handled by the Dart isolate that created
+  /// the block. Async functions are not supported.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC. If the owner isolate
+  /// has shut down, and the block is invoked by native code, it may block
+  /// indefinitely, or have other undefined behavior.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>
+  blocking(
+    void Function(ffi.Pointer<ffi.Void>, objc.NSCoder) fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _blockingCallable.nativeFunction.cast(),
+      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObjectImpl> arg1) => fn(
+        arg0,
+        objc.NSCoder.fromPointer(arg1, retain: false, release: true),
+      ),
+      keepIsolateAlive,
+    );
+    final rawListener = objc.newClosureBlock(
+      _blockingListenerCallable.nativeFunction.cast(),
+      (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObjectImpl> arg1) => fn(
+        arg0,
+        objc.NSCoder.fromPointer(arg1, retain: false, release: true),
+      ),
+      keepIsolateAlive,
+    );
+    final wrapper = _NativeLibrary_wrapBlockingBlock_18v1jvf(
+      raw,
+      rawListener,
+      objc.objCContext,
+    );
+    objc.objectRelease(raw.cast());
+    objc.objectRelease(rawListener.cast());
+    return objc.ObjCBlock<
+      ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)
+    >(wrapper, retain: false, release: true);
+  }
+
+  static void _listenerTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Void> arg0,
+    ffi.Pointer<objc.ObjCObjectImpl> arg1,
+  ) {
+    (objc.getBlockClosure(block)
+        as void Function(
+          ffi.Pointer<ffi.Void>,
+          ffi.Pointer<objc.ObjCObjectImpl>,
+        ))(arg0, arg1);
+    objc.objectRelease(block.cast());
+  }
+
+  static ffi.NativeCallable<
+    ffi.Void Function(
+      ffi.Pointer<objc.ObjCBlockImpl>,
+      ffi.Pointer<ffi.Void>,
+      ffi.Pointer<objc.ObjCObjectImpl>,
+    )
+  >
+  _listenerCallable =
+      ffi.NativeCallable<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObjectImpl>,
+          )
+        >.listener(_listenerTrampoline)
+        ..keepIsolateAlive = false;
+  static void _blockingTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Void> waiter,
+    ffi.Pointer<ffi.Void> arg0,
+    ffi.Pointer<objc.ObjCObjectImpl> arg1,
+  ) {
+    try {
+      (objc.getBlockClosure(block)
+          as void Function(
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObjectImpl>,
+          ))(arg0, arg1);
+    } catch (e) {
+    } finally {
+      objc.signalWaiter(waiter);
+      objc.objectRelease(block.cast());
+    }
+  }
+
+  static ffi.NativeCallable<
+    ffi.Void Function(
+      ffi.Pointer<objc.ObjCBlockImpl>,
+      ffi.Pointer<ffi.Void>,
+      ffi.Pointer<ffi.Void>,
+      ffi.Pointer<objc.ObjCObjectImpl>,
+    )
+  >
+  _blockingCallable =
+      ffi.NativeCallable<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObjectImpl>,
+          )
+        >.isolateLocal(_blockingTrampoline)
+        ..keepIsolateAlive = false;
+  static ffi.NativeCallable<
+    ffi.Void Function(
+      ffi.Pointer<objc.ObjCBlockImpl>,
+      ffi.Pointer<ffi.Void>,
+      ffi.Pointer<ffi.Void>,
+      ffi.Pointer<objc.ObjCObjectImpl>,
+    )
+  >
+  _blockingListenerCallable =
+      ffi.NativeCallable<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObjectImpl>,
+          )
+        >.listener(_blockingTrampoline)
+        ..keepIsolateAlive = false;
+  static void _fnPtrTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Void> arg0,
+    ffi.Pointer<objc.ObjCObjectImpl> arg1,
+  ) => block.ref.target
+      .cast<
+        ffi.NativeFunction<
+          ffi.Void Function(
+            ffi.Pointer<ffi.Void> arg0,
+            ffi.Pointer<objc.ObjCObjectImpl> arg1,
+          )
+        >
+      >()
+      .asFunction<
+        void Function(ffi.Pointer<ffi.Void>, ffi.Pointer<objc.ObjCObjectImpl>)
+      >()(arg0, arg1);
+  static ffi.Pointer<ffi.Void> _fnPtrCallable =
+      ffi.Pointer.fromFunction<
+            ffi.Void Function(
+              ffi.Pointer<objc.ObjCBlockImpl>,
+              ffi.Pointer<ffi.Void>,
+              ffi.Pointer<objc.ObjCObjectImpl>,
+            )
+          >(_fnPtrTrampoline)
+          .cast();
+  static void _closureTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Void> arg0,
+    ffi.Pointer<objc.ObjCObjectImpl> arg1,
+  ) =>
+      (objc.getBlockClosure(block)
+          as void Function(
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObjectImpl>,
+          ))(arg0, arg1);
+  static ffi.Pointer<ffi.Void> _closureCallable =
+      ffi.Pointer.fromFunction<
+            ffi.Void Function(
+              ffi.Pointer<objc.ObjCBlockImpl>,
+              ffi.Pointer<ffi.Void>,
+              ffi.Pointer<objc.ObjCObjectImpl>,
+            )
+          >(_closureTrampoline)
+          .cast();
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>`.
+extension ObjCBlock_ffiVoid_ffiVoid_NSCoder$CallExtension
+    on objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Void>, objc.NSCoder)> {
+  void call(ffi.Pointer<ffi.Void> arg0, objc.NSCoder arg1) => ref
+      .pointer
+      .ref
+      .invoke
+      .cast<
+        ffi.NativeFunction<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl> block,
+            ffi.Pointer<ffi.Void> arg0,
+            ffi.Pointer<objc.ObjCObjectImpl> arg1,
+          )
+        >
+      >()
+      .asFunction<
+        void Function(
+          ffi.Pointer<objc.ObjCBlockImpl>,
+          ffi.Pointer<ffi.Void>,
+          ffi.Pointer<objc.ObjCObjectImpl>,
+        )
+      >()(ref.pointer, arg0, arg1.ref.pointer);
+}
+
+late final _sel_initWithCoder_ = objc.registerName("initWithCoder:");
+final _objc_msgSend_1sotr3r = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObjectImpl>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObjectImpl>,
+      )
+    >();
+
+/// Construction methods for `objc.ObjCBlock<objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>`.
+abstract final class ObjCBlock_instancetype_ffiVoid_NSCoder {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<
+    objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
+      ffi.Pointer<ffi.Void>,
+      objc.NSCoder,
+    )
+  >
+  fromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) =>
+      objc.ObjCBlock<
+        objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
+          ffi.Pointer<ffi.Void>,
+          objc.NSCoder,
+        )
+      >(pointer, retain: retain, release: release);
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<
+    objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
+      ffi.Pointer<ffi.Void>,
+      objc.NSCoder,
+    )
+  >
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<
+        instancetype Function(
+          ffi.Pointer<ffi.Void> arg0,
+          ffi.Pointer<objc.ObjCObjectImpl> arg1,
+        )
+      >
+    >
+    ptr,
+  ) =>
+      objc.ObjCBlock<
+        objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
+          ffi.Pointer<ffi.Void>,
+          objc.NSCoder,
+        )
+      >(
+        objc.newPointerBlock(_fnPtrCallable, ptr.cast()),
+        retain: false,
+        release: true,
+      );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<
+    objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
+      ffi.Pointer<ffi.Void>,
+      objc.NSCoder,
+    )
+  >
+  fromFunction(
+    Dartinstancetype? Function(ffi.Pointer<ffi.Void>, objc.NSCoder) fn, {
+    bool keepIsolateAlive = true,
+  }) =>
+      objc.ObjCBlock<
+        objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
+          ffi.Pointer<ffi.Void>,
+          objc.NSCoder,
+        )
+      >(
+        objc.newClosureBlock(
+          _closureCallable,
+          (ffi.Pointer<ffi.Void> arg0, ffi.Pointer<objc.ObjCObjectImpl> arg1) =>
+              fn(
+                arg0,
+                objc.NSCoder.fromPointer(arg1, retain: true, release: true),
+              )?.ref.retainAndReturnPointer() ??
+              ffi.nullptr,
+          keepIsolateAlive,
+        ),
+        retain: false,
+        release: true,
+      );
+
+  static instancetype _fnPtrTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Void> arg0,
+    ffi.Pointer<objc.ObjCObjectImpl> arg1,
+  ) => block.ref.target
+      .cast<
+        ffi.NativeFunction<
+          instancetype Function(
+            ffi.Pointer<ffi.Void> arg0,
+            ffi.Pointer<objc.ObjCObjectImpl> arg1,
+          )
+        >
+      >()
+      .asFunction<
+        instancetype Function(
+          ffi.Pointer<ffi.Void>,
+          ffi.Pointer<objc.ObjCObjectImpl>,
+        )
+      >()(arg0, arg1);
+  static ffi.Pointer<ffi.Void> _fnPtrCallable =
+      ffi.Pointer.fromFunction<
+            instancetype Function(
+              ffi.Pointer<objc.ObjCBlockImpl>,
+              ffi.Pointer<ffi.Void>,
+              ffi.Pointer<objc.ObjCObjectImpl>,
+            )
+          >(_fnPtrTrampoline)
+          .cast();
+  static instancetype _closureTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Void> arg0,
+    ffi.Pointer<objc.ObjCObjectImpl> arg1,
+  ) =>
+      (objc.getBlockClosure(block)
+          as instancetype Function(
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<objc.ObjCObjectImpl>,
+          ))(arg0, arg1);
+  static ffi.Pointer<ffi.Void> _closureCallable =
+      ffi.Pointer.fromFunction<
+            instancetype Function(
+              ffi.Pointer<objc.ObjCBlockImpl>,
+              ffi.Pointer<ffi.Void>,
+              ffi.Pointer<objc.ObjCObjectImpl>,
+            )
+          >(_closureTrampoline)
+          .cast();
+}
+
+/// Call operator for `objc.ObjCBlock<objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(ffi.Pointer<ffi.Void>, objc.NSCoder)>`.
+extension ObjCBlock_instancetype_ffiVoid_NSCoder$CallExtension
+    on
+        objc.ObjCBlock<
+          objc.Retained<ffi.Pointer<objc.ObjCObjectImpl>?> Function(
+            ffi.Pointer<ffi.Void>,
+            objc.NSCoder,
+          )
+        > {
+  Dartinstancetype? call(ffi.Pointer<ffi.Void> arg0, objc.NSCoder arg1) =>
+      ref.pointer.ref.invoke
+              .cast<
+                ffi.NativeFunction<
+                  instancetype Function(
+                    ffi.Pointer<objc.ObjCBlockImpl> block,
+                    ffi.Pointer<ffi.Void> arg0,
+                    ffi.Pointer<objc.ObjCObjectImpl> arg1,
+                  )
+                >
+              >()
+              .asFunction<
+                instancetype Function(
+                  ffi.Pointer<objc.ObjCBlockImpl>,
+                  ffi.Pointer<ffi.Void>,
+                  ffi.Pointer<objc.ObjCObjectImpl>,
+                )
+              >()(ref.pointer, arg0, arg1.ref.pointer)
+              .address ==
+          0
+      ? null
+      : objc.ObjCObject(
+          ref.pointer.ref.invoke
+              .cast<
+                ffi.NativeFunction<
+                  instancetype Function(
+                    ffi.Pointer<objc.ObjCBlockImpl> block,
+                    ffi.Pointer<ffi.Void> arg0,
+                    ffi.Pointer<objc.ObjCObjectImpl> arg1,
+                  )
+                >
+              >()
+              .asFunction<
+                instancetype Function(
+                  ffi.Pointer<objc.ObjCBlockImpl>,
+                  ffi.Pointer<ffi.Void>,
+                  ffi.Pointer<objc.ObjCObjectImpl>,
+                )
+              >()(ref.pointer, arg0, arg1.ref.pointer),
+          retain: false,
+          release: true,
+        );
+}
 
 /// AUParameter
 extension type AUParameter._(objc.ObjCObject object$)
@@ -9821,6 +8285,1438 @@ extension ObjCBlock_AUAudioUnitStatus_AudioUnitRenderActionFlags_AudioTimeStamp_
       );
 }
 
+final class OpaqueMusicSequence extends ffi.Opaque {}
+
+final class AVAudio3DPoint extends ffi.Struct {
+  @ffi.Float()
+  external double x;
+
+  @ffi.Float()
+  external double y;
+
+  @ffi.Float()
+  external double z;
+}
+
+late final _class_AVAudioBuffer = objc.getClass("AVAudioBuffer");
+late final _class_AVAudioFormat = objc.getClass("AVAudioFormat");
+late final _sel_initWithStreamDescription_ = objc.registerName(
+  "initWithStreamDescription:",
+);
+final _objc_msgSend_12whkva = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<AudioStreamBasicDescription>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<AudioStreamBasicDescription>,
+      )
+    >();
+
+/// WARNING: AVAudioChannelLayout is a stub. To generate bindings for this class, include
+/// AVAudioChannelLayout in your config's objc-interfaces list.
+///
+/// AVAudioChannelLayout
+extension type AVAudioChannelLayout._(objc.ObjCObject object$)
+    implements objc.ObjCObject, objc.NSObject, objc.NSSecureCoding {
+  /// Constructs a [AVAudioChannelLayout] that points to the same underlying object as [other].
+  AVAudioChannelLayout.as(objc.ObjCObject other) : object$ = other {
+    objc.checkOsVersionInternal(
+      'AVAudioChannelLayout',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+  }
+
+  /// Constructs a [AVAudioChannelLayout] that wraps the given raw object pointer.
+  AVAudioChannelLayout.fromPointer(
+    ffi.Pointer<objc.ObjCObjectImpl> other, {
+    bool retain = false,
+    bool release = false,
+  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
+    objc.checkOsVersionInternal(
+      'AVAudioChannelLayout',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+  }
+}
+
+late final _sel_initWithStreamDescription_channelLayout_ = objc.registerName(
+  "initWithStreamDescription:channelLayout:",
+);
+final _objc_msgSend_1pu5pn8 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<AudioStreamBasicDescription>,
+          ffi.Pointer<objc.ObjCObjectImpl>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<AudioStreamBasicDescription>,
+        ffi.Pointer<objc.ObjCObjectImpl>,
+      )
+    >();
+late final _sel_initStandardFormatWithSampleRate_channels_ = objc.registerName(
+  "initStandardFormatWithSampleRate:channels:",
+);
+final _objc_msgSend_lrt8o8 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Double,
+          ffi.Uint32,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        double,
+        int,
+      )
+    >();
+late final _sel_initStandardFormatWithSampleRate_channelLayout_ = objc
+    .registerName("initStandardFormatWithSampleRate:channelLayout:");
+final _objc_msgSend_1ozwf6k = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Double,
+          ffi.Pointer<objc.ObjCObjectImpl>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        double,
+        ffi.Pointer<objc.ObjCObjectImpl>,
+      )
+    >();
+
+enum AVAudioCommonFormat {
+  AVAudioOtherFormat(0),
+  AVAudioPCMFormatFloat32(1),
+  AVAudioPCMFormatFloat64(2),
+  AVAudioPCMFormatInt16(3),
+  AVAudioPCMFormatInt32(4);
+
+  final int value;
+  const AVAudioCommonFormat(this.value);
+
+  static AVAudioCommonFormat fromValue(int value) => switch (value) {
+    0 => AVAudioOtherFormat,
+    1 => AVAudioPCMFormatFloat32,
+    2 => AVAudioPCMFormatFloat64,
+    3 => AVAudioPCMFormatInt16,
+    4 => AVAudioPCMFormatInt32,
+    _ => throw ArgumentError('Unknown value for AVAudioCommonFormat: $value'),
+  };
+}
+
+late final _sel_initWithCommonFormat_sampleRate_channels_interleaved_ = objc
+    .registerName("initWithCommonFormat:sampleRate:channels:interleaved:");
+final _objc_msgSend_14phkbx = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+          ffi.Double,
+          ffi.Uint32,
+          ffi.Bool,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        int,
+        double,
+        int,
+        bool,
+      )
+    >();
+late final _sel_initWithCommonFormat_sampleRate_interleaved_channelLayout_ =
+    objc.registerName(
+      "initWithCommonFormat:sampleRate:interleaved:channelLayout:",
+    );
+final _objc_msgSend_13hxpgt = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.UnsignedLong,
+          ffi.Double,
+          ffi.Bool,
+          ffi.Pointer<objc.ObjCObjectImpl>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        int,
+        double,
+        bool,
+        ffi.Pointer<objc.ObjCObjectImpl>,
+      )
+    >();
+late final _sel_initWithSettings_ = objc.registerName("initWithSettings:");
+late final _sel_initWithCMAudioFormatDescription_ = objc.registerName(
+  "initWithCMAudioFormatDescription:",
+);
+final _objc_msgSend_1bmcroy = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<opaqueCMFormatDescription>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<opaqueCMFormatDescription>,
+      )
+    >();
+late final _sel_isEqual_ = objc.registerName("isEqual:");
+late final _sel_isStandard = objc.registerName("isStandard");
+late final _sel_commonFormat = objc.registerName("commonFormat");
+final _objc_msgSend_1hv2fgi = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.UnsignedLong Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      int Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+late final _sel_channelCount = objc.registerName("channelCount");
+final _objc_msgSend_usggvf = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Uint32 Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      int Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+late final _sel_sampleRate = objc.registerName("sampleRate");
+final _objc_msgSend_1ukqyt8 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Double Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      double Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+final _objc_msgSend_1ukqyt8Fpret = objc.msgSendFpretPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Double Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      double Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+late final _sel_isInterleaved = objc.registerName("isInterleaved");
+late final _sel_streamDescription = objc.registerName("streamDescription");
+final _objc_msgSend_lhvs9c = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<AudioStreamBasicDescription> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<AudioStreamBasicDescription> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+late final _sel_channelLayout = objc.registerName("channelLayout");
+late final _sel_magicCookie = objc.registerName("magicCookie");
+late final _sel_setMagicCookie_ = objc.registerName("setMagicCookie:");
+late final _sel_settings = objc.registerName("settings");
+late final _sel_formatDescription = objc.registerName("formatDescription");
+final _objc_msgSend_15dwpk8 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<opaqueCMFormatDescription> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<opaqueCMFormatDescription> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+
+/// AVAudioFormat
+extension type AVAudioFormat._(objc.ObjCObject object$)
+    implements objc.ObjCObject, objc.NSObject, objc.NSSecureCoding {
+  /// Constructs a [AVAudioFormat] that points to the same underlying object as [other].
+  AVAudioFormat.as(objc.ObjCObject other) : object$ = other {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    assert(isA(object$));
+  }
+
+  /// Constructs a [AVAudioFormat] that wraps the given raw object pointer.
+  AVAudioFormat.fromPointer(
+    ffi.Pointer<objc.ObjCObjectImpl> other, {
+    bool retain = false,
+    bool release = false,
+  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    assert(isA(object$));
+  }
+
+  /// Returns whether [obj] is an instance of [AVAudioFormat].
+  static bool isA(objc.ObjCObject obj) => _objc_msgSend_19nvye5(
+    obj.ref.pointer,
+    _sel_isKindOfClass_,
+    _class_AVAudioFormat,
+  );
+
+  /// alloc
+  static AVAudioFormat alloc() {
+    final $ret = _objc_msgSend_151sglz(_class_AVAudioFormat, _sel_alloc);
+    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static AVAudioFormat allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final $ret = _objc_msgSend_1cwp428(
+      _class_AVAudioFormat,
+      _sel_allocWithZone_,
+      zone,
+    );
+    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// new
+  static AVAudioFormat new$() {
+    final $ret = _objc_msgSend_151sglz(_class_AVAudioFormat, _sel_new);
+    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// supportsSecureCoding
+  static bool getSupportsSecureCoding() {
+    return _objc_msgSend_91o635(
+      _class_AVAudioFormat,
+      _sel_supportsSecureCoding,
+    );
+  }
+
+  /// Returns a new instance of AVAudioFormat constructed with the default `new` method.
+  AVAudioFormat() : this.as(new$().object$);
+}
+
+extension AVAudioFormat$Methods on AVAudioFormat {
+  /// channelCount
+  int get channelCount {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.channelCount',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_usggvf(object$.ref.pointer, _sel_channelCount);
+  }
+
+  /// channelLayout
+  AVAudioChannelLayout? get channelLayout {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.channelLayout',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_151sglz(object$.ref.pointer, _sel_channelLayout);
+    return $ret.address == 0
+        ? null
+        : AVAudioChannelLayout.fromPointer($ret, retain: true, release: true);
+  }
+
+  /// commonFormat
+  AVAudioCommonFormat get commonFormat {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.commonFormat',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_1hv2fgi(object$.ref.pointer, _sel_commonFormat);
+    return AVAudioCommonFormat.fromValue($ret);
+  }
+
+  /// encodeWithCoder:
+  void encodeWithCoder(objc.NSCoder coder) {
+    _objc_msgSend_xtuoz7(
+      object$.ref.pointer,
+      _sel_encodeWithCoder_,
+      coder.ref.pointer,
+    );
+  }
+
+  /// formatDescription
+  ffi.Pointer<opaqueCMFormatDescription> get formatDescription {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.formatDescription',
+      iOS: (false, (9, 0, 0)),
+      macOS: (false, (10, 11, 0)),
+    );
+    return _objc_msgSend_15dwpk8(object$.ref.pointer, _sel_formatDescription);
+  }
+
+  /// init
+  AVAudioFormat init() {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.init',
+      iOS: (false, (2, 0, 0)),
+      macOS: (false, (10, 0, 0)),
+    );
+    final $ret = _objc_msgSend_151sglz(
+      object$.ref.retainAndReturnPointer(),
+      _sel_init,
+    );
+    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initStandardFormatWithSampleRate:channelLayout:
+  AVAudioFormat initStandardFormatWithSampleRate(
+    double sampleRate, {
+    required AVAudioChannelLayout channelLayout,
+  }) {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.initStandardFormatWithSampleRate:channelLayout:',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_1ozwf6k(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initStandardFormatWithSampleRate_channelLayout_,
+      sampleRate,
+      channelLayout.ref.pointer,
+    );
+    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initStandardFormatWithSampleRate:channels:
+  AVAudioFormat? initStandardFormatWithSampleRate$1(
+    double sampleRate, {
+    required int channels,
+  }) {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.initStandardFormatWithSampleRate:channels:',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_lrt8o8(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initStandardFormatWithSampleRate_channels_,
+      sampleRate,
+      channels,
+    );
+    return $ret.address == 0
+        ? null
+        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initWithCMAudioFormatDescription:
+  AVAudioFormat initWithCMAudioFormatDescription(
+    ffi.Pointer<opaqueCMFormatDescription> formatDescription,
+  ) {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.initWithCMAudioFormatDescription:',
+      iOS: (false, (9, 0, 0)),
+      macOS: (false, (10, 11, 0)),
+    );
+    final $ret = _objc_msgSend_1bmcroy(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initWithCMAudioFormatDescription_,
+      formatDescription,
+    );
+    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initWithCoder:
+  AVAudioFormat? initWithCoder(objc.NSCoder coder) {
+    final $ret = _objc_msgSend_1sotr3r(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initWithCoder_,
+      coder.ref.pointer,
+    );
+    return $ret.address == 0
+        ? null
+        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initWithCommonFormat:sampleRate:channels:interleaved:
+  AVAudioFormat? initWithCommonFormat(
+    AVAudioCommonFormat format, {
+    required double sampleRate,
+    required int channels,
+    required bool interleaved,
+  }) {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.initWithCommonFormat:sampleRate:channels:interleaved:',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_14phkbx(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initWithCommonFormat_sampleRate_channels_interleaved_,
+      format.value,
+      sampleRate,
+      channels,
+      interleaved,
+    );
+    return $ret.address == 0
+        ? null
+        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initWithCommonFormat:sampleRate:interleaved:channelLayout:
+  AVAudioFormat initWithCommonFormat$1(
+    AVAudioCommonFormat format, {
+    required double sampleRate,
+    required bool interleaved,
+    required AVAudioChannelLayout channelLayout,
+  }) {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.initWithCommonFormat:sampleRate:interleaved:channelLayout:',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_13hxpgt(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initWithCommonFormat_sampleRate_interleaved_channelLayout_,
+      format.value,
+      sampleRate,
+      interleaved,
+      channelLayout.ref.pointer,
+    );
+    return AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initWithSettings:
+  AVAudioFormat? initWithSettings(objc.NSDictionary settings) {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.initWithSettings:',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_1sotr3r(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initWithSettings_,
+      settings.ref.pointer,
+    );
+    return $ret.address == 0
+        ? null
+        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initWithStreamDescription:
+  AVAudioFormat? initWithStreamDescription(
+    ffi.Pointer<AudioStreamBasicDescription> asbd,
+  ) {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.initWithStreamDescription:',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_12whkva(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initWithStreamDescription_,
+      asbd,
+    );
+    return $ret.address == 0
+        ? null
+        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initWithStreamDescription:channelLayout:
+  AVAudioFormat? initWithStreamDescription$1(
+    ffi.Pointer<AudioStreamBasicDescription> asbd, {
+    AVAudioChannelLayout? channelLayout,
+  }) {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.initWithStreamDescription:channelLayout:',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_1pu5pn8(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initWithStreamDescription_channelLayout_,
+      asbd,
+      channelLayout?.ref.pointer ?? ffi.nullptr,
+    );
+    return $ret.address == 0
+        ? null
+        : AVAudioFormat.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// isEqual:
+  bool isEqual(objc.ObjCObject object) {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.isEqual:',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_19nvye5(
+      object$.ref.pointer,
+      _sel_isEqual_,
+      object.ref.pointer,
+    );
+  }
+
+  /// isInterleaved
+  bool get isInterleaved {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.isInterleaved',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_91o635(object$.ref.pointer, _sel_isInterleaved);
+  }
+
+  /// isStandard
+  bool get isStandard {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.isStandard',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_91o635(object$.ref.pointer, _sel_isStandard);
+  }
+
+  /// magicCookie
+  objc.NSData? get magicCookie {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.magicCookie',
+      iOS: (false, (10, 0, 0)),
+      macOS: (false, (10, 12, 0)),
+    );
+    final $ret = _objc_msgSend_151sglz(object$.ref.pointer, _sel_magicCookie);
+    return $ret.address == 0
+        ? null
+        : objc.NSData.fromPointer($ret, retain: true, release: true);
+  }
+
+  /// sampleRate
+  double get sampleRate {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.sampleRate',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return objc.useMsgSendVariants
+        ? _objc_msgSend_1ukqyt8Fpret(object$.ref.pointer, _sel_sampleRate)
+        : _objc_msgSend_1ukqyt8(object$.ref.pointer, _sel_sampleRate);
+  }
+
+  /// setMagicCookie:
+  set magicCookie(objc.NSData? value) {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.setMagicCookie:',
+      iOS: (false, (10, 0, 0)),
+      macOS: (false, (10, 12, 0)),
+    );
+    _objc_msgSend_xtuoz7(
+      object$.ref.pointer,
+      _sel_setMagicCookie_,
+      value?.ref.pointer ?? ffi.nullptr,
+    );
+  }
+
+  /// settings
+  objc.NSDictionary get settings {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.settings',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_151sglz(object$.ref.pointer, _sel_settings);
+    return objc.NSDictionary.fromPointer($ret, retain: true, release: true);
+  }
+
+  /// streamDescription
+  ffi.Pointer<AudioStreamBasicDescription> get streamDescription {
+    objc.checkOsVersionInternal(
+      'AVAudioFormat.streamDescription',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_lhvs9c(object$.ref.pointer, _sel_streamDescription);
+  }
+}
+
+late final _sel_format = objc.registerName("format");
+late final _sel_audioBufferList = objc.registerName("audioBufferList");
+final _objc_msgSend_vz9uye = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<AudioBufferList> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<AudioBufferList> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+late final _sel_mutableAudioBufferList = objc.registerName(
+  "mutableAudioBufferList",
+);
+
+/// AVAudioBuffer
+extension type AVAudioBuffer._(objc.ObjCObject object$)
+    implements
+        objc.ObjCObject,
+        objc.NSObject,
+        objc.NSCopying,
+        objc.NSMutableCopying {
+  /// Constructs a [AVAudioBuffer] that points to the same underlying object as [other].
+  AVAudioBuffer.as(objc.ObjCObject other) : object$ = other {
+    objc.checkOsVersionInternal(
+      'AVAudioBuffer',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    assert(isA(object$));
+  }
+
+  /// Constructs a [AVAudioBuffer] that wraps the given raw object pointer.
+  AVAudioBuffer.fromPointer(
+    ffi.Pointer<objc.ObjCObjectImpl> other, {
+    bool retain = false,
+    bool release = false,
+  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
+    objc.checkOsVersionInternal(
+      'AVAudioBuffer',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    assert(isA(object$));
+  }
+
+  /// Returns whether [obj] is an instance of [AVAudioBuffer].
+  static bool isA(objc.ObjCObject obj) => _objc_msgSend_19nvye5(
+    obj.ref.pointer,
+    _sel_isKindOfClass_,
+    _class_AVAudioBuffer,
+  );
+
+  /// alloc
+  static AVAudioBuffer alloc() {
+    final $ret = _objc_msgSend_151sglz(_class_AVAudioBuffer, _sel_alloc);
+    return AVAudioBuffer.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static AVAudioBuffer allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final $ret = _objc_msgSend_1cwp428(
+      _class_AVAudioBuffer,
+      _sel_allocWithZone_,
+      zone,
+    );
+    return AVAudioBuffer.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// new
+  static AVAudioBuffer new$() {
+    final $ret = _objc_msgSend_151sglz(_class_AVAudioBuffer, _sel_new);
+    return AVAudioBuffer.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// Returns a new instance of AVAudioBuffer constructed with the default `new` method.
+  AVAudioBuffer() : this.as(new$().object$);
+}
+
+extension AVAudioBuffer$Methods on AVAudioBuffer {
+  /// audioBufferList
+  ffi.Pointer<AudioBufferList> get audioBufferList {
+    objc.checkOsVersionInternal(
+      'AVAudioBuffer.audioBufferList',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_vz9uye(object$.ref.pointer, _sel_audioBufferList);
+  }
+
+  /// format
+  AVAudioFormat get format {
+    objc.checkOsVersionInternal(
+      'AVAudioBuffer.format',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_151sglz(object$.ref.pointer, _sel_format);
+    return AVAudioFormat.fromPointer($ret, retain: true, release: true);
+  }
+
+  /// init
+  AVAudioBuffer init() {
+    objc.checkOsVersionInternal(
+      'AVAudioBuffer.init',
+      iOS: (false, (2, 0, 0)),
+      macOS: (false, (10, 0, 0)),
+    );
+    final $ret = _objc_msgSend_151sglz(
+      object$.ref.retainAndReturnPointer(),
+      _sel_init,
+    );
+    return AVAudioBuffer.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// mutableAudioBufferList
+  ffi.Pointer<AudioBufferList> get mutableAudioBufferList {
+    objc.checkOsVersionInternal(
+      'AVAudioBuffer.mutableAudioBufferList',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_vz9uye(
+      object$.ref.pointer,
+      _sel_mutableAudioBufferList,
+    );
+  }
+}
+
+late final _class_AVAudioPCMBuffer = objc.getClass("AVAudioPCMBuffer");
+late final _sel_initWithPCMFormat_frameCapacity_ = objc.registerName(
+  "initWithPCMFormat:frameCapacity:",
+);
+final _objc_msgSend_14jnjpt = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Uint32,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        int,
+      )
+    >();
+
+/// Construction methods for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>`.
+abstract final class ObjCBlock_ffiVoid_AudioBufferList {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>
+  fromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>(
+    pointer,
+    retain: retain,
+    release: release,
+  );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<ffi.Void Function(ffi.Pointer<AudioBufferList> arg0)>
+    >
+    ptr,
+  ) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>(
+    objc.newPointerBlock(_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>
+  fromFunction(
+    void Function(ffi.Pointer<AudioBufferList>) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>(
+    objc.newClosureBlock(
+      _closureCallable,
+      (ffi.Pointer<AudioBufferList> arg0) => fn(arg0),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a listener block from a Dart function.
+  ///
+  /// This is based on FFI's NativeCallable.listener, and has the same
+  /// capabilities and limitations. This block can be invoked from any thread,
+  /// but only supports void functions, and is not run synchronously. See
+  /// NativeCallable.listener for more details.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>
+  listener(
+    void Function(ffi.Pointer<AudioBufferList>) fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _listenerCallable.nativeFunction.cast(),
+      (ffi.Pointer<AudioBufferList> arg0) => fn(arg0),
+      keepIsolateAlive,
+    );
+    final wrapper = _NativeLibrary_wrapListenerBlock_1hqui74(raw);
+    objc.objectRelease(raw.cast());
+    return objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>(
+      wrapper,
+      retain: false,
+      release: true,
+    );
+  }
+
+  /// Creates a blocking block from a Dart function.
+  ///
+  /// This callback can be invoked from any native thread, and will block the
+  /// caller until the callback is handled by the Dart isolate that created
+  /// the block. Async functions are not supported.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC. If the owner isolate
+  /// has shut down, and the block is invoked by native code, it may block
+  /// indefinitely, or have other undefined behavior.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>
+  blocking(
+    void Function(ffi.Pointer<AudioBufferList>) fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _blockingCallable.nativeFunction.cast(),
+      (ffi.Pointer<AudioBufferList> arg0) => fn(arg0),
+      keepIsolateAlive,
+    );
+    final rawListener = objc.newClosureBlock(
+      _blockingListenerCallable.nativeFunction.cast(),
+      (ffi.Pointer<AudioBufferList> arg0) => fn(arg0),
+      keepIsolateAlive,
+    );
+    final wrapper = _NativeLibrary_wrapBlockingBlock_1hqui74(
+      raw,
+      rawListener,
+      objc.objCContext,
+    );
+    objc.objectRelease(raw.cast());
+    objc.objectRelease(rawListener.cast());
+    return objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>(
+      wrapper,
+      retain: false,
+      release: true,
+    );
+  }
+
+  static void _listenerTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<AudioBufferList> arg0,
+  ) {
+    (objc.getBlockClosure(block)
+        as void Function(ffi.Pointer<AudioBufferList>))(arg0);
+    objc.objectRelease(block.cast());
+  }
+
+  static ffi.NativeCallable<
+    ffi.Void Function(
+      ffi.Pointer<objc.ObjCBlockImpl>,
+      ffi.Pointer<AudioBufferList>,
+    )
+  >
+  _listenerCallable =
+      ffi.NativeCallable<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<AudioBufferList>,
+          )
+        >.listener(_listenerTrampoline)
+        ..keepIsolateAlive = false;
+  static void _blockingTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Void> waiter,
+    ffi.Pointer<AudioBufferList> arg0,
+  ) {
+    try {
+      (objc.getBlockClosure(block)
+          as void Function(ffi.Pointer<AudioBufferList>))(arg0);
+    } catch (e) {
+    } finally {
+      objc.signalWaiter(waiter);
+      objc.objectRelease(block.cast());
+    }
+  }
+
+  static ffi.NativeCallable<
+    ffi.Void Function(
+      ffi.Pointer<objc.ObjCBlockImpl>,
+      ffi.Pointer<ffi.Void>,
+      ffi.Pointer<AudioBufferList>,
+    )
+  >
+  _blockingCallable =
+      ffi.NativeCallable<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<AudioBufferList>,
+          )
+        >.isolateLocal(_blockingTrampoline)
+        ..keepIsolateAlive = false;
+  static ffi.NativeCallable<
+    ffi.Void Function(
+      ffi.Pointer<objc.ObjCBlockImpl>,
+      ffi.Pointer<ffi.Void>,
+      ffi.Pointer<AudioBufferList>,
+    )
+  >
+  _blockingListenerCallable =
+      ffi.NativeCallable<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<AudioBufferList>,
+          )
+        >.listener(_blockingTrampoline)
+        ..keepIsolateAlive = false;
+  static void _fnPtrTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<AudioBufferList> arg0,
+  ) => block.ref.target
+      .cast<
+        ffi.NativeFunction<ffi.Void Function(ffi.Pointer<AudioBufferList> arg0)>
+      >()
+      .asFunction<void Function(ffi.Pointer<AudioBufferList>)>()(arg0);
+  static ffi.Pointer<ffi.Void> _fnPtrCallable =
+      ffi.Pointer.fromFunction<
+            ffi.Void Function(
+              ffi.Pointer<objc.ObjCBlockImpl>,
+              ffi.Pointer<AudioBufferList>,
+            )
+          >(_fnPtrTrampoline)
+          .cast();
+  static void _closureTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<AudioBufferList> arg0,
+  ) =>
+      (objc.getBlockClosure(block)
+          as void Function(ffi.Pointer<AudioBufferList>))(arg0);
+  static ffi.Pointer<ffi.Void> _closureCallable =
+      ffi.Pointer.fromFunction<
+            ffi.Void Function(
+              ffi.Pointer<objc.ObjCBlockImpl>,
+              ffi.Pointer<AudioBufferList>,
+            )
+          >(_closureTrampoline)
+          .cast();
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>`.
+extension ObjCBlock_ffiVoid_AudioBufferList$CallExtension
+    on objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)> {
+  void call(ffi.Pointer<AudioBufferList> arg0) => ref.pointer.ref.invoke
+      .cast<
+        ffi.NativeFunction<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl> block,
+            ffi.Pointer<AudioBufferList> arg0,
+          )
+        >
+      >()
+      .asFunction<
+        void Function(
+          ffi.Pointer<objc.ObjCBlockImpl>,
+          ffi.Pointer<AudioBufferList>,
+        )
+      >()(ref.pointer, arg0);
+}
+
+late final _sel_initWithPCMFormat_bufferListNoCopy_deallocator_ = objc
+    .registerName("initWithPCMFormat:bufferListNoCopy:deallocator:");
+final _objc_msgSend_1x81s3d = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<AudioBufferList>,
+          ffi.Pointer<objc.ObjCBlockImpl>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<AudioBufferList>,
+        ffi.Pointer<objc.ObjCBlockImpl>,
+      )
+    >();
+late final _sel_frameCapacity = objc.registerName("frameCapacity");
+late final _sel_frameLength = objc.registerName("frameLength");
+late final _sel_setFrameLength_ = objc.registerName("setFrameLength:");
+final _objc_msgSend_1xpk2hb = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Void Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Uint32,
+        )
+      >
+    >()
+    .asFunction<
+      void Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        int,
+      )
+    >();
+late final _sel_stride = objc.registerName("stride");
+final _objc_msgSend_xw2lbc = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.UnsignedLong Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      int Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+late final _sel_floatChannelData = objc.registerName("floatChannelData");
+final _objc_msgSend_16wx3vd = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<ffi.Pointer<ffi.Float>> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<ffi.Pointer<ffi.Float>> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+late final _sel_int16ChannelData = objc.registerName("int16ChannelData");
+final _objc_msgSend_a3hp12 = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<ffi.Pointer<ffi.Int16>> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<ffi.Pointer<ffi.Int16>> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+late final _sel_int32ChannelData = objc.registerName("int32ChannelData");
+final _objc_msgSend_1icm2hk = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<ffi.Pointer<ffi.Int32>> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<ffi.Pointer<ffi.Int32>> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+      )
+    >();
+
+/// AVAudioPCMBuffer
+extension type AVAudioPCMBuffer._(objc.ObjCObject object$)
+    implements objc.ObjCObject, AVAudioBuffer {
+  /// Constructs a [AVAudioPCMBuffer] that points to the same underlying object as [other].
+  AVAudioPCMBuffer.as(objc.ObjCObject other) : object$ = other {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    assert(isA(object$));
+  }
+
+  /// Constructs a [AVAudioPCMBuffer] that wraps the given raw object pointer.
+  AVAudioPCMBuffer.fromPointer(
+    ffi.Pointer<objc.ObjCObjectImpl> other, {
+    bool retain = false,
+    bool release = false,
+  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    assert(isA(object$));
+  }
+
+  /// Returns whether [obj] is an instance of [AVAudioPCMBuffer].
+  static bool isA(objc.ObjCObject obj) => _objc_msgSend_19nvye5(
+    obj.ref.pointer,
+    _sel_isKindOfClass_,
+    _class_AVAudioPCMBuffer,
+  );
+
+  /// alloc
+  static AVAudioPCMBuffer alloc() {
+    final $ret = _objc_msgSend_151sglz(_class_AVAudioPCMBuffer, _sel_alloc);
+    return AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static AVAudioPCMBuffer allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final $ret = _objc_msgSend_1cwp428(
+      _class_AVAudioPCMBuffer,
+      _sel_allocWithZone_,
+      zone,
+    );
+    return AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// new
+  static AVAudioPCMBuffer new$() {
+    final $ret = _objc_msgSend_151sglz(_class_AVAudioPCMBuffer, _sel_new);
+    return AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// Returns a new instance of AVAudioPCMBuffer constructed with the default `new` method.
+  AVAudioPCMBuffer() : this.as(new$().object$);
+}
+
+extension AVAudioPCMBuffer$Methods on AVAudioPCMBuffer {
+  /// floatChannelData
+  ffi.Pointer<ffi.Pointer<ffi.Float>> get floatChannelData {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer.floatChannelData',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_16wx3vd(object$.ref.pointer, _sel_floatChannelData);
+  }
+
+  /// frameCapacity
+  int get frameCapacity {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer.frameCapacity',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_usggvf(object$.ref.pointer, _sel_frameCapacity);
+  }
+
+  /// frameLength
+  int get frameLength {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer.frameLength',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_usggvf(object$.ref.pointer, _sel_frameLength);
+  }
+
+  /// init
+  AVAudioPCMBuffer init() {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer.init',
+      iOS: (false, (2, 0, 0)),
+      macOS: (false, (10, 0, 0)),
+    );
+    final $ret = _objc_msgSend_151sglz(
+      object$.ref.retainAndReturnPointer(),
+      _sel_init,
+    );
+    return AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initWithPCMFormat:bufferListNoCopy:deallocator:
+  AVAudioPCMBuffer? initWithPCMFormat(
+    AVAudioFormat format, {
+    required ffi.Pointer<AudioBufferList> bufferListNoCopy,
+    objc.ObjCBlock<ffi.Void Function(ffi.Pointer<AudioBufferList>)>?
+    deallocator,
+  }) {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer.initWithPCMFormat:bufferListNoCopy:deallocator:',
+      iOS: (false, (15, 0, 0)),
+      macOS: (false, (12, 0, 0)),
+    );
+    final $ret = _objc_msgSend_1x81s3d(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initWithPCMFormat_bufferListNoCopy_deallocator_,
+      format.ref.pointer,
+      bufferListNoCopy,
+      deallocator?.ref.pointer ?? ffi.nullptr,
+    );
+    return $ret.address == 0
+        ? null
+        : AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initWithPCMFormat:frameCapacity:
+  AVAudioPCMBuffer? initWithPCMFormat$1(
+    AVAudioFormat format, {
+    required int frameCapacity,
+  }) {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer.initWithPCMFormat:frameCapacity:',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    final $ret = _objc_msgSend_14jnjpt(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initWithPCMFormat_frameCapacity_,
+      format.ref.pointer,
+      frameCapacity,
+    );
+    return $ret.address == 0
+        ? null
+        : AVAudioPCMBuffer.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// int16ChannelData
+  ffi.Pointer<ffi.Pointer<ffi.Int16>> get int16ChannelData {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer.int16ChannelData',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_a3hp12(object$.ref.pointer, _sel_int16ChannelData);
+  }
+
+  /// int32ChannelData
+  ffi.Pointer<ffi.Pointer<ffi.Int32>> get int32ChannelData {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer.int32ChannelData',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_1icm2hk(object$.ref.pointer, _sel_int32ChannelData);
+  }
+
+  /// setFrameLength:
+  set frameLength(int value) {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer.setFrameLength:',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    _objc_msgSend_1xpk2hb(object$.ref.pointer, _sel_setFrameLength_, value);
+  }
+
+  /// stride
+  int get stride {
+    objc.checkOsVersionInternal(
+      'AVAudioPCMBuffer.stride',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+    return _objc_msgSend_xw2lbc(object$.ref.pointer, _sel_stride);
+  }
+}
+
 /// WARNING: AVAudioTime is a stub. To generate bindings for this class, include
 /// AVAudioTime in your config's objc-interfaces list.
 ///
@@ -9846,6 +9742,35 @@ extension type AVAudioTime._(objc.ObjCObject object$)
       'AVAudioTime',
       iOS: (false, (8, 0, 0)),
       macOS: (false, (10, 10, 0)),
+    );
+  }
+}
+
+/// WARNING: AVAudioConnectionPoint is a stub. To generate bindings for this class, include
+/// AVAudioConnectionPoint in your config's objc-interfaces list.
+///
+/// AVAudioConnectionPoint
+extension type AVAudioConnectionPoint._(objc.ObjCObject object$)
+    implements objc.ObjCObject, objc.NSObject {
+  /// Constructs a [AVAudioConnectionPoint] that points to the same underlying object as [other].
+  AVAudioConnectionPoint.as(objc.ObjCObject other) : object$ = other {
+    objc.checkOsVersionInternal(
+      'AVAudioConnectionPoint',
+      iOS: (false, (9, 0, 0)),
+      macOS: (false, (10, 11, 0)),
+    );
+  }
+
+  /// Constructs a [AVAudioConnectionPoint] that wraps the given raw object pointer.
+  AVAudioConnectionPoint.fromPointer(
+    ffi.Pointer<objc.ObjCObjectImpl> other, {
+    bool retain = false,
+    bool release = false,
+  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
+    objc.checkOsVersionInternal(
+      'AVAudioConnectionPoint',
+      iOS: (false, (9, 0, 0)),
+      macOS: (false, (10, 11, 0)),
     );
   }
 }
@@ -10394,9 +10319,6 @@ final _objc_msgSend_1k4kd9s = objc.msgSendPointer
 late final _sel_outputConnectionPointsForNode_outputBus_ = objc.registerName(
   "outputConnectionPointsForNode:outputBus:",
 );
-
-final class OpaqueMusicSequence extends ffi.Opaque {}
-
 late final _sel_musicSequence = objc.registerName("musicSequence");
 final _objc_msgSend_lm6wu1 = objc.msgSendPointer
     .cast<
@@ -13986,16 +13908,28 @@ late final _sel_inputNode = objc.registerName("inputNode");
 ///
 /// AVAudioMixerNode
 extension type AVAudioMixerNode._(objc.ObjCObject object$)
-    implements objc.ObjCObject {
+    implements objc.ObjCObject, AVAudioNode, AVAudioMixing {
   /// Constructs a [AVAudioMixerNode] that points to the same underlying object as [other].
-  AVAudioMixerNode.as(objc.ObjCObject other) : object$ = other {}
+  AVAudioMixerNode.as(objc.ObjCObject other) : object$ = other {
+    objc.checkOsVersionInternal(
+      'AVAudioMixerNode',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+  }
 
   /// Constructs a [AVAudioMixerNode] that wraps the given raw object pointer.
   AVAudioMixerNode.fromPointer(
     ffi.Pointer<objc.ObjCObjectImpl> other, {
     bool retain = false,
     bool release = false,
-  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {}
+  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
+    objc.checkOsVersionInternal(
+      'AVAudioMixerNode',
+      iOS: (false, (8, 0, 0)),
+      macOS: (false, (10, 10, 0)),
+    );
+  }
 }
 
 late final _sel_mainMixerNode = objc.registerName("mainMixerNode");
@@ -14008,20 +13942,6 @@ late final _sel_setAutoShutdownEnabled_ = objc.registerName(
 );
 late final _sel_attachedNodes = objc.registerName("attachedNodes");
 
-/// ! @enum AVAudioEngineManualRenderingMode
-/// @abstract
-/// By default, the engine is connected to an audio device and automatically renders in realtime.
-/// It can also be configured to operate in manual rendering mode, i.e. not connected to an
-/// audio device and rendering in response to requests from the client.
-///
-/// AVAudioEngineManualRenderingModeOffline
-/// The engine operates in an offline mode without any realtime constraints.
-///
-/// AVAudioEngineManualRenderingModeRealtime
-/// The engine operates under realtime constraints, i.e. it will not make any blocking call
-/// (e.g. calling libdispatch, blocking on a mutex, allocating memory etc.) while rendering.
-/// Note that only the block based render mechanism can be used in this mode
-/// (see `AVAudioEngine(manualRenderingBlock)`.
 enum AVAudioEngineManualRenderingMode {
   AVAudioEngineManualRenderingModeOffline(0),
   AVAudioEngineManualRenderingModeRealtime(1);
@@ -14068,29 +13988,6 @@ late final _sel_disableManualRenderingMode = objc.registerName(
   "disableManualRenderingMode",
 );
 
-/// ! @enum AVAudioEngineManualRenderingStatus
-/// @abstract
-/// Status codes returned from the render call to the engine operating in manual rendering mode.
-///
-/// AVAudioEngineManualRenderingStatusError
-/// An error occurred when rendering and no data was returned. See the returned error code
-/// for the description of the error.
-///
-/// AVAudioEngineManualRenderingStatusSuccess
-/// All of the requested data was returned successfully.
-///
-/// AVAudioEngineManualRenderingStatusInsufficientDataFromInputNode
-/// Applicable only to the input node, when it provides input data for rendering
-/// (see `AVAudioInputNode(setManualRenderingInputPCMFormat:inputBlock:)`).
-/// Indicates that not enough input data was returned by the input node to satisfy the
-/// render request at the current time. The output buffer may contain data rendered by other
-/// active sources in the engine's processing graph.
-///
-/// AVAudioEngineManualRenderingStatusCannotDoInCurrentContext
-/// The operation could not be performed now, but the client could retry later if needed.
-/// This is usually to guard a realtime render operation (e.g. rendering through
-/// `manualRenderingBlock`) when a reconfiguration of the engine's internal state
-/// is in progress.
 enum AVAudioEngineManualRenderingStatus {
   AVAudioEngineManualRenderingStatusError(-1),
   AVAudioEngineManualRenderingStatusSuccess(0),
@@ -14442,25 +14339,7 @@ late final _sel_disconnectMIDIOutput_ = objc.registerName(
   "disconnectMIDIOutput:",
 );
 
-/// !
-/// @class AVAudioEngine
-///
-/// An AVAudioEngine contains a group of connected AVAudioNodes ("nodes"), each of which performs
-/// an audio signal generation, processing, or input/output task.
-///
-/// Nodes are created separately and attached to the engine.
-///
-/// The engine supports dynamic connection, disconnection and removal of nodes while running,
-/// with only minor limitations:
-/// - all dynamic reconnections must occur upstream of a mixer
-/// - while removals of effects will normally result in the automatic connection of the adjacent
-/// nodes, removal of a node which has differing input vs. output channel counts, or which
-/// is a mixer, is likely to result in a broken graph.
-///
-/// By default, the engine is connected to an audio device and automatically renders in realtime.
-/// It can also be configured to operate in manual rendering mode, i.e. not connected to an
-/// audio device and rendering in response to requests from the client, normally at or
-/// faster than realtime rate.
+/// AVAudioEngine
 extension type AVAudioEngine._(objc.ObjCObject object$)
     implements objc.ObjCObject, objc.NSObject {
   /// Constructs a [AVAudioEngine] that points to the same underlying object as [other].
@@ -14521,26 +14400,7 @@ extension type AVAudioEngine._(objc.ObjCObject object$)
 }
 
 extension AVAudioEngine$Methods on AVAudioEngine {
-  /// !	@method attachNode:
-  /// @abstract
-  /// Take ownership of a new node.
-  /// @param node
-  /// The node to be attached to the engine.
-  ///
-  /// To support the instantiation of arbitrary AVAudioNode subclasses, instances are created
-  /// externally to the engine, but are not usable until they are attached to the engine via
-  /// this method. Thus the idiom, without ARC, is:
-  ///
-  /// ```
-  /// // when building engine:
-  /// AVAudioNode *_player;	// member of controller class (for example)
-  /// ...
-  /// _player = [[AVAudioPlayerNode alloc] init];
-  /// [engine attachNode: _player];
-  /// ...
-  /// // when destroying engine (without ARC)
-  /// [_player release];
-  /// ```
+  /// attachNode:
   void attachNode(AVAudioNode node) {
     objc.checkOsVersionInternal(
       'AVAudioEngine.attachNode:',
@@ -14554,9 +14414,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @property attachedNodes
-  /// @abstract
-  /// Set of all nodes attached to the engine.
+  /// attachedNodes
   objc.NSSet get attachedNodes {
     objc.checkOsVersionInternal(
       'AVAudioEngine.attachedNodes',
@@ -14567,13 +14425,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     return objc.NSSet.fromPointer($ret, retain: true, release: true);
   }
 
-  /// !	@method connect:to:format:
-  /// @abstract
-  /// Establish a connection between two nodes
-  ///
-  /// This calls connect:to:fromBus:toBus:format: using bus 0 on the source node,
-  /// and bus 0 on the destination node, except in the case of a destination which is a mixer,
-  /// in which case the destination is the mixer's nextAvailableInputBus.
+  /// connect:to:format:
   void connect(
     AVAudioNode node1, {
     required AVAudioNode to,
@@ -14593,28 +14445,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @method connect:to:fromBus:toBus:format:
-  /// @abstract
-  /// Establish a connection between two nodes.
-  /// @param node1
-  /// The source node
-  /// @param node2
-  /// The destination node
-  /// @param bus1
-  /// The output bus on the source node
-  /// @param bus2
-  /// The input bus on the destination node
-  /// @param format
-  /// If non-nil, the format of the source node's output bus is set to this
-  /// format. In all cases, the format of the destination node's input bus is set to
-  /// match that of the source node's output bus.
-  ///
-  /// Nodes have input and output buses (AVAudioNodeBus). Use this method to establish
-  /// one-to-one connections betweeen nodes. Connections made using this method are always
-  /// one-to-one, never one-to-many or many-to-one.
-  ///
-  /// Note that any pre-existing connection(s) involving the source's output bus or the
-  /// destination's input bus will be broken.
+  /// connect:to:fromBus:toBus:format:
   void connect$1(
     AVAudioNode node1, {
     required AVAudioNode to,
@@ -14638,40 +14469,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @method connect:toConnectionPoints:fromBus:format:
-  /// @abstract
-  /// Establish connections between a source node and multiple destination nodes.
-  /// @param sourceNode
-  /// The source node
-  /// @param destNodes
-  /// An array of AVAudioConnectionPoint objects specifying destination
-  /// nodes and busses
-  /// @param sourceBus
-  /// The output bus on source node
-  /// @param format
-  /// If non-nil, the format of the source node's output bus is set to this
-  /// format. In all cases, the format of the destination nodes' input bus is set to
-  /// match that of the source node's output bus
-  ///
-  /// Use this method to establish connections from a source node to multiple destination nodes.
-  /// Connections made using this method are either one-to-one (when a single destination
-  /// connection is specified) or one-to-many (when multiple connections are specified), but
-  /// never many-to-one.
-  ///
-  /// To incrementally add a new connection to a source node, use this method with an array
-  /// of AVAudioConnectionPoint objects comprising of pre-existing connections (obtained from
-  /// `outputConnectionPointsForNode:outputBus:`) and the new connection.
-  ///
-  /// Note that any pre-existing connection involving the destination's input bus will be
-  /// broken. And, any pre-existing connection on source node which is not a part of the
-  /// specified destination connection array will also be broken.
-  ///
-  /// Also note that when the output of a node is split into multiple paths, all the paths
-  /// must render at the same rate until they reach a common mixer.
-  /// In other words, starting from the split node until the common mixer node where all split
-  /// paths terminate, you cannot have:
-  /// - any AVAudioUnitTimeEffect
-  /// - any sample rate conversion
+  /// connect:toConnectionPoints:fromBus:format:
   void connect$2(
     AVAudioNode sourceNode, {
     required objc.NSArray toConnectionPoints,
@@ -14693,35 +14491,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @method connectMIDI:to:format:block:
-  /// @abstract
-  /// Establish a MIDI only connection between two nodes.
-  /// @param sourceNode
-  /// The source node.
-  /// @param destinationNode
-  /// The destination node.
-  /// @param format
-  /// If non-nil, the format of the source node's output bus is set to this format.
-  /// In all cases, the format of the source nodes' output bus has to match with the
-  /// destination nodes' output bus format.
-  /// Although the output bus of the source is not in use, the format needs to be set
-  /// in order to be able to use the sample rate for MIDI event timing calculations.
-  /// @param tapBlock
-  /// If non-nil, this block is called from the source node's `AUMIDIOutputEventBlock`
-  /// on the realtime thread. The host can tap the MIDI data of the source node through
-  /// this block. May be nil.
-  ///
-  /// Use this method to establish a MIDI only connection between a source node and a
-  /// destination node that has MIDI input capability.
-  ///
-  /// The source node can only be a AVAudioUnit node of type `kAudioUnitType_MIDIProcessor`.
-  /// The destination node types can be `kAudioUnitType_MusicDevice`,
-  /// `kAudioUnitType_MusicEffect` or `kAudioUnitType_MIDIProcessor`.
-  ///
-  /// Note that any pre-existing MIDI connection involving the destination will be broken.
-  ///
-  /// Any client installed block on the source node's audio unit `AUMIDIOutputEventBlock`
-  /// will be overwritten when making the MIDI connection.
+  /// connectMIDI:to:format:block:
   void connectMIDI(
     AVAudioNode sourceNode, {
     required AVAudioNode to,
@@ -14746,35 +14516,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @method connectMIDI:to:format:eventListblock:
-  /// @abstract
-  /// Establish a MIDI only connection between two nodes.
-  /// @param sourceNode
-  /// The source node.
-  /// @param destinationNode
-  /// The destination node.
-  /// @param format
-  /// If non-nil, the format of the source node's output bus is set to this format.
-  /// In all cases, the format of the source nodes' output bus has to match with the
-  /// destination nodes' output bus format.
-  /// Although the output bus of the source is not in use, the format needs to be set
-  /// in order to be able to use the sample rate for MIDI event timing calculations.
-  /// @param tapBlock
-  /// This block is called from the source node's `AUMIDIOutputEventListBlock`
-  /// on the realtime thread. The host can tap the MIDI data of the source node through
-  /// this block.
-  ///
-  /// Use this method to establish a MIDI only connection between a source node and a
-  /// destination node that has MIDI input capability.
-  ///
-  /// The source node can only be a AVAudioUnit node of type `kAudioUnitType_MIDIProcessor`.
-  /// The destination node types can be `kAudioUnitType_MusicDevice`,
-  /// `kAudioUnitType_MusicEffect` or `kAudioUnitType_MIDIProcessor`.
-  ///
-  /// Note that any pre-existing MIDI connection involving the destination will be broken.
-  ///
-  /// Any client installed block on the source node's audio unit `AUMIDIOutputEventListBlock`
-  /// will be overwritten when making the MIDI connection.
+  /// connectMIDI:to:format:eventListBlock:
   void connectMIDI$1(
     AVAudioNode sourceNode, {
     required AVAudioNode to,
@@ -14799,39 +14541,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @method connectMIDI:toNodes:format:block:
-  /// @abstract
-  /// Establish a MIDI only connection between a source node and multiple destination nodes.
-  /// @param sourceNode
-  /// The source node.
-  /// @param destinationNodes
-  /// An array of AVAudioNodes specifying destination nodes.
-  /// @param format
-  /// If non-nil, the format of the source node's output bus is set to this format.
-  /// In all cases, the format of the source nodes' output bus has to match with the
-  /// destination nodes' output bus format.
-  /// Although the output bus of the source is not in use, the format needs to be set
-  /// in order to be able to use the sample rate for MIDI event timing calculations.
-  /// @param tapBlock
-  /// If non-nil, this block is called from the source node's `AUMIDIOutputEventBlock`
-  /// on the realtime thread. The host can tap the MIDI data of the source node through
-  /// this block. May be nil.
-  ///
-  /// Use this method to establish a MIDI only connection between a source node and
-  /// multiple destination nodes.
-  ///
-  /// The source node can only be a AVAudioUnit node of type `kAudioUnitType_MIDIProcessor`.
-  /// The destination node types can be `kAudioUnitType_MusicDevice`,
-  /// `kAudioUnitType_MusicEffect` or `kAudioUnitType_MIDIProcessor`.
-  ///
-  /// MIDI connections made using this method are either one-to-one (when a single
-  /// destination connection is specified) or one-to-many (when multiple connections are
-  /// specified), but never many-to-one.
-  ///
-  /// Note that any pre-existing connection involving the destination will be broken.
-  ///
-  /// Any client installed block on the source node's audio unit `AUMIDIOutputEventBlock`
-  /// will be overwritten when making the MIDI connection.
+  /// connectMIDI:toNodes:format:block:
   void connectMIDI$2(
     AVAudioNode sourceNode, {
     required objc.NSArray toNodes,
@@ -14856,39 +14566,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @method connectMIDI:toNodes:format:eventListBlock:
-  /// @abstract
-  /// Establish a MIDI only connection between a source node and multiple destination nodes.
-  /// @param sourceNode
-  /// The source node.
-  /// @param destinationNodes
-  /// An array of AVAudioNodes specifying destination nodes.
-  /// @param format
-  /// If non-nil, the format of the source node's output bus is set to this format.
-  /// In all cases, the format of the source nodes' output bus has to match with the
-  /// destination nodes' output bus format.
-  /// Although the output bus of the source is not in use, the format needs to be set
-  /// in order to be able to use the sample rate for MIDI event timing calculations.
-  /// @param tapBlock
-  /// This block is called from the source node's `AUMIDIOutputEventListBlock`
-  /// on the realtime thread. The host can tap the MIDI data of the source node through
-  /// this block.
-  ///
-  /// Use this method to establish a MIDI only connection between a source node and
-  /// multiple destination nodes.
-  ///
-  /// The source node can only be a AVAudioUnit node of type `kAudioUnitType_MIDIProcessor`.
-  /// The destination node types can be `kAudioUnitType_MusicDevice`,
-  /// `kAudioUnitType_MusicEffect` or `kAudioUnitType_MIDIProcessor`.
-  ///
-  /// MIDI connections made using this method are either one-to-one (when a single
-  /// destination connection is specified) or one-to-many (when multiple connections are
-  /// specified), but never many-to-one.
-  ///
-  /// Note that any pre-existing connection involving the destination will be broken.
-  ///
-  /// Any client installed block on the source node's audio unit `AUMIDIOutputEventListBlock`
-  /// will be overwritten when making the MIDI connection.
+  /// connectMIDI:toNodes:format:eventListBlock:
   void connectMIDI$3(
     AVAudioNode sourceNode, {
     required objc.NSArray toNodes,
@@ -14913,11 +14591,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// !	@method detachNode:
-  /// @abstract
-  /// Detach a node previously attached to the engine.
-  ///
-  /// If necessary, the engine will safely disconnect the node before detaching it.
+  /// detachNode:
   void detachNode(AVAudioNode node) {
     objc.checkOsVersionInternal(
       'AVAudioEngine.detachNode:',
@@ -14931,19 +14605,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// !	@method disableManualRenderingMode
-  /// @abstract
-  /// Set the engine to render to/from an audio device.
-  ///
-  /// When disabling the manual rendering mode, the engine:
-  /// 1. Stops and resets itself (see `stop` and `reset`).
-  /// 2. Switches the output/input nodes to render to/from an audio device. Their input and
-  /// output formats may change.
-  /// 3. Removes any taps previously installed on the input and output nodes.
-  /// 4. Maintains all the engine connections as is.
-  ///
-  /// Calling this method when the engine is already rendering to/from an audio device has no
-  /// effect.
+  /// disableManualRenderingMode
   void disableManualRenderingMode() {
     objc.checkOsVersionInternal(
       'AVAudioEngine.disableManualRenderingMode',
@@ -14953,16 +14615,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     _objc_msgSend_1pl9qdv(object$.ref.pointer, _sel_disableManualRenderingMode);
   }
 
-  /// ! @method disconnectMIDI:from:
-  /// @abstract
-  /// Remove a MIDI connection between two nodes.
-  /// @param sourceNode
-  /// The node whose MIDI output is to be disconnected.
-  /// @param destinationNode
-  /// The node whose MIDI input is to be disconnected.
-  ///
-  /// If a tap block is installed on the source node, it will be removed when the last
-  /// connection from the source node is removed.
+  /// disconnectMIDI:from:
   void disconnectMIDI(AVAudioNode sourceNode, {required AVAudioNode from}) {
     objc.checkOsVersionInternal(
       'AVAudioEngine.disconnectMIDI:from:',
@@ -14977,16 +14630,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @method disconnectMIDI:fromNodes:
-  /// @abstract
-  /// Remove a MIDI connection between one source node and multiple destination nodes.
-  /// @param sourceNode
-  /// The node whose MIDI output is to be disconnected.
-  /// @param destinationNodes
-  /// An array of AVAudioNodes specifying nodes whose MIDI input is to be disconnected.
-  ///
-  /// If a tap block is installed on the source node, it will be removed when the last
-  /// connection from the source node is removed.
+  /// disconnectMIDI:fromNodes:
   void disconnectMIDI$1(
     AVAudioNode sourceNode, {
     required objc.NSArray fromNodes,
@@ -15004,11 +14648,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @method disconnectMIDIInput:
-  /// @abstract
-  /// Disconnects all input MIDI connections of this node.
-  /// @param node
-  /// The node whose MIDI input is to be disconnected.
+  /// disconnectMIDIInput:
   void disconnectMIDIInput(AVAudioNode node) {
     objc.checkOsVersionInternal(
       'AVAudioEngine.disconnectMIDIInput:',
@@ -15022,11 +14662,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @method disconnectMIDIOutput:
-  /// @abstract
-  /// Disconnects all output MIDI connections of this node.
-  /// @param node
-  /// The node whose MIDI outputs are to be disconnected.
+  /// disconnectMIDIOutput:
   void disconnectMIDIOutput(AVAudioNode node) {
     objc.checkOsVersionInternal(
       'AVAudioEngine.disconnectMIDIOutput:',
@@ -15040,13 +14676,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// !	@method disconnectNodeInput:
-  /// @abstract
-  /// Remove a connection between two nodes.
-  /// @param node
-  /// The node whose inputs are to be disconnected
-  ///
-  /// Connections are broken on each of the node's input busses.
+  /// disconnectNodeInput:
   void disconnectNodeInput(AVAudioNode node) {
     objc.checkOsVersionInternal(
       'AVAudioEngine.disconnectNodeInput:',
@@ -15060,13 +14690,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @method disconnectNodeInput:bus:
-  /// @abstract
-  /// Remove a connection between two nodes.
-  /// @param node
-  /// The node whose input is to be disconnected
-  /// @param bus
-  /// The destination's input bus to disconnect
+  /// disconnectNodeInput:bus:
   void disconnectNodeInput$1(AVAudioNode node, {required int bus}) {
     objc.checkOsVersionInternal(
       'AVAudioEngine.disconnectNodeInput:bus:',
@@ -15081,13 +14705,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// !	@method disconnectNodeOutput:
-  /// @abstract
-  /// Remove a connection between two nodes.
-  /// @param node
-  /// The node whose outputs are to be disconnected
-  ///
-  /// Connections are broken on each of the node's output busses.
+  /// disconnectNodeOutput:
   void disconnectNodeOutput(AVAudioNode node) {
     objc.checkOsVersionInternal(
       'AVAudioEngine.disconnectNodeOutput:',
@@ -15101,13 +14719,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @method disconnectNodeOutput:bus:
-  /// @abstract
-  /// Remove a connection between two nodes.
-  /// @param node
-  /// The node whose output is to be disconnected
-  /// @param bus
-  /// The source's output bus to disconnect
+  /// disconnectNodeOutput:bus:
   void disconnectNodeOutput$1(AVAudioNode node, {required int bus}) {
     objc.checkOsVersionInternal(
       'AVAudioEngine.disconnectNodeOutput:bus:',
@@ -15122,46 +14734,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// !	@method enableManualRenderingMode:format:maximumFrameCount:error:
-  /// @abstract
-  /// Set the engine to operate in a manual rendering mode with the specified render format and
-  /// maximum frame count.
-  /// @param mode
-  /// The manual rendering mode to use.
-  /// @param pcmFormat
-  /// The format of the output PCM audio data from the engine.
-  /// @param maximumFrameCount
-  /// The maximum number of PCM sample frames the engine will be asked to produce in any single
-  /// render call.
-  /// @param outError
-  /// On exit, if the engine cannot switch to the manual rendering mode, a description of the
-  /// error (see `AVAudioEngineManualRenderingError` for the possible errors).
-  /// @return
-  /// YES for success.
-  ///
-  /// Use this method to configure the engine to render in response to requests from the client.
-  ///
-  /// The engine must be in a stopped state before calling this method.
-  /// The render format must be a PCM format and match the format of the buffer to which
-  /// the engine is asked to render (see `renderOffline:toBuffer:error:`).
-  ///
-  /// It is advised to enable manual rendering mode soon after the engine is created, and
-  /// before accessing any of mainMixerNode, inputNode or outputNode of the engine.
-  /// Otherwise, accessing or interacting with the engine before enabling manual rendering
-  /// mode could have the unintended side-effect of configuring the hardware for device-rendering
-  /// mode.
-  ///
-  /// The input data in manual rendering mode can be supplied through the source nodes, e.g.
-  /// `AVAudioPlayerNode`, `AVAudioInputNode` etc.
-  ///
-  /// When switching to manual rendering mode, the engine:
-  /// 1. Switches the input and output nodes to manual rendering mode. Their input and output
-  /// formats may change.
-  /// 2. Removes any taps previously installed on the input and output nodes.
-  /// 3. Maintains all the engine connections as is.
-  ///
-  /// Reasons for potential failure when switching to manual rendering mode include:
-  /// - Engine is not in a stopped state.
+  /// enableManualRenderingMode:format:maximumFrameCount:error:
   bool enableManualRenderingMode(
     AVAudioEngineManualRenderingMode mode, {
     required AVAudioFormat format,
@@ -15203,20 +14776,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     return AVAudioEngine.fromPointer($ret, retain: false, release: true);
   }
 
-  /// ! @method inputConnectionPointForNode:inputBus:
-  /// @abstract
-  /// Get connection information on a node's input bus.
-  /// @param node
-  /// The node whose input connection is being queried.
-  /// @param bus
-  /// The node's input bus on which the connection is being queried.
-  /// @return
-  /// An AVAudioConnectionPoint object with connection information on the node's
-  /// specified input bus.
-  ///
-  /// Connections are always one-to-one or one-to-many, never many-to-one.
-  ///
-  /// Returns nil if there is no connection on the node's specified input bus.
+  /// inputConnectionPointForNode:inputBus:
   AVAudioConnectionPoint? inputConnectionPointForNode(
     AVAudioNode node, {
     required int inputBus,
@@ -15237,29 +14797,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
         : AVAudioConnectionPoint.fromPointer($ret, retain: true, release: true);
   }
 
-  /// ! @property inputNode
-  /// @abstract
-  /// The engine's singleton input node.
-  ///
-  /// Audio input is performed via an input node. The engine creates a singleton on demand when
-  /// this property is first accessed. To receive input, connect another node from the output of
-  /// the input node, or create a recording tap on it.
-  ///
-  /// When the engine is rendering to/from an audio device, the AVAudioSesssion category and/or
-  /// availability of hardware determine whether an app can perform input. Check for the input node's
-  /// input format (i.e. hardware format) for non-zero sample rate and channel count to see if input is enabled.
-  /// Trying to perform input through the input node when it is not enabled or available will
-  /// cause the engine to throw an error (when possible) or an exception.
-  ///
-  /// Note that if the engine has at any point previously had its inputNode enabled and permission to
-  /// record was granted, then any time the engine is running, the mic-in-use indicator will appear.
-  ///
-  /// For applications which may need to dynamically switch between output-only and input-output
-  /// modes, it may be advantageous to use two engine instances.
-  ///
-  /// In manual rendering mode, the input node can be used to synchronously supply data to
-  /// the engine while it is rendering (see
-  /// `AVAudioInputNode(setManualRenderingInputPCMFormat:inputBlock:)`.
+  /// inputNode
   AVAudioInputNode get inputNode {
     objc.checkOsVersionInternal(
       'AVAudioEngine.inputNode',
@@ -15270,24 +14808,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     return AVAudioInputNode.fromPointer($ret, retain: true, release: true);
   }
 
-  /// ! @property autoShutdownEnabled
-  /// @abstract
-  /// When auto shutdown is enabled, the engine can start and stop the audio hardware dynamically,
-  /// to conserve power. This is the enforced behavior on watchOS and can be optionally enabled on
-  /// other platforms.
-  ///
-  /// To conserve power, it is advised that the client pause/stop the engine when not in use.
-  /// But when auto shutdown is enabled, the engine will stop the audio hardware if it was running
-  /// idle for a certain duration, and restart it later when required.
-  /// Note that, because this operation is dynamic, it may affect the start times of the source
-  /// nodes (e.g. `AVAudioPlayerNode`), if the engine has to resume from its shutdown state.
-  ///
-  /// On watchOS, auto shutdown is always enabled. On other platforms, it is disabled by
-  /// default, but the client can enable it if needed.
-  ///
-  /// This property is applicable only when the engine is rendering to/from an audio device. If
-  /// the value is changed when the engine is in manual rendering mode, it will take effect
-  /// whenever the engine is switched to render to/from the audio device.
+  /// isAutoShutdownEnabled
   bool get isAutoShutdownEnabled {
     objc.checkOsVersionInternal(
       'AVAudioEngine.isAutoShutdownEnabled',
@@ -15300,10 +14821,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @property isInManualRenderingMode
-  /// @abstract
-  /// Whether or not the engine is operating in manual rendering mode, i.e. not connected
-  /// to an audio device and rendering in response to the requests from the client
+  /// isInManualRenderingMode
   bool get isInManualRenderingMode {
     objc.checkOsVersionInternal(
       'AVAudioEngine.isInManualRenderingMode',
@@ -15316,9 +14834,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @property running
-  /// @abstract
-  /// The engine's running state.
+  /// isRunning
   bool get isRunning {
     objc.checkOsVersionInternal(
       'AVAudioEngine.isRunning',
@@ -15328,21 +14844,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     return _objc_msgSend_91o635(object$.ref.pointer, _sel_isRunning);
   }
 
-  /// ! @property mainMixerNode
-  /// @abstract
-  /// The engine's optional singleton main mixer node.
-  ///
-  /// The engine will construct a singleton main mixer and connect it to the outputNode on demand,
-  /// when this property is first accessed. You can then connect additional nodes to the mixer.
-  ///
-  /// If the client has never explicitly set the connection format between the mainMixerNode and
-  /// the outputNode, the engine will always set/update the format to track the format of the outputNode
-  /// on (re)start, even after an AVAudioEngineConfigurationChangeNotification.
-  /// Otherwise, it's the client's responsibility to set/update this connection format after an
-  /// AVAudioEngineConfigurationChangeNotification.
-  ///
-  /// By default, the mixer's output format (sample rate and channel count) will track the format
-  /// of the output node. You may however make the connection explicitly with a different format.
+  /// mainMixerNode
   AVAudioMixerNode get mainMixerNode {
     objc.checkOsVersionInternal(
       'AVAudioEngine.mainMixerNode',
@@ -15353,22 +14855,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     return AVAudioMixerNode.fromPointer($ret, retain: true, release: true);
   }
 
-  /// !	@property manualRenderingBlock
-  /// @abstract
-  /// Block to render the engine operating in manual rendering mode
-  ///
-  /// This block based render call must be used to render the engine when operating in
-  /// `AVAudioEngineManualRenderingModeRealtime`. In this mode, the engine operates under
-  /// realtime constraints and will not make any blocking call (e.g. calling libdispatch, blocking
-  /// on a mutex, allocating memory etc.) while rendering.
-  ///
-  /// Before invoking the rendering functionality, client must fetch this block and cache the
-  /// result. The block can then be called from a realtime context, without any possibility of
-  /// blocking.
-  ///
-  /// When rendering in `AVAudioEngineManualRenderingModeOffline`, either this block based render
-  /// call or	`renderOffline:toBuffer:error:` ObjC method can be used.
-  /// All the rules outlined in `renderOffline:toBuffer:error:` are applicable here as well.
+  /// manualRenderingBlock
   objc.ObjCBlock<
     ffi.Long Function(
       ffi.Uint32,
@@ -15393,12 +14880,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @property manualRenderingFormat
-  /// @abstract
-  /// The render format of the engine in manual rendering mode.
-  ///
-  /// Querying this property when the engine is not in manual rendering mode will return an
-  /// invalid format, with zero sample rate and channel count.
+  /// manualRenderingFormat
   AVAudioFormat get manualRenderingFormat {
     objc.checkOsVersionInternal(
       'AVAudioEngine.manualRenderingFormat',
@@ -15412,12 +14894,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     return AVAudioFormat.fromPointer($ret, retain: true, release: true);
   }
 
-  /// ! @property manualRenderingMaximumFrameCount
-  /// @abstract
-  /// The maximum number of PCM sample frames the engine can produce in any single render call in
-  /// the manual rendering mode.
-  ///
-  /// Querying this property when the engine is not in manual rendering mode will return zero.
+  /// manualRenderingMaximumFrameCount
   int get manualRenderingMaximumFrameCount {
     objc.checkOsVersionInternal(
       'AVAudioEngine.manualRenderingMaximumFrameCount',
@@ -15430,12 +14907,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @property manualRenderingMode
-  /// @abstract
-  /// The manual rendering mode configured on the engine
-  ///
-  /// This property is meaningful only when the engine is operating in manual rendering mode,
-  /// i.e. when `isInManualRenderingMode` returns true.
+  /// manualRenderingMode
   AVAudioEngineManualRenderingMode get manualRenderingMode {
     objc.checkOsVersionInternal(
       'AVAudioEngine.manualRenderingMode',
@@ -15449,13 +14921,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     return AVAudioEngineManualRenderingMode.fromValue($ret);
   }
 
-  /// ! @property manualRenderingSampleTime
-  /// @abstract
-  /// Indicates where the engine is on its render timeline in manual rendering mode.
-  ///
-  /// The timeline in manual rendering mode starts at a sample time of zero, and is in terms
-  /// of the render format's sample rate. Resetting the engine (see `reset`) will reset the
-  /// timeline back to zero.
+  /// manualRenderingSampleTime
   int get manualRenderingSampleTime {
     objc.checkOsVersionInternal(
       'AVAudioEngine.manualRenderingSampleTime',
@@ -15468,9 +14934,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @property musicSequence
-  /// @abstract
-  /// The MusicSequence previously attached to the engine (if any).
+  /// musicSequence
   ffi.Pointer<OpaqueMusicSequence> get musicSequence {
     objc.checkOsVersionInternal(
       'AVAudioEngine.musicSequence',
@@ -15480,20 +14944,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     return _objc_msgSend_lm6wu1(object$.ref.pointer, _sel_musicSequence);
   }
 
-  /// ! @method outputConnectionPointsForNode:outputBus:
-  /// @abstract
-  /// Get connection information on a node's output bus.
-  /// @param node
-  /// The node whose output connections are being queried.
-  /// @param bus
-  /// The node's output bus on which connections are being queried.
-  /// @return
-  /// An array of AVAudioConnectionPoint objects with connection information on the node's
-  /// specified output bus.
-  ///
-  /// Connections are always one-to-one or one-to-many, never many-to-one.
-  ///
-  /// Returns an empty array if there are no connections on the node's specified output bus.
+  /// outputConnectionPointsForNode:outputBus:
   objc.NSArray outputConnectionPointsForNode(
     AVAudioNode node, {
     required int outputBus,
@@ -15512,24 +14963,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     return objc.NSArray.fromPointer($ret, retain: true, release: true);
   }
 
-  /// ! @property outputNode
-  /// @abstract
-  /// The engine's singleton output node.
-  ///
-  /// Audio output is performed via an output node. The engine creates a singleton on demand when
-  /// this property is first accessed. Connect another node to the input of the output node, or
-  /// obtain a mixer that is connected there by default, using the "mainMixerNode" property.
-  ///
-  /// When the engine is rendering to/from an audio device, the AVAudioSesssion category and/or
-  /// availability of hardware determine whether an app can perform output. Check the output
-  /// format of output node (i.e. hardware format) for non-zero sample rate and channel count to
-  /// see if output is enabled.
-  /// Trying to perform output through the output node when it is not enabled or available will
-  /// cause the engine to throw an error (when possible) or an exception.
-  ///
-  /// In manual rendering mode, the output format of the output node will determine the
-  /// render format of the engine. It can be changed through
-  /// `enableManualRenderingMode:format:maximumFrameCount:error:`.
+  /// outputNode
   AVAudioOutputNode get outputNode {
     objc.checkOsVersionInternal(
       'AVAudioEngine.outputNode',
@@ -15540,16 +14974,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     return AVAudioOutputNode.fromPointer($ret, retain: true, release: true);
   }
 
-  /// !	@method pause
-  /// @abstract
-  /// Pause the engine.
-  ///
-  /// When the engine is rendering to/from an audio device, stops the audio hardware and the flow
-  /// of audio through the engine. When operating in this mode, it is recommended that the engine
-  /// be paused or stopped (as applicable) when not in use, to minimize power consumption.
-  ///
-  /// Pausing the engine does not deallocate the resources allocated by prepare. Resume the
-  /// engine by invoking start again.
+  /// pause
   void pause() {
     objc.checkOsVersionInternal(
       'AVAudioEngine.pause',
@@ -15559,15 +14984,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     _objc_msgSend_1pl9qdv(object$.ref.pointer, _sel_pause);
   }
 
-  /// !	@method prepare
-  /// @abstract
-  /// Prepare the engine for starting.
-  ///
-  /// This method preallocates many of the resources the engine requires in order to start.
-  /// Use it to responsively start audio input or output.
-  ///
-  /// On AVAudioSession supported platforms, this method may cause the audio session to be implicitly activated. Activating the audio session (implicitly or explicitly) may cause other audio sessions to be interrupted or ducked depending on the session's configuration. It is recommended to configure and activate the app's audio session before preparing the engine.
-  /// See https://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html for details.
+  /// prepare
   void prepare() {
     objc.checkOsVersionInternal(
       'AVAudioEngine.prepare',
@@ -15577,37 +14994,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     _objc_msgSend_1pl9qdv(object$.ref.pointer, _sel_prepare);
   }
 
-  /// !	@method renderOffline:toBuffer:error:
-  /// @abstract
-  /// Render call to the engine operating in the offline manual rendering mode
-  /// @param numberOfFrames
-  /// The number of PCM sample frames to be rendered
-  /// @param buffer
-  /// The PCM buffer to which the engine must render the audio
-  /// @param outError
-  /// On exit, if an error occurs during rendering, a description of the error (see
-  /// `AVAudioEngineManualRenderingError` for the possible errors)
-  /// @return
-  /// One of the status codes from `AVAudioEngineManualRenderingStatus`. Irrespective of the
-  /// returned status code, on exit, the output buffer's frameLength will indicate the number of
-  /// PCM samples rendered by the engine
-  ///
-  /// The engine must be in the offline manual rendering mode
-  /// (`AVAudioEngineManualRenderingModeOffline`) and started before calling this method.
-  ///
-  /// The format of the buffer must match the render format set through
-  /// `enableManualRenderingMode:format:maximumFrameCount:error:`. The buffer capacity must be
-  /// greater than or equal to the number of samples asked to render.
-  /// On exit, the buffer's frameLength will indicate the number of PCM samples rendered by the
-  /// engine.
-  ///
-  /// The engine's timeline in manual rendering mode starts at a sample time of zero, and is in
-  /// terms of the render format's sample rate. Resetting the engine (see `reset`) will reset the
-  /// timeline back to zero.
-  ///
-  /// When rendering in `AVAudioEngineManualRenderingModeRealtime`, this ObjC render method
-  /// must not be used, an error is returned otherwise. Use the block based render call
-  /// (`manualRenderingBlock`) in that mode instead.
+  /// renderOffline:toBuffer:error:
   AVAudioEngineManualRenderingStatus renderOffline(
     int numberOfFrames, {
     required AVAudioPCMBuffer toBuffer,
@@ -15633,14 +15020,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     }
   }
 
-  /// !	@method reset
-  /// @abstract reset
-  /// Reset all of the nodes in the engine.
-  ///
-  /// This will reset all of the nodes in the engine. This is useful, for example, for silencing
-  /// reverb and delay tails.
-  ///
-  /// In manual rendering mode, the render timeline is reset to a sample time of zero.
+  /// reset
   void reset() {
     objc.checkOsVersionInternal(
       'AVAudioEngine.reset',
@@ -15650,24 +15030,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     _objc_msgSend_1pl9qdv(object$.ref.pointer, _sel_reset);
   }
 
-  /// ! @property autoShutdownEnabled
-  /// @abstract
-  /// When auto shutdown is enabled, the engine can start and stop the audio hardware dynamically,
-  /// to conserve power. This is the enforced behavior on watchOS and can be optionally enabled on
-  /// other platforms.
-  ///
-  /// To conserve power, it is advised that the client pause/stop the engine when not in use.
-  /// But when auto shutdown is enabled, the engine will stop the audio hardware if it was running
-  /// idle for a certain duration, and restart it later when required.
-  /// Note that, because this operation is dynamic, it may affect the start times of the source
-  /// nodes (e.g. `AVAudioPlayerNode`), if the engine has to resume from its shutdown state.
-  ///
-  /// On watchOS, auto shutdown is always enabled. On other platforms, it is disabled by
-  /// default, but the client can enable it if needed.
-  ///
-  /// This property is applicable only when the engine is rendering to/from an audio device. If
-  /// the value is changed when the engine is in manual rendering mode, it will take effect
-  /// whenever the engine is switched to render to/from the audio device.
+  /// setAutoShutdownEnabled:
   set isAutoShutdownEnabled(bool value) {
     objc.checkOsVersionInternal(
       'AVAudioEngine.setAutoShutdownEnabled:',
@@ -15681,9 +15044,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     );
   }
 
-  /// ! @property musicSequence
-  /// @abstract
-  /// The MusicSequence previously attached to the engine (if any).
+  /// setMusicSequence:
   set musicSequence(ffi.Pointer<OpaqueMusicSequence> value) {
     objc.checkOsVersionInternal(
       'AVAudioEngine.setMusicSequence:',
@@ -15693,26 +15054,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     _objc_msgSend_2cg4ox(object$.ref.pointer, _sel_setMusicSequence_, value);
   }
 
-  /// ! @method startAndReturnError:
-  /// @abstract
-  /// Start the engine.
-  /// @return
-  /// YES for success
-  ///
-  /// Calls prepare if it has not already been called since stop.
-  ///
-  /// When the engine is rendering to/from an audio device, starts the audio hardware via the
-  /// AVAudioInputNode and/or AVAudioOutputNode instances in the engine. Audio begins to flow
-  /// through the engine.
-  /// Reasons for potential failure to start in this mode include:
-  /// 1. There is problem in the structure of the graph. Input can't be routed to output or to a
-  /// recording tap through converter type nodes.
-  /// 2. An AVAudioSession error.
-  /// 3. The driver failed to start the hardware.
-  ///
-  /// In manual rendering mode, prepares the engine to render when requested by the client.
-  ///
-  /// On AVAudioSession supported platforms, this method may cause the audio session to be implicitly activated. It is recommended to configure and activate the app's audio session before starting the engine. For more information, see the `prepare` method above.
+  /// startAndReturnError:
   bool startAndReturnError() {
     objc.checkOsVersionInternal(
       'AVAudioEngine.startAndReturnError:',
@@ -15733,13 +15075,7 @@ extension AVAudioEngine$Methods on AVAudioEngine {
     }
   }
 
-  /// ! @method stop
-  /// @abstract
-  /// When the engine is rendering to/from an audio device, stops the audio hardware and the
-  /// engine. When operating in this mode, it is recommended that the engine be paused or stopped
-  /// (as applicable) when not in use, to minimize power consumption.
-  ///
-  /// Stopping the engine releases the resources allocated by prepare.
+  /// stop
   void stop() {
     objc.checkOsVersionInternal(
       'AVAudioEngine.stop',
@@ -16065,4 +15401,377 @@ extension type AVAudio3DMixing._(objc.ObjCProtocol object$)
     bool retain = false,
     bool release = false,
   }) : object$ = objc.ObjCProtocol(other, retain: retain, release: release);
+}
+
+/// Construction methods for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>`.
+abstract final class ObjCBlock_ffiVoid_ffiFloat_NSInteger {
+  /// Returns a block that wraps the given raw block pointer.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>
+  fromPointer(
+    ffi.Pointer<objc.ObjCBlockImpl> pointer, {
+    bool retain = false,
+    bool release = false,
+  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>(
+    pointer,
+    retain: retain,
+    release: release,
+  );
+
+  /// Creates a block from a C function pointer.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>
+  fromFunctionPointer(
+    ffi.Pointer<
+      ffi.NativeFunction<
+        ffi.Void Function(ffi.Pointer<ffi.Float> arg0, ffi.Long arg1)
+      >
+    >
+    ptr,
+  ) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>(
+    objc.newPointerBlock(_fnPtrCallable, ptr.cast()),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a block from a Dart function.
+  ///
+  /// This block must be invoked by native code running on the same thread as
+  /// the isolate that registered it. Invoking the block on the wrong thread
+  /// will result in a crash.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>
+  fromFunction(
+    void Function(ffi.Pointer<ffi.Float>, int) fn, {
+    bool keepIsolateAlive = true,
+  }) => objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>(
+    objc.newClosureBlock(
+      _closureCallable,
+      (ffi.Pointer<ffi.Float> arg0, int arg1) => fn(arg0, arg1),
+      keepIsolateAlive,
+    ),
+    retain: false,
+    release: true,
+  );
+
+  /// Creates a listener block from a Dart function.
+  ///
+  /// This is based on FFI's NativeCallable.listener, and has the same
+  /// capabilities and limitations. This block can be invoked from any thread,
+  /// but only supports void functions, and is not run synchronously. See
+  /// NativeCallable.listener for more details.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>
+  listener(
+    void Function(ffi.Pointer<ffi.Float>, int) fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _listenerCallable.nativeFunction.cast(),
+      (ffi.Pointer<ffi.Float> arg0, int arg1) => fn(arg0, arg1),
+      keepIsolateAlive,
+    );
+    final wrapper = _NativeLibrary_wrapListenerBlock_aiz4t(raw);
+    objc.objectRelease(raw.cast());
+    return objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>(
+      wrapper,
+      retain: false,
+      release: true,
+    );
+  }
+
+  /// Creates a blocking block from a Dart function.
+  ///
+  /// This callback can be invoked from any native thread, and will block the
+  /// caller until the callback is handled by the Dart isolate that created
+  /// the block. Async functions are not supported.
+  ///
+  /// If `keepIsolateAlive` is true, this block will keep this isolate alive
+  /// until it is garbage collected by both Dart and ObjC. If the owner isolate
+  /// has shut down, and the block is invoked by native code, it may block
+  /// indefinitely, or have other undefined behavior.
+  static objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>
+  blocking(
+    void Function(ffi.Pointer<ffi.Float>, int) fn, {
+    bool keepIsolateAlive = true,
+  }) {
+    final raw = objc.newClosureBlock(
+      _blockingCallable.nativeFunction.cast(),
+      (ffi.Pointer<ffi.Float> arg0, int arg1) => fn(arg0, arg1),
+      keepIsolateAlive,
+    );
+    final rawListener = objc.newClosureBlock(
+      _blockingListenerCallable.nativeFunction.cast(),
+      (ffi.Pointer<ffi.Float> arg0, int arg1) => fn(arg0, arg1),
+      keepIsolateAlive,
+    );
+    final wrapper = _NativeLibrary_wrapBlockingBlock_aiz4t(
+      raw,
+      rawListener,
+      objc.objCContext,
+    );
+    objc.objectRelease(raw.cast());
+    objc.objectRelease(rawListener.cast());
+    return objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>(
+      wrapper,
+      retain: false,
+      release: true,
+    );
+  }
+
+  static void _listenerTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Float> arg0,
+    int arg1,
+  ) {
+    (objc.getBlockClosure(block) as void Function(ffi.Pointer<ffi.Float>, int))(
+      arg0,
+      arg1,
+    );
+    objc.objectRelease(block.cast());
+  }
+
+  static ffi.NativeCallable<
+    ffi.Void Function(
+      ffi.Pointer<objc.ObjCBlockImpl>,
+      ffi.Pointer<ffi.Float>,
+      ffi.Long,
+    )
+  >
+  _listenerCallable =
+      ffi.NativeCallable<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Float>,
+            ffi.Long,
+          )
+        >.listener(_listenerTrampoline)
+        ..keepIsolateAlive = false;
+  static void _blockingTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Void> waiter,
+    ffi.Pointer<ffi.Float> arg0,
+    int arg1,
+  ) {
+    try {
+      (objc.getBlockClosure(block)
+          as void Function(ffi.Pointer<ffi.Float>, int))(arg0, arg1);
+    } catch (e) {
+    } finally {
+      objc.signalWaiter(waiter);
+      objc.objectRelease(block.cast());
+    }
+  }
+
+  static ffi.NativeCallable<
+    ffi.Void Function(
+      ffi.Pointer<objc.ObjCBlockImpl>,
+      ffi.Pointer<ffi.Void>,
+      ffi.Pointer<ffi.Float>,
+      ffi.Long,
+    )
+  >
+  _blockingCallable =
+      ffi.NativeCallable<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<ffi.Float>,
+            ffi.Long,
+          )
+        >.isolateLocal(_blockingTrampoline)
+        ..keepIsolateAlive = false;
+  static ffi.NativeCallable<
+    ffi.Void Function(
+      ffi.Pointer<objc.ObjCBlockImpl>,
+      ffi.Pointer<ffi.Void>,
+      ffi.Pointer<ffi.Float>,
+      ffi.Long,
+    )
+  >
+  _blockingListenerCallable =
+      ffi.NativeCallable<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl>,
+            ffi.Pointer<ffi.Void>,
+            ffi.Pointer<ffi.Float>,
+            ffi.Long,
+          )
+        >.listener(_blockingTrampoline)
+        ..keepIsolateAlive = false;
+  static void _fnPtrTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Float> arg0,
+    int arg1,
+  ) => block.ref.target
+      .cast<
+        ffi.NativeFunction<
+          ffi.Void Function(ffi.Pointer<ffi.Float> arg0, ffi.Long arg1)
+        >
+      >()
+      .asFunction<void Function(ffi.Pointer<ffi.Float>, int)>()(arg0, arg1);
+  static ffi.Pointer<ffi.Void> _fnPtrCallable =
+      ffi.Pointer.fromFunction<
+            ffi.Void Function(
+              ffi.Pointer<objc.ObjCBlockImpl>,
+              ffi.Pointer<ffi.Float>,
+              ffi.Long,
+            )
+          >(_fnPtrTrampoline)
+          .cast();
+  static void _closureTrampoline(
+    ffi.Pointer<objc.ObjCBlockImpl> block,
+    ffi.Pointer<ffi.Float> arg0,
+    int arg1,
+  ) =>
+      (objc.getBlockClosure(block)
+          as void Function(ffi.Pointer<ffi.Float>, int))(arg0, arg1);
+  static ffi.Pointer<ffi.Void> _closureCallable =
+      ffi.Pointer.fromFunction<
+            ffi.Void Function(
+              ffi.Pointer<objc.ObjCBlockImpl>,
+              ffi.Pointer<ffi.Float>,
+              ffi.Long,
+            )
+          >(_closureTrampoline)
+          .cast();
+}
+
+/// Call operator for `objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>`.
+extension ObjCBlock_ffiVoid_ffiFloat_NSInteger$CallExtension
+    on objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)> {
+  void call(ffi.Pointer<ffi.Float> arg0, int arg1) => ref.pointer.ref.invoke
+      .cast<
+        ffi.NativeFunction<
+          ffi.Void Function(
+            ffi.Pointer<objc.ObjCBlockImpl> block,
+            ffi.Pointer<ffi.Float> arg0,
+            ffi.Long arg1,
+          )
+        >
+      >()
+      .asFunction<
+        void Function(
+          ffi.Pointer<objc.ObjCBlockImpl>,
+          ffi.Pointer<ffi.Float>,
+          int,
+        )
+      >()(ref.pointer, arg0, arg1);
+}
+
+late final _class_AudioMarshaller = objc.getClass("AudioMarshaller");
+late final _sel_initWithCallback_ = objc.registerName("initWithCallback:");
+final _objc_msgSend_nnxkei = objc.msgSendPointer
+    .cast<
+      ffi.NativeFunction<
+        ffi.Pointer<objc.ObjCObjectImpl> Function(
+          ffi.Pointer<objc.ObjCObjectImpl>,
+          ffi.Pointer<objc.ObjCSelector>,
+          ffi.Pointer<objc.ObjCBlockImpl>,
+        )
+      >
+    >()
+    .asFunction<
+      ffi.Pointer<objc.ObjCObjectImpl> Function(
+        ffi.Pointer<objc.ObjCObjectImpl>,
+        ffi.Pointer<objc.ObjCSelector>,
+        ffi.Pointer<objc.ObjCBlockImpl>,
+      )
+    >();
+late final _sel_getBridgeBlock = objc.registerName("getBridgeBlock");
+
+/// AudioMarshaller
+extension type AudioMarshaller._(objc.ObjCObject object$)
+    implements objc.ObjCObject, objc.NSObject {
+  /// Constructs a [AudioMarshaller] that points to the same underlying object as [other].
+  AudioMarshaller.as(objc.ObjCObject other) : object$ = other {
+    assert(isA(object$));
+  }
+
+  /// Constructs a [AudioMarshaller] that wraps the given raw object pointer.
+  AudioMarshaller.fromPointer(
+    ffi.Pointer<objc.ObjCObjectImpl> other, {
+    bool retain = false,
+    bool release = false,
+  }) : object$ = objc.ObjCObject(other, retain: retain, release: release) {
+    assert(isA(object$));
+  }
+
+  /// Returns whether [obj] is an instance of [AudioMarshaller].
+  static bool isA(objc.ObjCObject obj) => _objc_msgSend_19nvye5(
+    obj.ref.pointer,
+    _sel_isKindOfClass_,
+    _class_AudioMarshaller,
+  );
+
+  /// alloc
+  static AudioMarshaller alloc() {
+    final $ret = _objc_msgSend_151sglz(_class_AudioMarshaller, _sel_alloc);
+    return AudioMarshaller.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// allocWithZone:
+  static AudioMarshaller allocWithZone(ffi.Pointer<objc.NSZone> zone) {
+    final $ret = _objc_msgSend_1cwp428(
+      _class_AudioMarshaller,
+      _sel_allocWithZone_,
+      zone,
+    );
+    return AudioMarshaller.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// new
+  static AudioMarshaller new$() {
+    final $ret = _objc_msgSend_151sglz(_class_AudioMarshaller, _sel_new);
+    return AudioMarshaller.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// Returns a new instance of AudioMarshaller constructed with the default `new` method.
+  AudioMarshaller() : this.as(new$().object$);
+}
+
+extension AudioMarshaller$Methods on AudioMarshaller {
+  /// getBridgeBlock
+  objc.ObjCBlock<ffi.Void Function(AVAudioPCMBuffer, AVAudioTime)>
+  getBridgeBlock() {
+    final $ret = _objc_msgSend_uwvaik(object$.ref.pointer, _sel_getBridgeBlock);
+    return ObjCBlock_ffiVoid_AVAudioPCMBuffer_AVAudioTime.fromPointer(
+      $ret,
+      retain: true,
+      release: true,
+    );
+  }
+
+  /// init
+  AudioMarshaller init() {
+    objc.checkOsVersionInternal(
+      'AudioMarshaller.init',
+      iOS: (false, (2, 0, 0)),
+      macOS: (false, (10, 0, 0)),
+    );
+    final $ret = _objc_msgSend_151sglz(
+      object$.ref.retainAndReturnPointer(),
+      _sel_init,
+    );
+    return AudioMarshaller.fromPointer($ret, retain: false, release: true);
+  }
+
+  /// initWithCallback:
+  AudioMarshaller initWithCallback(
+    objc.ObjCBlock<ffi.Void Function(ffi.Pointer<ffi.Float>, ffi.Long)>
+    dartCallback,
+  ) {
+    final $ret = _objc_msgSend_nnxkei(
+      object$.ref.retainAndReturnPointer(),
+      _sel_initWithCallback_,
+      dartCallback.ref.pointer,
+    );
+    return AudioMarshaller.fromPointer($ret, retain: false, release: true);
+  }
 }

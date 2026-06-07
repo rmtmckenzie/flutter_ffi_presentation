@@ -138,11 +138,11 @@
 //   }
 // }
 
+import 'dart:developer';
 import 'dart:ffi';
 import 'dart:math' as math;
 
 import 'package:mic_ffi/interface.dart';
-import 'package:mic_ffi/src/internal/ios.generated.dart' hide AVAudioTime, AVAudioPCMBuffer;
 import 'package:mic_ffi/src/internal/ios_bindings.generated.dart';
 import 'package:objective_c/objective_c.dart';
 
@@ -162,20 +162,20 @@ class MicIOS implements MicFfi {
   @override
   Future<void> startCapture() async {
     // NativeLibrary.open('package:mic_ffi/mic_ffi');
-    print("OPENING MIC_FFI FRAMEWORK");
-    DynamicLibrary.open('Frameworks/mic_ffi.framework/mic_ffi');
-    print("OPENED MIC_FFI FRAMEWORK");
+    // print("OPENING MIC_FFI FRAMEWORK");
+    // DynamicLibrary.open('Frameworks/mic_ffi.framework/mic_ffi');
+    // print("OPENED MIC_FFI FRAMEWORK");
 
-    await Future.delayed(Duration(seconds: 1));
+    // await Future.delayed(Duration(seconds: 1));
 
-    print("STARTING");
+    log("STARTING");
 
     // 1. Setup our main-thread Dart destination
-    _dartCallable = NativeCallable<Void Function(Pointer<Float>, Long)>.listener(_processAudioBytes);
+    // _dartCallable = NativeCallable<Void Function(Pointer<Float>, Long)>.listener(_processAudioBytes);
+    // _dartMainThreadBlock = ObjCBlock_ffiVoid_ffiFloat_NSInteger.fromFunctionPointer(_dartCallable.nativeFunction);
 
-    _dartMainThreadBlock = ObjCBlock_ffiVoid_ffiFloat_NSInteger.fromFunctionPointer(_dartCallable.nativeFunction);
+    _dartMainThreadBlock = ObjCBlock_ffiVoid_ffiFloat_NSInteger.blocking(_processAudioBytes);
 
-    // _dartMainThreadBlock = ObjCBlock<Void Function(Pointer<Float>, Int)>.(_dartCallable.nativeFunction);
 
     // 2. Request a safe native thread-hopping block from our pure helper utility
     // We pass our Dart function reference into Objective-C
@@ -192,7 +192,7 @@ class MicIOS implements MicFfi {
       0,
       bufferSize: 1024,
       format: inputFormat,
-      block: _marshaller.getBridgeBlock() as ObjCBlock<Void Function(AVAudioPCMBuffer, AVAudioTime)>,
+      block: _marshaller.getBridgeBlock(),
     );
     // inputNode.installTapOnBus_bufferSize_format_block_(0, 1024, inputFormat, _hardwareTapBlock);
     _engine.startAndReturnError();
