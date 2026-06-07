@@ -1,0 +1,16 @@
+# Run with `dart run ffigen --config ffigen.yaml`.
+name: FlutterMonocypherBindings
+description: |
+  Bindings for `src/miniaudio/miniaudio.h`.
+
+  Regenerate bindings with `dart run ffigen --config ffigen.yaml`.
+output: 'lib/src/internal/bindings.generated.dart'
+headers:
+  entry-points:
+    - 'src/miniaudio/miniaudio.h'
+  include-directives:
+    - 'src/miniaudio/miniaudio.h'
+ffi-native:
+comments:
+  style: any
+  length: full

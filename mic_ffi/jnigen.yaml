@@ -1,0 +1,15 @@
+android_sdk_config:
+  add_gradle_deps: true
+  android_example: 'example/'
+
+# The specific Java classes we want to generate Dart code for
+classes:
+  - 'android.media.AudioRecord'
+  - 'android.media.AudioFormat'
+  - 'android.media.MediaRecorder'
+
+# Where to save the generated Dart bindings
+output:
+  dart:
+    path: 'lib/src/internal/android_bindings.generated.dart'
+    structure: 'single_file'
