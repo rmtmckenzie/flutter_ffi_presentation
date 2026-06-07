@@ -12,9 +12,7 @@ abstract class MicFfi {
 
   // 2. The magic factory constructor
   factory MicFfi() {
-    if (_engine == null) {
-      _engine = createMicEngine();
-    }
+    _engine ??= createMicEngine();
     return _engine!;
   }
 }

@@ -52,15 +52,9 @@ flutter:
     platforms:
       ios:
         pluginClass: MicFfiPlugin
-      linux:
-        pluginClass: MicFfiPlugin
-      macos:
-        pluginClass: MicFfiPlugin
-      windows:
-        pluginClass: MicFfiPluginCApi
-      web:
-        pluginClass: MicFfiWeb
-        fileName: mic_ffi_web.dart
+#      web:
+#        pluginClass: MicFfiWeb
+#        fileName: mic_ffi_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
