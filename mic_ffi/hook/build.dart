@@ -21,28 +21,28 @@ void main(List<String> args) async {
       // Do nothing! Let the native build gradle handle.
       return;
     } else if (targetOS == OS.iOS) {
-      print("COMPILING FOR IOS!!!!");
-      // throw("TESTING THAT IT FAILS");
-      // we need to compile the extra files to make things work for ios
-      final cBuilder = CBuilder.library(
-        name: packageName,
-        assetName: 'src/internal/ios.generated.dart',
-        sources: ['src/ios/AudioMarshaller.m', 'src/ios/generated_bindings.m'],
-        frameworks: ['Foundation', 'AVFoundation'],
-        flags: ['-fobjc-arc', '-ObjC'],
-        language: .objectiveC
-      );
-
-      await cBuilder.run(
-        input: input,
-        output: output,
-        logger: Logger('')
-          ..level = .ALL
-          ..onRecord.listen((record) => print(record.message)),
-      );
-
-      print("DONE COMPILING FOR IOS!!");
-
+      // print("COMPILING FOR IOS!!!!");
+      // // throw("TESTING THAT IT FAILS");
+      // // we need to compile the extra files to make things work for ios
+      // final cBuilder = CBuilder.library(
+      //   name: packageName,
+      //   assetName: 'src/internal/ios_bindings.generated.dart',
+      //   sources: ['src/ios/AudioMarshaller.m', 'src/ios/bindings.m'],
+      //   frameworks: ['Foundation', 'AVFoundation'],
+      //   flags: ['-fobjc-arc', '-ObjC'],
+      //   language: .objectiveC
+      // );
+      //
+      // await cBuilder.run(
+      //   input: input,
+      //   output: output,
+      //   logger: Logger('')
+      //     ..level = .ALL
+      //     ..onRecord.listen((record) => print(record.message)),
+      // );
+      //
+      // print("DONE COMPILING FOR IOS!!");
+      return;
     } else {
       // for desktop
       final cBuilder = CBuilder.library(

@@ -1,6 +1,7 @@
 #include <stdint.h>
 #import <Foundation/Foundation.h>
 #import <objc/message.h>
+#import "include/AudioMarshaller.h"
 #import <AVFAudio/AVAudioEngine.h>
 #import <AVFAudio/AVAudioNode.h>
 #import <AVFAudio/AVAudioFormat.h>
@@ -51,25 +52,117 @@ id objc_retainBlock(id);
   };
 
 
+typedef void  (^_ListenerTrampoline)(struct AudioUnitRenderContext * arg0);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline _NativeLibrary_wrapListenerBlock_1208de5(_ListenerTrampoline block) NS_RETURNS_RETAINED {
+  return ^void(struct AudioUnitRenderContext * arg0) {
+    objc_retainBlock(block);
+    block(arg0);
+  };
+}
+
+typedef void  (^_BlockingTrampoline)(void * waiter, struct AudioUnitRenderContext * arg0);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline _NativeLibrary_wrapBlockingBlock_1208de5(
+    _BlockingTrampoline block, _BlockingTrampoline listenerBlock,
+    DOBJC_Context* ctx) NS_RETURNS_RETAINED {
+  BLOCKING_BLOCK_IMPL(ctx, ^void(struct AudioUnitRenderContext * arg0), {
+    objc_retainBlock(block);
+    block(nil, arg0);
+  }, {
+    objc_retainBlock(listenerBlock);
+    listenerBlock(waiter, arg0);
+  });
+}
+
+typedef void  (^_ListenerTrampoline_1)(uint64_t arg0, float arg1);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline_1 _NativeLibrary_wrapListenerBlock_xr8iv0(_ListenerTrampoline_1 block) NS_RETURNS_RETAINED {
+  return ^void(uint64_t arg0, float arg1) {
+    objc_retainBlock(block);
+    block(arg0, arg1);
+  };
+}
+
+typedef void  (^_BlockingTrampoline_1)(void * waiter, uint64_t arg0, float arg1);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline_1 _NativeLibrary_wrapBlockingBlock_xr8iv0(
+    _BlockingTrampoline_1 block, _BlockingTrampoline_1 listenerBlock,
+    DOBJC_Context* ctx) NS_RETURNS_RETAINED {
+  BLOCKING_BLOCK_IMPL(ctx, ^void(uint64_t arg0, float arg1), {
+    objc_retainBlock(block);
+    block(nil, arg0, arg1);
+  }, {
+    objc_retainBlock(listenerBlock);
+    listenerBlock(waiter, arg0, arg1);
+  });
+}
+
+typedef void  (^_ListenerTrampoline_2)(long arg0, struct AURecordedParameterEvent * arg1);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline_2 _NativeLibrary_wrapListenerBlock_6up75b(_ListenerTrampoline_2 block) NS_RETURNS_RETAINED {
+  return ^void(long arg0, struct AURecordedParameterEvent * arg1) {
+    objc_retainBlock(block);
+    block(arg0, arg1);
+  };
+}
+
+typedef void  (^_BlockingTrampoline_2)(void * waiter, long arg0, struct AURecordedParameterEvent * arg1);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline_2 _NativeLibrary_wrapBlockingBlock_6up75b(
+    _BlockingTrampoline_2 block, _BlockingTrampoline_2 listenerBlock,
+    DOBJC_Context* ctx) NS_RETURNS_RETAINED {
+  BLOCKING_BLOCK_IMPL(ctx, ^void(long arg0, struct AURecordedParameterEvent * arg1), {
+    objc_retainBlock(block);
+    block(nil, arg0, arg1);
+  }, {
+    objc_retainBlock(listenerBlock);
+    listenerBlock(waiter, arg0, arg1);
+  });
+}
+
+typedef void  (^_ListenerTrampoline_3)(long arg0, struct AUParameterAutomationEvent * arg1);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline_3 _NativeLibrary_wrapListenerBlock_bqkezo(_ListenerTrampoline_3 block) NS_RETURNS_RETAINED {
+  return ^void(long arg0, struct AUParameterAutomationEvent * arg1) {
+    objc_retainBlock(block);
+    block(arg0, arg1);
+  };
+}
+
+typedef void  (^_BlockingTrampoline_3)(void * waiter, long arg0, struct AUParameterAutomationEvent * arg1);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline_3 _NativeLibrary_wrapBlockingBlock_bqkezo(
+    _BlockingTrampoline_3 block, _BlockingTrampoline_3 listenerBlock,
+    DOBJC_Context* ctx) NS_RETURNS_RETAINED {
+  BLOCKING_BLOCK_IMPL(ctx, ^void(long arg0, struct AUParameterAutomationEvent * arg1), {
+    objc_retainBlock(block);
+    block(nil, arg0, arg1);
+  }, {
+    objc_retainBlock(listenerBlock);
+    listenerBlock(waiter, arg0, arg1);
+  });
+}
+
 typedef BOOL  (^_ProtocolTrampoline)(void * sel);
 __attribute__((visibility("default"))) __attribute__((used))
 BOOL  _NativeLibrary_protocolTrampoline_e3qsqz(id target, void * sel) {
   return ((_ProtocolTrampoline)((id (*)(id, SEL, SEL))objc_msgSend)(target, @selector(getDOBJCDartProtocolMethodForSelector:), sel))(sel);
 }
 
-typedef void  (^_ListenerTrampoline)(void * arg0, id arg1);
+typedef void  (^_ListenerTrampoline_4)(void * arg0, id arg1);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline _NativeLibrary_wrapListenerBlock_18v1jvf(_ListenerTrampoline block) NS_RETURNS_RETAINED {
+_ListenerTrampoline_4 _NativeLibrary_wrapListenerBlock_18v1jvf(_ListenerTrampoline_4 block) NS_RETURNS_RETAINED {
   return ^void(void * arg0, id arg1) {
     objc_retainBlock(block);
     block(arg0, (__bridge id)(__bridge_retained void*)(arg1));
   };
 }
 
-typedef void  (^_BlockingTrampoline)(void * waiter, void * arg0, id arg1);
+typedef void  (^_BlockingTrampoline_4)(void * waiter, void * arg0, id arg1);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline _NativeLibrary_wrapBlockingBlock_18v1jvf(
-    _BlockingTrampoline block, _BlockingTrampoline listenerBlock,
+_ListenerTrampoline_4 _NativeLibrary_wrapBlockingBlock_18v1jvf(
+    _BlockingTrampoline_4 block, _BlockingTrampoline_4 listenerBlock,
     DOBJC_Context* ctx) NS_RETURNS_RETAINED {
   BLOCKING_BLOCK_IMPL(ctx, ^void(void * arg0, id arg1), {
     objc_retainBlock(block);
@@ -92,134 +185,19 @@ id  _NativeLibrary_protocolTrampoline_xr62hr(id target, void * sel, id arg1) {
   return ((_ProtocolTrampoline_2)((id (*)(id, SEL, SEL))objc_msgSend)(target, @selector(getDOBJCDartProtocolMethodForSelector:), sel))(sel, arg1);
 }
 
-typedef void  (^_ListenerTrampoline_1)(struct AudioBufferList * arg0);
+typedef void  (^_ListenerTrampoline_5)(id arg0, float arg1);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_1 _NativeLibrary_wrapListenerBlock_1hqui74(_ListenerTrampoline_1 block) NS_RETURNS_RETAINED {
-  return ^void(struct AudioBufferList * arg0) {
-    objc_retainBlock(block);
-    block(arg0);
-  };
-}
-
-typedef void  (^_BlockingTrampoline_1)(void * waiter, struct AudioBufferList * arg0);
-__attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_1 _NativeLibrary_wrapBlockingBlock_1hqui74(
-    _BlockingTrampoline_1 block, _BlockingTrampoline_1 listenerBlock,
-    DOBJC_Context* ctx) NS_RETURNS_RETAINED {
-  BLOCKING_BLOCK_IMPL(ctx, ^void(struct AudioBufferList * arg0), {
-    objc_retainBlock(block);
-    block(nil, arg0);
-  }, {
-    objc_retainBlock(listenerBlock);
-    listenerBlock(waiter, arg0);
-  });
-}
-
-typedef void  (^_ListenerTrampoline_2)(struct AudioUnitRenderContext * arg0);
-__attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_2 _NativeLibrary_wrapListenerBlock_1208de5(_ListenerTrampoline_2 block) NS_RETURNS_RETAINED {
-  return ^void(struct AudioUnitRenderContext * arg0) {
-    objc_retainBlock(block);
-    block(arg0);
-  };
-}
-
-typedef void  (^_BlockingTrampoline_2)(void * waiter, struct AudioUnitRenderContext * arg0);
-__attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_2 _NativeLibrary_wrapBlockingBlock_1208de5(
-    _BlockingTrampoline_2 block, _BlockingTrampoline_2 listenerBlock,
-    DOBJC_Context* ctx) NS_RETURNS_RETAINED {
-  BLOCKING_BLOCK_IMPL(ctx, ^void(struct AudioUnitRenderContext * arg0), {
-    objc_retainBlock(block);
-    block(nil, arg0);
-  }, {
-    objc_retainBlock(listenerBlock);
-    listenerBlock(waiter, arg0);
-  });
-}
-
-typedef void  (^_ListenerTrampoline_3)(uint64_t arg0, float arg1);
-__attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_3 _NativeLibrary_wrapListenerBlock_xr8iv0(_ListenerTrampoline_3 block) NS_RETURNS_RETAINED {
-  return ^void(uint64_t arg0, float arg1) {
-    objc_retainBlock(block);
-    block(arg0, arg1);
-  };
-}
-
-typedef void  (^_BlockingTrampoline_3)(void * waiter, uint64_t arg0, float arg1);
-__attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_3 _NativeLibrary_wrapBlockingBlock_xr8iv0(
-    _BlockingTrampoline_3 block, _BlockingTrampoline_3 listenerBlock,
-    DOBJC_Context* ctx) NS_RETURNS_RETAINED {
-  BLOCKING_BLOCK_IMPL(ctx, ^void(uint64_t arg0, float arg1), {
-    objc_retainBlock(block);
-    block(nil, arg0, arg1);
-  }, {
-    objc_retainBlock(listenerBlock);
-    listenerBlock(waiter, arg0, arg1);
-  });
-}
-
-typedef void  (^_ListenerTrampoline_4)(long arg0, struct AURecordedParameterEvent * arg1);
-__attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_4 _NativeLibrary_wrapListenerBlock_6up75b(_ListenerTrampoline_4 block) NS_RETURNS_RETAINED {
-  return ^void(long arg0, struct AURecordedParameterEvent * arg1) {
-    objc_retainBlock(block);
-    block(arg0, arg1);
-  };
-}
-
-typedef void  (^_BlockingTrampoline_4)(void * waiter, long arg0, struct AURecordedParameterEvent * arg1);
-__attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_4 _NativeLibrary_wrapBlockingBlock_6up75b(
-    _BlockingTrampoline_4 block, _BlockingTrampoline_4 listenerBlock,
-    DOBJC_Context* ctx) NS_RETURNS_RETAINED {
-  BLOCKING_BLOCK_IMPL(ctx, ^void(long arg0, struct AURecordedParameterEvent * arg1), {
-    objc_retainBlock(block);
-    block(nil, arg0, arg1);
-  }, {
-    objc_retainBlock(listenerBlock);
-    listenerBlock(waiter, arg0, arg1);
-  });
-}
-
-typedef void  (^_ListenerTrampoline_5)(long arg0, struct AUParameterAutomationEvent * arg1);
-__attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_5 _NativeLibrary_wrapListenerBlock_bqkezo(_ListenerTrampoline_5 block) NS_RETURNS_RETAINED {
-  return ^void(long arg0, struct AUParameterAutomationEvent * arg1) {
-    objc_retainBlock(block);
-    block(arg0, arg1);
-  };
-}
-
-typedef void  (^_BlockingTrampoline_5)(void * waiter, long arg0, struct AUParameterAutomationEvent * arg1);
-__attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_5 _NativeLibrary_wrapBlockingBlock_bqkezo(
-    _BlockingTrampoline_5 block, _BlockingTrampoline_5 listenerBlock,
-    DOBJC_Context* ctx) NS_RETURNS_RETAINED {
-  BLOCKING_BLOCK_IMPL(ctx, ^void(long arg0, struct AUParameterAutomationEvent * arg1), {
-    objc_retainBlock(block);
-    block(nil, arg0, arg1);
-  }, {
-    objc_retainBlock(listenerBlock);
-    listenerBlock(waiter, arg0, arg1);
-  });
-}
-
-typedef void  (^_ListenerTrampoline_6)(id arg0, float arg1);
-__attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_6 _NativeLibrary_wrapListenerBlock_142x8lj(_ListenerTrampoline_6 block) NS_RETURNS_RETAINED {
+_ListenerTrampoline_5 _NativeLibrary_wrapListenerBlock_142x8lj(_ListenerTrampoline_5 block) NS_RETURNS_RETAINED {
   return ^void(id arg0, float arg1) {
     objc_retainBlock(block);
     block((__bridge id)(__bridge_retained void*)(arg0), arg1);
   };
 }
 
-typedef void  (^_BlockingTrampoline_6)(void * waiter, id arg0, float arg1);
+typedef void  (^_BlockingTrampoline_5)(void * waiter, id arg0, float arg1);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_6 _NativeLibrary_wrapBlockingBlock_142x8lj(
-    _BlockingTrampoline_6 block, _BlockingTrampoline_6 listenerBlock,
+_ListenerTrampoline_5 _NativeLibrary_wrapBlockingBlock_142x8lj(
+    _BlockingTrampoline_5 block, _BlockingTrampoline_5 listenerBlock,
     DOBJC_Context* ctx) NS_RETURNS_RETAINED {
   BLOCKING_BLOCK_IMPL(ctx, ^void(id arg0, float arg1), {
     objc_retainBlock(block);
@@ -230,19 +208,19 @@ _ListenerTrampoline_6 _NativeLibrary_wrapBlockingBlock_142x8lj(
   });
 }
 
-typedef void  (^_ListenerTrampoline_7)(AudioUnitRenderActionFlags arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3);
+typedef void  (^_ListenerTrampoline_6)(AudioUnitRenderActionFlags arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_7 _NativeLibrary_wrapListenerBlock_1jn8q5n(_ListenerTrampoline_7 block) NS_RETURNS_RETAINED {
+_ListenerTrampoline_6 _NativeLibrary_wrapListenerBlock_1jn8q5n(_ListenerTrampoline_6 block) NS_RETURNS_RETAINED {
   return ^void(AudioUnitRenderActionFlags arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3) {
     objc_retainBlock(block);
     block(arg0, arg1, arg2, arg3);
   };
 }
 
-typedef void  (^_BlockingTrampoline_7)(void * waiter, AudioUnitRenderActionFlags arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3);
+typedef void  (^_BlockingTrampoline_6)(void * waiter, AudioUnitRenderActionFlags arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_7 _NativeLibrary_wrapBlockingBlock_1jn8q5n(
-    _BlockingTrampoline_7 block, _BlockingTrampoline_7 listenerBlock,
+_ListenerTrampoline_6 _NativeLibrary_wrapBlockingBlock_1jn8q5n(
+    _BlockingTrampoline_6 block, _BlockingTrampoline_6 listenerBlock,
     DOBJC_Context* ctx) NS_RETURNS_RETAINED {
   BLOCKING_BLOCK_IMPL(ctx, ^void(AudioUnitRenderActionFlags arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3), {
     objc_retainBlock(block);
@@ -253,19 +231,19 @@ _ListenerTrampoline_7 _NativeLibrary_wrapBlockingBlock_1jn8q5n(
   });
 }
 
-typedef void  (^_ListenerTrampoline_8)(int64_t arg0, uint32_t arg1, uint64_t arg2, float arg3);
+typedef void  (^_ListenerTrampoline_7)(int64_t arg0, uint32_t arg1, uint64_t arg2, float arg3);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_8 _NativeLibrary_wrapListenerBlock_d5qk2g(_ListenerTrampoline_8 block) NS_RETURNS_RETAINED {
+_ListenerTrampoline_7 _NativeLibrary_wrapListenerBlock_d5qk2g(_ListenerTrampoline_7 block) NS_RETURNS_RETAINED {
   return ^void(int64_t arg0, uint32_t arg1, uint64_t arg2, float arg3) {
     objc_retainBlock(block);
     block(arg0, arg1, arg2, arg3);
   };
 }
 
-typedef void  (^_BlockingTrampoline_8)(void * waiter, int64_t arg0, uint32_t arg1, uint64_t arg2, float arg3);
+typedef void  (^_BlockingTrampoline_7)(void * waiter, int64_t arg0, uint32_t arg1, uint64_t arg2, float arg3);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_8 _NativeLibrary_wrapBlockingBlock_d5qk2g(
-    _BlockingTrampoline_8 block, _BlockingTrampoline_8 listenerBlock,
+_ListenerTrampoline_7 _NativeLibrary_wrapBlockingBlock_d5qk2g(
+    _BlockingTrampoline_7 block, _BlockingTrampoline_7 listenerBlock,
     DOBJC_Context* ctx) NS_RETURNS_RETAINED {
   BLOCKING_BLOCK_IMPL(ctx, ^void(int64_t arg0, uint32_t arg1, uint64_t arg2, float arg3), {
     objc_retainBlock(block);
@@ -276,19 +254,19 @@ _ListenerTrampoline_8 _NativeLibrary_wrapBlockingBlock_d5qk2g(
   });
 }
 
-typedef void  (^_ListenerTrampoline_9)(int64_t arg0, uint8_t arg1, long arg2, uint8_t * arg3);
+typedef void  (^_ListenerTrampoline_8)(int64_t arg0, uint8_t arg1, long arg2, uint8_t * arg3);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_9 _NativeLibrary_wrapListenerBlock_1dy5sj5(_ListenerTrampoline_9 block) NS_RETURNS_RETAINED {
+_ListenerTrampoline_8 _NativeLibrary_wrapListenerBlock_1dy5sj5(_ListenerTrampoline_8 block) NS_RETURNS_RETAINED {
   return ^void(int64_t arg0, uint8_t arg1, long arg2, uint8_t * arg3) {
     objc_retainBlock(block);
     block(arg0, arg1, arg2, arg3);
   };
 }
 
-typedef void  (^_BlockingTrampoline_9)(void * waiter, int64_t arg0, uint8_t arg1, long arg2, uint8_t * arg3);
+typedef void  (^_BlockingTrampoline_8)(void * waiter, int64_t arg0, uint8_t arg1, long arg2, uint8_t * arg3);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_9 _NativeLibrary_wrapBlockingBlock_1dy5sj5(
-    _BlockingTrampoline_9 block, _BlockingTrampoline_9 listenerBlock,
+_ListenerTrampoline_8 _NativeLibrary_wrapBlockingBlock_1dy5sj5(
+    _BlockingTrampoline_8 block, _BlockingTrampoline_8 listenerBlock,
     DOBJC_Context* ctx) NS_RETURNS_RETAINED {
   BLOCKING_BLOCK_IMPL(ctx, ^void(int64_t arg0, uint8_t arg1, long arg2, uint8_t * arg3), {
     objc_retainBlock(block);
@@ -299,19 +277,19 @@ _ListenerTrampoline_9 _NativeLibrary_wrapBlockingBlock_1dy5sj5(
   });
 }
 
-typedef void  (^_ListenerTrampoline_10)(uint8_t arg0, uint8_t arg1, id arg2, BOOL arg3);
+typedef void  (^_ListenerTrampoline_9)(uint8_t arg0, uint8_t arg1, id arg2, BOOL arg3);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_10 _NativeLibrary_wrapListenerBlock_17t6k8t(_ListenerTrampoline_10 block) NS_RETURNS_RETAINED {
+_ListenerTrampoline_9 _NativeLibrary_wrapListenerBlock_17t6k8t(_ListenerTrampoline_9 block) NS_RETURNS_RETAINED {
   return ^void(uint8_t arg0, uint8_t arg1, id arg2, BOOL arg3) {
     objc_retainBlock(block);
     block(arg0, arg1, (__bridge id)(__bridge_retained void*)(arg2), arg3);
   };
 }
 
-typedef void  (^_BlockingTrampoline_10)(void * waiter, uint8_t arg0, uint8_t arg1, id arg2, BOOL arg3);
+typedef void  (^_BlockingTrampoline_9)(void * waiter, uint8_t arg0, uint8_t arg1, id arg2, BOOL arg3);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_10 _NativeLibrary_wrapBlockingBlock_17t6k8t(
-    _BlockingTrampoline_10 block, _BlockingTrampoline_10 listenerBlock,
+_ListenerTrampoline_9 _NativeLibrary_wrapBlockingBlock_17t6k8t(
+    _BlockingTrampoline_9 block, _BlockingTrampoline_9 listenerBlock,
     DOBJC_Context* ctx) NS_RETURNS_RETAINED {
   BLOCKING_BLOCK_IMPL(ctx, ^void(uint8_t arg0, uint8_t arg1, id arg2, BOOL arg3), {
     objc_retainBlock(block);
@@ -322,19 +300,19 @@ _ListenerTrampoline_10 _NativeLibrary_wrapBlockingBlock_17t6k8t(
   });
 }
 
-typedef void  (^_ListenerTrampoline_11)(AudioUnitRenderActionFlags * arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3);
+typedef void  (^_ListenerTrampoline_10)(AudioUnitRenderActionFlags * arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_11 _NativeLibrary_wrapListenerBlock_18q2rn5(_ListenerTrampoline_11 block) NS_RETURNS_RETAINED {
+_ListenerTrampoline_10 _NativeLibrary_wrapListenerBlock_18q2rn5(_ListenerTrampoline_10 block) NS_RETURNS_RETAINED {
   return ^void(AudioUnitRenderActionFlags * arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3) {
     objc_retainBlock(block);
     block(arg0, arg1, arg2, arg3);
   };
 }
 
-typedef void  (^_BlockingTrampoline_11)(void * waiter, AudioUnitRenderActionFlags * arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3);
+typedef void  (^_BlockingTrampoline_10)(void * waiter, AudioUnitRenderActionFlags * arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3);
 __attribute__((visibility("default"))) __attribute__((used))
-_ListenerTrampoline_11 _NativeLibrary_wrapBlockingBlock_18q2rn5(
-    _BlockingTrampoline_11 block, _BlockingTrampoline_11 listenerBlock,
+_ListenerTrampoline_10 _NativeLibrary_wrapBlockingBlock_18q2rn5(
+    _BlockingTrampoline_10 block, _BlockingTrampoline_10 listenerBlock,
     DOBJC_Context* ctx) NS_RETURNS_RETAINED {
   BLOCKING_BLOCK_IMPL(ctx, ^void(AudioUnitRenderActionFlags * arg0, struct AudioTimeStamp * arg1, uint32_t arg2, long arg3), {
     objc_retainBlock(block);
@@ -342,6 +320,29 @@ _ListenerTrampoline_11 _NativeLibrary_wrapBlockingBlock_18q2rn5(
   }, {
     objc_retainBlock(listenerBlock);
     listenerBlock(waiter, arg0, arg1, arg2, arg3);
+  });
+}
+
+typedef void  (^_ListenerTrampoline_11)(struct AudioBufferList * arg0);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline_11 _NativeLibrary_wrapListenerBlock_1hqui74(_ListenerTrampoline_11 block) NS_RETURNS_RETAINED {
+  return ^void(struct AudioBufferList * arg0) {
+    objc_retainBlock(block);
+    block(arg0);
+  };
+}
+
+typedef void  (^_BlockingTrampoline_11)(void * waiter, struct AudioBufferList * arg0);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline_11 _NativeLibrary_wrapBlockingBlock_1hqui74(
+    _BlockingTrampoline_11 block, _BlockingTrampoline_11 listenerBlock,
+    DOBJC_Context* ctx) NS_RETURNS_RETAINED {
+  BLOCKING_BLOCK_IMPL(ctx, ^void(struct AudioBufferList * arg0), {
+    objc_retainBlock(block);
+    block(nil, arg0);
+  }, {
+    objc_retainBlock(listenerBlock);
+    listenerBlock(waiter, arg0);
   });
 }
 
@@ -570,6 +571,29 @@ typedef void  (^_ProtocolTrampoline_13)(void * sel, struct AVAudio3DPoint arg1);
 __attribute__((visibility("default"))) __attribute__((used))
 void  _NativeLibrary_protocolTrampoline_1sk3k4k(id target, void * sel, struct AVAudio3DPoint arg1) {
   return ((_ProtocolTrampoline_13)((id (*)(id, SEL, SEL))objc_msgSend)(target, @selector(getDOBJCDartProtocolMethodForSelector:), sel))(sel, arg1);
+}
+
+typedef void  (^_ListenerTrampoline_19)(float * arg0, long arg1);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline_19 _NativeLibrary_wrapListenerBlock_aiz4t(_ListenerTrampoline_19 block) NS_RETURNS_RETAINED {
+  return ^void(float * arg0, long arg1) {
+    objc_retainBlock(block);
+    block(arg0, arg1);
+  };
+}
+
+typedef void  (^_BlockingTrampoline_19)(void * waiter, float * arg0, long arg1);
+__attribute__((visibility("default"))) __attribute__((used))
+_ListenerTrampoline_19 _NativeLibrary_wrapBlockingBlock_aiz4t(
+    _BlockingTrampoline_19 block, _BlockingTrampoline_19 listenerBlock,
+    DOBJC_Context* ctx) NS_RETURNS_RETAINED {
+  BLOCKING_BLOCK_IMPL(ctx, ^void(float * arg0, long arg1), {
+    objc_retainBlock(block);
+    block(nil, arg0, arg1);
+  }, {
+    objc_retainBlock(listenerBlock);
+    listenerBlock(waiter, arg0, arg1);
+  });
 }
 #undef BLOCKING_BLOCK_IMPL
 

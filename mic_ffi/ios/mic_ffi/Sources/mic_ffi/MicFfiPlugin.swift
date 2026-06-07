@@ -1,6 +1,6 @@
 import Flutter
 import UIKit
-// import mic_ffi_objc
+import mic_ffi_objc
 
 public class MicFfiPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
@@ -8,10 +8,10 @@ public class MicFfiPlugin: NSObject, FlutterPlugin {
     let instance = MicFfiPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
 
-//     AudioMarshaller.init { pointer, int in
-//       // do nothing.
-//       print("Marshalled")
-//     }
+    AudioMarshaller.init { pointer, int in
+      // do nothing.
+      print("Marshalled")
+    }
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {

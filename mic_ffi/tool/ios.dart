@@ -24,7 +24,8 @@ final config = FfiGenerator(
   ),
   output: Output(
     dartFile: Uri.file('lib/src/internal/ios_bindings.generated.dart'),
-    objectiveCFile: Uri.file('ios/mic_ffi/Sources/mic_ffi_objc/bindings.m')
+    objectiveCFile: Uri.file('ios/mic_ffi/Sources/mic_ffi_objc/bindings.m'),
+    // style: NativeExternalBindings(),
     // objectiveCFile: Uri.file('src/ios/generated_bindings.m'),
   ),
 );
@@ -46,5 +47,4 @@ final config = FfiGenerator(
 
 void main() {
   config.generate();
-  // configMarshaller.generate();
 }

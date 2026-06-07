@@ -154,7 +154,7 @@ class MicIOS implements MicFfi {
   late final AVAudioEngine _engine;
   late final AudioMarshaller _marshaller; // Instantiated from pure ObjC bindings!
 
-  late final NativeCallable<Void Function(Pointer<Float>, Long)> _dartCallable;
+  // late final NativeCallable<Void Function(Pointer<Float>, Long)> _dartCallable;
   late final ObjCBlock<Void Function(Pointer<Float>, Long)> _dartMainThreadBlock;
 
   double _currentVolume = 0.0;
@@ -206,6 +206,7 @@ class MicIOS implements MicFfi {
       sumOfSquares += rawFloatBuffer[i] * rawFloatBuffer[i];
     }
     _currentVolume = math.sqrt(sumOfSquares / frameCount);
+    log("Processing audio block: $_currentVolume");
   }
 
   @override
@@ -215,7 +216,7 @@ class MicIOS implements MicFfi {
   Future<void> stopCapture() {
     _engine.inputNode.removeTapOnBus(0);
     _engine.stop();
-    _dartCallable.close();
+    // _dartCallable.close();
     _currentVolume = 0.0;
     _marshaller.dealloc();
 
