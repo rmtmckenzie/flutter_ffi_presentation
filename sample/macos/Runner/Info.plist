@@ -28,5 +28,7 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This application needs access to the microphone to analyze and visualize audio telemetry in real time.</string>
 </dict>
 </plist>

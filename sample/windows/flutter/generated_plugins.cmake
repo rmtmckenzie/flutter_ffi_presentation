@@ -3,9 +3,12 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  permission_plus_windows
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
+  jni
+  mic_ffi
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)

@@ -22,3 +22,5 @@ build/
 # *.dylib
 # *.so
 # *.dll
+# Widget Preview related
+.widget_preview/

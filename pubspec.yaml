@@ -6,3 +6,4 @@ workspace:
   - presentation
   - sample
   - mic_ffi
+  - process

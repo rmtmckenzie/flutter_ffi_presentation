@@ -8,7 +8,6 @@ import 'dart:typed_data';
 import 'package:mic_ffi/interface.dart';
 import 'dart:async';
 import 'dart:js_interop'; // Required for modern JS interop types
-import 'dart:math' as math;
 import 'package:web/web.dart' as web; // The official modern web interop package
 
 MicFfi createMicEngine() {
@@ -23,8 +22,11 @@ class WebMicEngine implements MicFfi {
 
   // Float32List is automatically mapped to JS Float32Array under the hood
   late Float32List _timeDomainBuffer;
-  double _currentVolume = 0.0;
+  final StreamController<Float32List> _streamController = StreamController.broadcast();
   Timer? _pollingTimer;
+
+  @override
+  Stream<Float32List> stream() => _streamController.stream;
 
   @override
   Future<void> startCapture() async {
@@ -56,30 +58,19 @@ class WebMicEngine implements MicFfi {
 
     // 5. Start a periodic timer to poll the audio stream (e.g., every 16ms for 60FPS updates)
     _pollingTimer = Timer.periodic(const Duration(milliseconds: 16), (_) {
-      _calculateWebVolume();
+      _pollAudio();
     });
   }
 
-  void _calculateWebVolume() {
+  void _pollAudio() {
     if (_analyserNode == null) return;
 
     // Grab the live waveform data from the browser's native audio buffer.
     // The jsify() layer handles passing our Dart Float32List directly to the JS engine.
     _analyserNode!.getFloatTimeDomainData(_timeDomainBuffer.toJS);
 
-    // Perform your standard, lightning-fast RMS math loop right over the floats
-    double sumOfSquares = 0.0;
-    for (int i = 0; i < _timeDomainBuffer.length; i++) {
-      // getByteTimeDomainData normalizes wave values around 128 (8-bit center)
-      final double normalizedSample = (_timeDomainBuffer[i] - 128.0) / 128.0;
-      sumOfSquares += normalizedSample * normalizedSample;
-    }
-
-    _currentVolume = math.sqrt(sumOfSquares / _timeDomainBuffer.length);
+    _streamController.add(Float32List.fromList(_timeDomainBuffer));
   }
-
-  @override
-  double get volume => _currentVolume;
 
   @override
   Future<void> stopCapture() async {
@@ -101,6 +92,5 @@ class WebMicEngine implements MicFfi {
     _mediaStream = null;
     _audioContext = null;
     _analyserNode = null;
-    _currentVolume = 0.0;
   }
 }

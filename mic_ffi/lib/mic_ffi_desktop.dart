@@ -1,36 +1,28 @@
 import 'dart:async';
 import 'dart:ffi';
+import 'dart:typed_data';
 
 import 'package:ffi/ffi.dart';
 import 'package:mic_ffi/mic_ffi.dart';
 import 'package:mic_ffi/src/internal/bindings.generated.dart';
-import 'package:mic_ffi/temp.dart';
 
 class DesktopMicEngine implements MicFfi {
-  final StreamController<double> _stream = StreamController.broadcast();
-  double _currentVolume = 0;
-
+  final StreamController<Float32List> _stream = StreamController.broadcast();
   Pointer<ma_device>? _device;
 
   // This runs safely on your Dart UI event loop!
   // note that there is a _slight_ delay here due to it being
-  // passed to the event loop - it could be slightly faster to
-  // do the calculations in the c side of things.
+  // passed to the event loop
   void _dartAudioCallback(Pointer<ma_device> pDevice, Pointer<Void> pOutput, Pointer<Void> pInput, int frameCount) {
     if (pInput == nullptr) return;
 
-    // Cast raw pointer to extract your float array data
     final Pointer<Float> samples = pInput.cast<Float>();
-    // if we want to copy these out, make sure to copy safely
-    //
-    // (Since channels = 1, total samples = frameCount * 1)
-    //final Float32List audioSamples = sampleBuffer.asTypedList(frameCount);
-    // final sampleCopy = Float32List.fromList(audioSamples);
 
-    final volume = calculateFloatRMS(samples, frameCount);
+    final Float32List audioSamples = samples.asTypedList(frameCount);
+    // copy the sample to a buffer for safety
+    final sampleCopy = Float32List.fromList(audioSamples);
 
-    _currentVolume = volume;
-    _stream.add(volume);
+    _stream.add(sampleCopy);
   }
 
   @override
@@ -74,9 +66,7 @@ class DesktopMicEngine implements MicFfi {
   }
 
   @override
-  double get volume => _currentVolume;
-
-  Stream<double> stream() => _stream.stream;
+  Stream<Float32List> stream() => _stream.stream;
 
   @override
   Future<void> stopCapture() {
@@ -84,18 +74,11 @@ class DesktopMicEngine implements MicFfi {
     if (device == null || device == nullptr) {
       return Future.syncValue(null);
     }
-    // 1. Stop the audio hardware thread from capturing samples
     ma_device_stop(device);
-
-    // 2. Uninitialize the device internals (closes OS audio streams, frees internal ring buffers)
     ma_device_uninit(device);
-
-    // 3. Free the C-heap memory allocated for the struct itself
     calloc.free(device);
 
     _device = null;
-    _currentVolume= 0;
-
     return Future.syncValue(null);
   }
 }

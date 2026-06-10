@@ -1,5 +1,4 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mic_ffi/mic_ffi.dart';
 import 'package:mic_ffi/mic_ffi_platform_interface.dart';
 import 'package:mic_ffi/mic_ffi_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
@@ -19,7 +18,7 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    MicFfi micFfiPlugin = MicFfi();
+    // MicFfi micFfiPlugin = MicFfi();
     MockMicFfiPlatform fakePlatform = MockMicFfiPlatform();
     MicFfiPlatform.instance = fakePlatform;
 

@@ -1,11 +1,11 @@
 // 1. Define the platform-agnostic interface
-import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:mic_ffi/mic_ffi.dart';
 
 abstract class MicFfi {
   Future<void> startCapture();
-  double get volume;
+  Stream<Float32List> stream();
   Future<void> stopCapture();
 
   static MicFfi? _engine;

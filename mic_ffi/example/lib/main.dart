@@ -64,7 +64,7 @@ class _MyAppState extends State<MyApp> {
             OutlinedButton(
               onPressed: () {
                 setState(() {
-                  volume = _micFfiPlugin.volume;
+                  // volume = _micFfiPlugin.volume;
                 });
               },
               child: Text("Get Volume"),
