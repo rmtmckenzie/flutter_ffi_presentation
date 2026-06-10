@@ -1,6 +1,6 @@
 import 'dart:math' as math;
+import 'package:audio_process/src/widgets/visualizer_data.dart';
 import 'package:flutter/material.dart';
-import 'visualizer_data.dart';
 
 class PitchPainter extends CustomPainter {
   final ValueNotifier<VisualizerData> dataNotifier;

@@ -1,5 +1,6 @@
 import 'dart:math' as math;
-import 'package:audio_process/audio_process.dart';
+
+import 'package:audio_process/src/audio_telemetry.dart';
 
 class VisualizerData {
   final AudioTelemetry? telemetry;

@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:isolate';
 import 'dart:typed_data';
 
-import 'audio_processor_worker.dart';
-import 'audio_telemetry.dart';
+import 'package:audio_process/src/audio_processor_worker.dart';
+import 'package:audio_process/src/audio_telemetry.dart';
 
 class AudioPipeline {
   Isolate? _processorIsolate;
@@ -34,11 +34,7 @@ class AudioPipeline {
 
     _processorIsolate = await Isolate.spawn(
       spawnEntry,
-      AudioProcessorWorkerInput(
-        _uiReceivePort!.sendPort,
-        updateInterval,
-        noiseGateDb: noiseGateDb,
-      ),
+      AudioProcessorWorkerInput(_uiReceivePort!.sendPort, updateInterval, noiseGateDb: noiseGateDb),
     );
   }
 

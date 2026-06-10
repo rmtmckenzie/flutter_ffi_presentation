@@ -1,6 +1,6 @@
 import 'dart:math' as math;
+import 'package:audio_process/src/widgets/visualizer_data.dart';
 import 'package:flutter/material.dart';
-import 'visualizer_data.dart';
 
 class VolumePainter extends CustomPainter {
   final ValueNotifier<VisualizerData> dataNotifier;
@@ -16,8 +16,10 @@ class VolumePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final double volume = dataNotifier.value.telemetry?.volume ?? 0.0;
-    // Scale and clamp volume slightly to make it visualy responsive even to lower noises
-    final double normalizedVolume = (volume * 1.5).clamp(0.0, 1.0);
+    final double db = volume > 0.0000001
+        ? (90.0 + 20.0 * (math.log(volume) / math.ln10)).clamp(0.0, 120.0)
+        : 0.0;
+    final double normalizedVolume = db / 120.0;
 
     final double center = size.width / 2;
     final double radius = (size.width - 16) / 2; // leave padding for stroke widths

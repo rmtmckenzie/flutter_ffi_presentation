@@ -2,20 +2,17 @@ import 'dart:async';
 import 'dart:isolate';
 import 'dart:math' as math;
 import 'dart:typed_data';
+
+import 'package:audio_process/src/audio_telemetry.dart';
+import 'package:audio_process/src/pitch_ring_buffer.dart';
 import 'package:fftea/fftea.dart'; // High-performance FFT framework
-import 'audio_telemetry.dart';
-import 'pitch_ring_buffer.dart';
 
 class AudioProcessorWorkerInput {
   final SendPort uiSendPort;
   final Duration interval;
   final double noiseGateDb;
 
-  AudioProcessorWorkerInput(
-    this.uiSendPort,
-    this.interval, {
-    this.noiseGateDb = 35.0,
-  });
+  AudioProcessorWorkerInput(this.uiSendPort, this.interval, {this.noiseGateDb = 35.0});
 }
 
 class AudioProcessorWorker {
@@ -26,7 +23,7 @@ class AudioProcessorWorker {
 
   // Configurable size for FFT analysis (Must be a power of 2 for maximum FFTEA speed)
   static const int fftSize = 1024;
-  
+
   // Historical Ring Buffer: Large enough to handle overlap and smooth visualizations
   static const int ringBufferSize = 4096;
   final Float32List _ringBuffer = Float32List(ringBufferSize);
@@ -36,7 +33,7 @@ class AudioProcessorWorker {
   // FFTEA Engine setup
   late final FFT _fft;
   late final Timer _ticker;
-  
+
   AudioTelemetry? _lastTelemetry;
 
   // Pitch tracking stabilization and filtering state
@@ -44,14 +41,10 @@ class AudioProcessorWorker {
   static const int _medianWindowSize = 3;
   late final PitchRingBuffer _pitchBuffer = PitchRingBuffer(_medianWindowSize);
 
-  AudioProcessorWorker(
-    this._uiSendPort,
-    Duration updateInterval, {
-    this.noiseGateDb = 35.0,
-  }) {
+  AudioProcessorWorker(this._uiSendPort, Duration updateInterval, {this.noiseGateDb = 35.0}) {
     _noiseGateThreshold = math.pow(10.0, (noiseGateDb - 90.0) / 20.0).toDouble();
     _fft = FFT(fftSize);
-    
+
     // Hand our command incoming port back to the UI thread
     _uiSendPort.send(_commandPort.sendPort);
 
@@ -70,11 +63,7 @@ class AudioProcessorWorker {
 
   /// Entry point invoked by Isolate.spawn
   static void spawnEntry(AudioProcessorWorkerInput input) {
-    AudioProcessorWorker(
-      input.uiSendPort,
-      input.interval,
-      noiseGateDb: input.noiseGateDb,
-    );
+    AudioProcessorWorker(input.uiSendPort, input.interval, noiseGateDb: input.noiseGateDb);
   }
 
   /// Thread-safe thread append step for variable chunk packets
@@ -96,7 +85,7 @@ class AudioProcessorWorker {
     // 1. Extract a sequential linear array window reading backwards from our write index
     final Float32List analysisWindow = Float32List(fftSize);
     int readIndex = (_writeIndex - fftSize + ringBufferSize) % ringBufferSize;
-    
+
     for (int i = 0; i < fftSize; i++) {
       analysisWindow[i] = _ringBuffer[readIndex];
       readIndex = (readIndex + 1) % ringBufferSize;
@@ -140,7 +129,7 @@ class AudioProcessorWorker {
       }
 
       rawPitch = (zeroCrossings * 44100) / (2 * fftSize);
-      
+
       // Limit to standard human pitch ranges to reject extreme outlier spikes
       if (rawPitch < 50.0 || rawPitch > 2000.0) {
         rawPitch = 0.0;
@@ -151,7 +140,7 @@ class AudioProcessorWorker {
     if (rawPitch > 0.0) {
       // 2. Median filter: eliminate transient pitch spike outliers
       _pitchBuffer.add(rawPitch);
-      
+
       final List<double> values = _pitchBuffer.toList();
       values.sort();
       final double medianPitch = values[values.length ~/ 2];

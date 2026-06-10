@@ -20,6 +20,9 @@ dependencies:
   google_fonts: ^8.1.0
   flutter_deck_ws_client: ^0.3.0
   dart_frog: ^1.2.6
+  # local deps
+  mic_ffi: any
+  audio_process: any
 
 dev_dependencies:
   flutter_test:

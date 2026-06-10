@@ -1,5 +1,5 @@
+import 'package:audio_process/src/widgets/visualizer_data.dart';
 import 'package:flutter/material.dart';
-import 'visualizer_data.dart';
 
 class SpectrumPainter extends CustomPainter {
   final ValueNotifier<VisualizerData> dataNotifier;
@@ -56,10 +56,7 @@ class SpectrumPainter extends CustomPainter {
         end: Alignment.topCenter,
       ).createShader(Rect.fromLTWH(x, y, barWidth, drawHeight));
 
-      final rrect = RRect.fromRectAndRadius(
-        Rect.fromLTWH(x, y, barWidth, drawHeight),
-        const Radius.circular(2.0),
-      );
+      final rrect = RRect.fromRectAndRadius(Rect.fromLTWH(x, y, barWidth, drawHeight), const Radius.circular(2.0));
       canvas.drawRRect(rrect, rectPaint);
     }
   }

@@ -1,6 +1,6 @@
+import 'package:audio_process/audio_process.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
-import 'package:flutter_ffi_presentation/components/signing.dart';
 import 'package:flutter_ffi_presentation/components/slide.dart';
 
 class HowToUseResult extends SlideWidget {
@@ -14,8 +14,6 @@ class HowToUseResult extends SlideWidget {
 
   @override
   Widget buildBody(BuildContext context) {
-    return Center(
-      child: Signing(),
-    );
+    return Center(child: AudioTelemetryView());
   }
 }

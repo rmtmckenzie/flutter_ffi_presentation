@@ -22,7 +22,9 @@ class PitchRingBuffer {
   }
 
   int get length => _size;
+
   bool get isEmpty => _size == 0;
+
   bool get isFull => _size == capacity;
 
   List<double> toList() {

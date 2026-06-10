@@ -4,7 +4,6 @@ import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_ffi_presentation/components/default_text.dart';
 import 'package:flutter_ffi_presentation/components/helpers.dart';
 import 'package:flutter_ffi_presentation/components/slide.dart';
-import 'package:flutter_ffi_presentation/components/title_row.dart';
 
 class WhatIsFfi extends SlideWidget {
   const WhatIsFfi({super.key})
@@ -35,11 +34,7 @@ class WhatIsFfi extends SlideWidget {
             ),
           ),
         ),
-        Expanded(
-          child: Image.asset(
-            "assets/what/${bright.name}.png",
-          ),
-        ),
+        Expanded(child: Image.asset("assets/what/${bright.name}.png")),
       ],
     );
   }

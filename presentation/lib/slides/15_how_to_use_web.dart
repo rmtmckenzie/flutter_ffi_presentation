@@ -1,8 +1,6 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_ffi_presentation/components/slide.dart';
-import 'package:flutter_ffi_presentation/components/title_row.dart';
 
 const allocation = """
 #include "monocypher/monocypher.c"
@@ -203,20 +201,26 @@ class HowToUseWeb extends SlideWidget {
   @override
   Widget buildBody(BuildContext context) {
     return Center(
-      child: FlutterDeckSlideStepsBuilder(builder: (context, step) {
-        switch(step) {
-          case 1:
-            return FlutterDeckCodeHighlight(code: buildWasm, fileName: "build_wasm.dart", textStyle: TextStyle(fontSize: 14));
-          case 2:
-            return FlutterDeckCodeHighlight(code: allocation, fileName: "wasm.c", textStyle: TextStyle(fontSize: 14));
-          case 3:
-            return FlutterDeckCodeHighlight(code: load,textStyle: TextStyle(fontSize: 16));
-          case 4:
-            return FlutterDeckCodeHighlight(code: impl);
-          default:
-            return SizedBox();
-        }
-      }),
+      child: FlutterDeckSlideStepsBuilder(
+        builder: (context, step) {
+          switch (step) {
+            case 1:
+              return FlutterDeckCodeHighlight(
+                code: buildWasm,
+                fileName: "build_wasm.dart",
+                textStyle: TextStyle(fontSize: 14),
+              );
+            case 2:
+              return FlutterDeckCodeHighlight(code: allocation, fileName: "wasm.c", textStyle: TextStyle(fontSize: 14));
+            case 3:
+              return FlutterDeckCodeHighlight(code: load, textStyle: TextStyle(fontSize: 16));
+            case 4:
+              return FlutterDeckCodeHighlight(code: impl);
+            default:
+              return SizedBox();
+          }
+        },
+      ),
     );
   }
 }
