@@ -204,9 +204,7 @@ class _SigningScreenState extends State<SigningScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Expanded(
-          child: _buildKeyManagementCard(),
-        ),
+        Expanded(child: _buildKeyManagementCard()),
         Expanded(child: _buildSigningCard()),
         Expanded(child: _buildVerificationCard()),
       ],

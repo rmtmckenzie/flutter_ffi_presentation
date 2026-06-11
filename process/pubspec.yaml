@@ -13,7 +13,7 @@ dependencies:
   flutter:
     sdk: flutter
   mic_ffi: ^0.0.1
-  permission_plus: ^0.1.0
+  permission_plus: ^1.0.0
 
 dev_dependencies:
   flutter_test:

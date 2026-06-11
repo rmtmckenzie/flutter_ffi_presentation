@@ -23,6 +23,8 @@ dependencies:
   # local deps
   mic_ffi: any
   audio_process: any
+  pretty_qr_code: ^3.6.0
+  flutter_deck_pdf_export: ^0.2.0
 
 dev_dependencies:
   flutter_test:

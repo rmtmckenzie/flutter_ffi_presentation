@@ -33,16 +33,17 @@ dev_dependencies:
   jnigen: ^0.16.0
   swiftgen: ^0.1.2
 
-flutter:
-  plugin:
-    platforms:
-      android:
-        ffiPlugin: true
-      ios:
-        ffiPlugin: true
-      linux:
-        ffiPlugin: true
-      macos:
-        ffiPlugin: true
-      windows:
-        ffiPlugin: true
+#
+#flutter:
+#  plugin:
+#    platforms:
+#      android:
+#        ffiPlugin: true
+#      ios:
+#        ffiPlugin: true
+#      linux:
+#        ffiPlugin: true
+#      macos:
+#        ffiPlugin: true
+#      windows:
+#        ffiPlugin: true

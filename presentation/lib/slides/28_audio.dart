@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_ffi_presentation/components/slide.dart';
 
-class FfiResult extends SlideWidget {
-  const FfiResult({super.key})
-    : super(
-        configuration: const FlutterDeckSlideConfiguration(
-          route: "/ffi-result",
-          header: FlutterDeckHeaderConfiguration(title: "FFI Microphone - Result"),
-        ),
-      );
+class AudioAgain extends SlideWidget {
+  const AudioAgain({super.key})
+      : super(
+    configuration: const FlutterDeckSlideConfiguration(
+      route: "/audio",
+      header: FlutterDeckHeaderConfiguration(title: "FFI Microphone (again)"),
+    ),
+  );
 
   @override
   Widget buildBody(BuildContext context) {

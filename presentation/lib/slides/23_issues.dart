@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
-import 'package:flutter_ffi_presentation/components/bullet_list.dart';
+import 'package:flutter_ffi_presentation/components/list_column.dart';
 import 'package:flutter_ffi_presentation/components/slide.dart';
 
 class IssuesSlide extends SlideWidget {
@@ -26,7 +26,7 @@ class IssuesSlide extends SlideWidget {
         ],
       ),
       ListItem(
-         "Still having multiple copies of audio",
+         "Multiple copies of audio",
         subItems: [
           ListItem( "iOS Background Thread -> main, main -> processing"),
           ListItem( "android background thread -> processing"),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
-import 'package:flutter_ffi_presentation/components/bullet_list.dart';
+import 'package:flutter_ffi_presentation/components/list_column.dart';
 import 'package:flutter_ffi_presentation/components/slide.dart';
 
 const ffigenCode = """
@@ -117,7 +117,7 @@ class HowToUseCompiling extends SlideWidget {
                     return FlutterDeckCodeHighlight(
                       code: buildCode,
                       language: 'dart',
-                      fileName: "build.yaml",
+                      fileName: "build.dart",
                       textStyle: TextStyle(fontSize: 15),
                     );
                   default:

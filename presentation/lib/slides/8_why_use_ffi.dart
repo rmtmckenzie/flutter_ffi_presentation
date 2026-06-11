@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_ffi_presentation/components/slide.dart';
 import 'package:flutter_ffi_presentation/components/text_column.dart';
-import 'package:flutter_ffi_presentation/components/title_row.dart';
 
 class WhyUseFfi extends SlideWidget {
   const WhyUseFfi({super.key})

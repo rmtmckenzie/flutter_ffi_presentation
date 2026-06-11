@@ -1,9 +1,6 @@
-import 'dart:developer';
-
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
-
 
 class SlideHeader extends StatelessWidget {
   const SlideHeader({super.key, required this.padding});

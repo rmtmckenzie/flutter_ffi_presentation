@@ -2,7 +2,6 @@ import 'dart:io';
 import 'package:jnigen/jnigen.dart';
 
 void main() async {
-
   final config = Config(
     androidSdkConfig: AndroidSdkConfig(
       addGradleDeps: true,
@@ -26,7 +25,7 @@ void main() async {
   try {
     await generateJniBindings(config);
   } catch (e) {
-    stderr.writeln('❌ JNIGen generation failed: $e');
+    stderr.writeln('JNIGen generation failed: $e');
     exit(1);
   }
 }

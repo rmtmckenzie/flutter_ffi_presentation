@@ -8,6 +8,8 @@
 .pub/
 build/
 
+builds/
+
 # Exception: Allow the workspace to track its project definition if needed
 !.dart_tool/package_config.json
 
@@ -24,3 +26,5 @@ build/
 # *.dll
 # Widget Preview related
 .widget_preview/
+
+**/.DS_Store

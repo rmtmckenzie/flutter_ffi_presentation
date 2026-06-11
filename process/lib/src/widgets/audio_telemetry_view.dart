@@ -12,8 +12,20 @@ import 'package:flutter/material.dart';
 import 'package:mic_ffi/mic_ffi.dart';
 import 'package:permission_plus/permission_plus.dart';
 
+enum AudioTelemetryLayout {
+  responsive,
+  grid2x2,
+  grid4x1,
+  grid1x4,
+}
+
 class AudioTelemetryView extends StatefulWidget {
-  const AudioTelemetryView({super.key});
+  final AudioTelemetryLayout layout;
+
+  const AudioTelemetryView({
+    super.key,
+    this.layout = AudioTelemetryLayout.responsive,
+  });
 
   @override
   State<AudioTelemetryView> createState() => _AudioTelemetryViewState();
@@ -111,6 +123,7 @@ class _AudioTelemetryViewState extends State<AudioTelemetryView> with SingleTick
   }
 
   Future<void> _stopCapture() async {
+    //TODO: clean up the disposal code
     try {
       await _micFfi.stopCapture();
     } catch (e) {
@@ -209,18 +222,68 @@ class _AudioTelemetryViewState extends State<AudioTelemetryView> with SingleTick
 
         // Main Dashboard Grid Layout
         Expanded(
-          child: GridView.count(
-            crossAxisCount: isDesktop ? 2 : 1,
-            childAspectRatio: isDesktop ? 1.4 : 1.75,
-            crossAxisSpacing: 16,
-            mainAxisSpacing: 16,
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            children: [
-              OscilloscopeWidget(dataNotifier: _visualizerNotifier),
-              SpectrumWidget(dataNotifier: _visualizerNotifier),
-              VolumeWidget(dataNotifier: _visualizerNotifier),
-              PitchTrackerWidget(dataNotifier: _visualizerNotifier),
-            ],
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final double width = constraints.maxWidth;
+              final double height = constraints.maxHeight;
+
+              final int columns;
+              final int rows;
+
+              switch (widget.layout) {
+                case AudioTelemetryLayout.responsive:
+                  if (isDesktop) {
+                    columns = 2;
+                    rows = 2;
+                  } else {
+                    columns = 1;
+                    rows = 4;
+                  }
+                  break;
+                case AudioTelemetryLayout.grid2x2:
+                  columns = 2;
+                  rows = 2;
+                  break;
+                case AudioTelemetryLayout.grid4x1:
+                  columns = 4;
+                  rows = 1;
+                  break;
+                case AudioTelemetryLayout.grid1x4:
+                  columns = 1;
+                  rows = 4;
+                  break;
+              }
+
+              const double crossAxisSpacing = 16;
+              const double mainAxisSpacing = 16;
+              const double paddingHorizontal = 16;
+
+              final double availableWidth = width - (paddingHorizontal * 2);
+              final double itemWidth = (availableWidth - (crossAxisSpacing * (columns - 1))) / columns;
+              final double itemHeight = (height - (mainAxisSpacing * (rows - 1))) / rows;
+
+              final double childAspectRatio;
+              if (itemWidth > 0 && itemHeight > 0) {
+                childAspectRatio = itemWidth / itemHeight;
+              } else {
+                childAspectRatio = 1.0;
+              }
+
+              return GridView.count(
+                crossAxisCount: columns,
+                childAspectRatio: childAspectRatio,
+                crossAxisSpacing: crossAxisSpacing,
+                mainAxisSpacing: mainAxisSpacing,
+                padding: const EdgeInsets.symmetric(horizontal: paddingHorizontal),
+                physics: const NeverScrollableScrollPhysics(),
+                children: [
+                  OscilloscopeWidget(dataNotifier: _visualizerNotifier),
+                  SpectrumWidget(dataNotifier: _visualizerNotifier),
+                  VolumeWidget(dataNotifier: _visualizerNotifier),
+                  PitchTrackerWidget(dataNotifier: _visualizerNotifier),
+                ],
+              );
+            },
           ),
         ),
 

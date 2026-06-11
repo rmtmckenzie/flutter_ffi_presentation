@@ -21,7 +21,7 @@ class SpectrumWidget extends StatelessWidget {
                 Icon(Icons.equalizer, size: 16, color: theme.colorScheme.secondary),
                 const SizedBox(width: 8),
                 Text(
-                  'LOGARITHMIC FREQUENCY SPECTRUM (FFT)',
+                  'FREQ. SPECTRUM (FFT)',
                   style: TextStyle(
                     fontSize: 11,
                     fontWeight: FontWeight.w900,

@@ -10,6 +10,7 @@ import 'package:flutter_ffi_presentation/slides/15_how_to_use_web.dart';
 import 'package:flutter_ffi_presentation/slides/14_how_to_use_result.dart';
 import 'package:flutter_ffi_presentation/slides/16_ffi_mic.dart';
 import 'package:flutter_ffi_presentation/slides/17_ffi_mic_desktop.dart';
+import 'package:flutter_ffi_presentation/slides/18_ffi_result.dart';
 import 'package:flutter_ffi_presentation/slides/19_ffi_mic_android.dart';
 import 'package:flutter_ffi_presentation/slides/20_ffi_mic_ios.dart';
 import 'package:flutter_ffi_presentation/slides/1_title.dart';
@@ -19,6 +20,8 @@ import 'package:flutter_ffi_presentation/slides/23_issues.dart';
 import 'package:flutter_ffi_presentation/slides/23_irl.dart';
 import 'package:flutter_ffi_presentation/slides/24_questions.dart';
 import 'package:flutter_ffi_presentation/slides/25_summary.dart';
+import 'package:flutter_ffi_presentation/slides/27_enc.dart';
+import 'package:flutter_ffi_presentation/slides/28_audio.dart';
 import 'package:flutter_ffi_presentation/slides/2_introduction.dart';
 import 'package:flutter_ffi_presentation/slides/3_outline.dart';
 import 'package:flutter_ffi_presentation/slides/4_who.dart';
@@ -28,6 +31,7 @@ import 'package:flutter_ffi_presentation/slides/7_what_is_ffi_now.dart';
 import 'package:flutter_ffi_presentation/slides/8_why_use_ffi.dart';
 import 'package:flutter_ffi_presentation/slides/9_when_not_to_use.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_deck_pdf_export/flutter_deck_pdf_export.dart';
 
 class Deck extends StatelessWidget {
   const Deck({super.key, this.isPresenterView = false});
@@ -112,6 +116,7 @@ class Deck extends StatelessWidget {
         HowToUseWeb(),
         FfiMic(),
         FfiMicSetup(),
+        FfiResult(),
         FfiMicAndroid(),
         FFIMicIOS(),
         FFIMicIOSMarshaller(),
@@ -120,9 +125,12 @@ class Deck extends StatelessWidget {
         IrlSlide(),
         QuestionsSlide(),
         SummarySlide(),
+        EncAgain(),
+        AudioAgain(),
       ],
-      // colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      plugins: [
+        FlutterDeckPdfExportPlugin(),
+      ],
     );
   }
 }

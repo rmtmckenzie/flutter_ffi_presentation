@@ -1,27 +1,31 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:flutter_ffi_presentation/components/list_column.dart';
 import 'package:flutter_ffi_presentation/components/slide.dart';
-import 'package:flutter_ffi_presentation/components/title_row.dart';
 
 class QuestionsSlide extends SlideWidget {
   const QuestionsSlide({super.key})
     : super(
         configuration: const FlutterDeckSlideConfiguration(
           route: "/questions",
-          header: FlutterDeckHeaderConfiguration(title: "CHANGE ME"),
+          header: FlutterDeckHeaderConfiguration(title: "Future Questions"),
         ),
       );
 
   @override
   Widget buildBody(BuildContext context) {
-    return TitleRowFlex(
-      titleFlex: 1,
-      bodyFlex: 3,
-      child: Column(
-        spacing: 20,
-        children: [TitleRow(title: "", body: AutoSizeText(""))],
+    return ListColumn(numbered: false, [
+      ListItem(
+        "SwiftGen",
+        subItems: [
+          ListItem("Wanted to include"),
+          ListItem("Many caveats", subItems: [ListItem("@objc"), ListItem("intermediate steps")]),
+        ],
       ),
-    );
+      ListItem(
+        "Platform View + FFI",
+        subItems: [ListItem("not well defined"), ListItem("regular plugin likely needed")],
+      ),
+    ]);
   }
 }

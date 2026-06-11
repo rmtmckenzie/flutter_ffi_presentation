@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
-import 'package:flutter_ffi_presentation/components/bullet_list.dart';
+import 'package:flutter_ffi_presentation/components/list_column.dart';
 import 'package:flutter_ffi_presentation/components/slide.dart';
 
 
@@ -61,7 +61,6 @@ class FfiMicSetup extends SlideWidget {
     : super(
         configuration: const FlutterDeckSlideConfiguration(
           route: "/ffi-mic-setup",
-          initial: true,
           steps: 3,
           header: FlutterDeckHeaderConfiguration(title: "FFI Microphone - Desktop"),
           speakerNotes: """

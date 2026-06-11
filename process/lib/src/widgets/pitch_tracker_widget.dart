@@ -44,7 +44,7 @@ class PitchTrackerWidget extends StatelessWidget {
                     Icon(Icons.music_note, size: 16, color: theme.colorScheme.primary),
                     const SizedBox(width: 8),
                     Text(
-                      'PITCH TRACKER',
+                      'PITCH',
                       style: TextStyle(
                         fontSize: 11,
                         fontWeight: FontWeight.w900,

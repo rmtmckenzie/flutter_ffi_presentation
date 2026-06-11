@@ -66,7 +66,6 @@ class WebMicEngine implements MicFfi {
     if (_analyserNode == null) return;
 
     // Grab the live waveform data from the browser's native audio buffer.
-    // The jsify() layer handles passing our Dart Float32List directly to the JS engine.
     _analyserNode!.getFloatTimeDomainData(_timeDomainBuffer.toJS);
 
     _streamController.add(Float32List.fromList(_timeDomainBuffer));
