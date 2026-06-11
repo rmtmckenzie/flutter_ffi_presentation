@@ -5,18 +5,18 @@ packages:
     dependency: transitive
     description:
       name: _fe_analyzer_shared
-      sha256: "563c6992eaeda8625f45b87f6a6a0c547df16565d1c93d8271c7c11057710ca7"
+      sha256: "5eaa62d376b284f425a434e11f0fdc9c5fce9faf87d93c1b24afb2f9a4114cbe"
       url: "https://pub.dev"
     source: hosted
-    version: "101.0.0"
+    version: "102.0.0"
   analyzer:
     dependency: transitive
     description:
       name: analyzer
-      sha256: aa6a9365901532864cae51208f2a6bb18dd01972ebead19c431efc848f60080b
+      sha256: "1c48981b81b9dd272d69639399dbaa2a85b09882098b478ab575068650379f03"
       url: "https://pub.dev"
     source: hosted
-    version: "13.1.0"
+    version: "13.2.0"
   archive:
     dependency: transitive
     description:
@@ -323,7 +323,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: ace99f9882c1e4010c64371836007866d6e81afa
+      resolved-ref: b61cfe4806fc45fc23185613085e6d4e3abd0f31
       url: "https://github.com/rmtmckenzie/flutter_monocypher.git"
     source: git
     version: "0.0.1"
